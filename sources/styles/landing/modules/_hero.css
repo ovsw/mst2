@@ -1,0 +1,144 @@
+.hero {
+  
+  position: relative;
+  padding-top: 1rem;
+  margin-top: 70px;
+  background-color: $msGreen;
+  /* background-color: #301111; */
+  
+
+  &__bg-wrapper{
+    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFElEQVQIW2NkYGD4z8DAwMjIAAUADikBA/ggJToAAAAASUVORK5CYII='), url('../../assets/images/hero/group-outside.jpg');
+    background-position:bottom center, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, 600px; */
+
+     /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2MQ3m+6GQADqwG7/WrUNAAAAABJRU5ErkJggg=='), url('../../assets/images/hero/group-outside.jpg');
+    background-position:bottom center, bottom center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, 600px;  */
+  }
+
+  &__heading {
+    font-size: 3.157rem;
+    padding: 3.5rem 1.5rem 0rem 1.5rem;
+    color: $white;
+    font-weight: 400;
+    line-height: 0.8;
+    margin: 0;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+
+    @mixin atSmall {
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    
+    span {
+      font-weight: 300;
+      font-size: 1.777rem;
+      display: block;
+      line-height: 1.7;
+      padding-left: 0.5rem;
+      text-shadow: none;
+
+      &.second {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  &__card {
+    
+    padding: 180px 0 130px 40%;
+    
+    @mixin atMedium {
+      padding-left: 60%;
+    }
+    
+    
+    &.n-1 {
+      clip-path: polygon(0 20%, 1600px 0, 1600px 80%, 0 100%);
+      background-image: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(237,117,61,0.37) 5%,rgba(237,117,61,0.6) 90%), url('../../assets/images/hero/performances.jpg');
+      background-position: 30% 0%;
+      
+    }
+    &.n-2 {
+      clip-path: polygon(0 20%, 1600px 0, 1600px 80%, 0 100%);
+      
+      background-image: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(122,183,74,0.25) 5%,rgba(122,183,74,0.6) 100%), url('../../assets/images/hero/group-outside.jpg');
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,7ab74a+25&0+0,1+100 */
+      background-position: left center;
+      margin-top: -90px;
+    }
+
+    &.n-3 {
+      clip-path: polygon(0 20%, 1600px 0, 1600px 80%, 0 100%);
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(118,123,163,0.25) 5%,rgba(140,112,171,0.6) 100%), url('../../assets/images/hero/family.jpg');
+      background-size: cover;
+      margin-top: -90px;
+    }
+  }
+
+  &__card-title{
+    color: $white;
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  &__card-text {
+    color: $white;
+    padding: 0.8rem 1rem 1rem 1rem;
+    line-height: 1.3;
+    border: 3px solid color(white a(60%));
+    border-right: none;
+
+    @mixin atMedium {
+      
+      
+    }
+    
+
+    &.n-1 {
+      background-color: #ED753D;
+    }
+
+    &.n-2 {
+      background-color: #7ab74a;
+    }
+
+    &.n-3 {
+      background-color: #8c70ab;
+    }
+  }
+  
+  &__card-description {
+    color: color($white a(80%));
+  }
+
+  &__card-button {
+    background-color: $white;
+    display: block;
+    margin: 5px 10% 0 10%;
+    text-decoration: none;
+
+    @mixin atMedium {
+      display: inline-block;
+      margin: 5px 5px;
+    }
+    
+    &.n-1{
+      color: #ED753D;  
+    }
+
+    &.n-2{
+      color: #7ab74a;  
+    }
+
+    &.n-3{
+      color: #8c70ab;  
+    }
+  }
+}

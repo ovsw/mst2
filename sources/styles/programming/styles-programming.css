@@ -1,0 +1,198 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_global";
+
+@import "base/_variables";
+@import "base/_mixins";
+@import "modules/_header";
+@import "modules/_navigation";
+
+.hero-section {
+  /* background-color: rgba(100, 100, 100, .5);
+  background: radial-gradient(circle, #297354 0%, #0e713a 100%); */
+  text-align: center;
+  color: $white;
+}
+
+/* .package-wrapper {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  z-index: 900;
+} */
+
+.package-slide {
+  min-height: 120vh;
+  margin: 0;
+  background-position: top left;
+  background-attachment: fixed;
+}
+
+.content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 20% 50%;
+  padding: 17vh 5% 0 5%;
+}
+
+
+
+.packageSlide0 {
+  height:  100vh;
+  .content-wrapper {
+    background-image: url('../../assets/images/programming/main-cover.png'), radial-gradient(ellipse at $spotlight-gradient, #dffdc6 0%, #98d874 30%);
+  }
+}
+
+.packageSlide1 {
+  .content-wrapper {    
+    background-image: url('../../assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #e4e4e4 30%);
+  }
+}
+
+.packageSlide2 {
+  .content-wrapper {
+    background-image: url('../../assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #d7ffbd 0%, #c9fda8 30%);
+  }
+}
+
+.packageSlide3 {
+  .content-wrapper { 
+    background-image: url('../../assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #deceff 30%);
+    /* #cec3e4 */
+  }
+}
+
+.packageSlide4 {
+  .content-wrapper { 
+    background-image: url('../../assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #c8f8ff 30%);
+    /* #97dfea */
+  }
+}
+
+.packageSlide5 {
+  .content-wrapper {
+    background-image: url('../../assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #ffcfd7 30%);
+  }
+}
+
+.packageSlide6 {
+  .content-wrapper {
+    background-image: url('../../assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #fdedb0 30%);
+  }
+}
+
+.content-wrapper .content {
+  width:  50%;
+  float:  right;
+  text-align: left;
+}
+
+/* general slide styles */
+
+.content-wrapper .content p {
+  line-height: 1.8em;
+  font-family: $body-font;
+  color: gray;
+  font-size: 18px;
+}
+
+.content-wrapper .content ul li {
+  line-height: 1.7em;
+  font-family: $body-font;
+  color: gray;
+  font-size: 20px;
+}
+.content-wrapper .content ul li a {
+    color: green;
+}
+.headerPrefix {
+  font-family: $heading-font;
+  font-style: italic;
+  font-size:  30px;
+}
+
+.content-wrapper .content h3 {
+  line-height: 1.8em;
+  font-family: $body-font;
+  color: #7d5454;
+  font-size: 20px;
+}
+
+.mainTitle, .slideTitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:  900;
+  text-align: left;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: #7b9086 3px 2px 0;
+  line-height: 1.2em;
+  margin-top: 20px;
+  margin-bottom:30px;
+}
+.slideTitle {
+  color: #57b543;
+  text-shadow: #fff 3px 2px 0;
+  font-size:  45px;
+}
+.tagLine, .slideUdertitle {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:  400;
+  color: #688c64;
+}
+.content-wrapper .content p.slideUdertitle {
+  margin-bottom: 60px;
+  color: #b3b3b3;
+}
+.mainSubtitle, .slideSubtitle {
+  font-weight:  300;
+  font-size:  50px;
+  text-align:left;
+  color:#d6ffcf;
+  margin-top: 20px;
+}
+
+.slideSubtitle {
+  color: #57b543;
+  margin-bottom:0;
+}
+
+.scrollBtn {
+  padding-top: 60px;
+  display:  block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font-size:  18px;
+
+  text-decoration: none;
+  transition: opacity .3s;
+  clear:both;
+}
+.scrollBtn span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+.scrollBtn :hover {
+  opacity: .5;
+}

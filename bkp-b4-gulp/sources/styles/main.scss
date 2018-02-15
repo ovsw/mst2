@@ -1,0 +1,133 @@
+@import 'node_modules/sanitize.css/sanitize';
+// @import 'node_modules/susy/sass/susy';
+@import 'node_modules/breakpoint-sass/stylesheets/breakpoint';
+@import 'node_modules/breakpoint-slicer/stylesheets/breakpoint-slicer';
+@import 'variables';
+
+
+
+// @import 'node_modules/compass-sass-mixins/lib/compass/css3';
+// @import 'node_modules/compass-sass-mixins/lib/compass';
+
+body {
+  font-family: $body-font;
+}
+
+.main-logo {
+  img {
+    @include to(2) {
+      float: none;
+    }
+
+    width: 300px;
+    display: inline-block;
+    max-height: $top-menu-height;
+    float: left;
+  }
+}
+
+@import 'navigation';
+
+
+
+.mainHeader {
+  height: 7vh;
+  background-color: $main-background;
+  display: flex;
+  justify-content: space-between;
+}
+
+//  HERO
+
+.heroWrapper {
+  position: relative;
+  height: 93vh;
+  overflow: hidden;
+}
+
+.heroContent {
+  position: absolute;
+  z-index: 800;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.heroMainColumn {
+  margin: 0 5%;
+}
+
+.bottomCards {
+  display: flex;
+  flex-wrap: wrap;
+
+  .heroCardWrapper {
+    width: 20%;
+  }
+}
+
+.heroCardWrapper {
+  padding: 5px;
+}
+
+.card {
+  background-color: $oasis-green;
+  padding: 5px;
+  position: relative;
+
+  .cardTitle,
+  .cardSubtitle {
+    margin: 0;
+    padding: 0;
+    color: $white;
+  }
+
+  .cardTitle {
+    font-family: $heading-font;
+  }
+
+  .cardSubtitle {
+    font-family: $special-font;
+  }
+}
+
+.cardBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+
+
+
+//  VIDEO BG
+.heroVideoBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+
+}
+

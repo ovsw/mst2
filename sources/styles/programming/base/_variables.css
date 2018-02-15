@@ -1,0 +1,23 @@
+/* FONTS */
+$heading-font:  'jubilat', serif;
+$body-font: 'Open Sans', sans-serif;
+$special-font: 'Josefin Sans', sans-serif;
+
+/* COLORS */
+$primary-color: #f00;
+$black: #1a2714;
+$white: #fff;
+
+$main-background: #fcf0db;
+
+$oasis-blue: #0166af;
+$oasis-green: #30b256;
+
+$mobile-menu-icon-color: red;
+$side-nav-link-color: #818181;
+
+/* NAV  */
+$mobile-side-menu-width: 250px;
+$top-menu-height: 60px; 
+
+$spotlight-gradient:  25% 57%;
