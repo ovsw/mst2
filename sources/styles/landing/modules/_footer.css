@@ -9,6 +9,29 @@
     padding-top: 110px;
     padding-bottom: 50px;
   }
+  @mixin atLarge {
+    margin-top: 0;
+  }
+  @mixin atHuge {
+    clip-path: none;
+    transform: skewY(-2deg);    
+  }
+
+  &__wrapper {
+    @mixin atLarge {
+      background-color: $white;
+      background: -webkit-linear-gradient(top, rgba(255,255,255,1) 49%,rgba(135,204,47,1) 49%);
+    }
+    
+  }
+
+  &__inner-wrapper {
+    @mixin atHuge {
+      transform: skewY(2deg);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
 
   &__logos {
 
@@ -44,6 +67,9 @@
       padding-bottom: 2rem;
       padding-top: 1rem;
     }
+    @mixin atHuge {
+      font-size: 1rem;
+    }
   }
 
   &__column {
@@ -72,7 +98,7 @@
   &__copyright {
     color: color($white a(60%));
     font-size: 0.85rem;
-    border-top: 1px solid white;
+    border-top: 1px solid color($white a(60%));
     padding-top: 1rem;
     line-height: 1.4;
     clear:both;
@@ -80,6 +106,10 @@
     @mixin atMedium {
       font-size: 1rem;
       padding-top: 1.5rem;
+    }
+
+    @mixin atHuge {
+      font-size: 0.9rem;
     }
   }
 
