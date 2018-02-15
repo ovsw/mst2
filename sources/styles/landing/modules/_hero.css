@@ -70,12 +70,12 @@
   }
 
   &__cards-wrapper{
+    @mixin atMedium {
       background: linear-gradient(
         to bottom,
         rgba(135,204,47,1) 67%,rgba(255,255,255,1) 68%
-        );
-    
-    
+        ); 
+    }
   }
 
   &__card {
