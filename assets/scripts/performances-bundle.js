@@ -54,6 +54,20 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.top-nav__submenu-button').click
   }
 });
 
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.slidecards__card').click(function(){
+  
+  // if($(this).hasClass("open")){ 
+  //   $(this).removeClass('open');
+  // }else{
+  //   $('.slidecards__card').removeClass('open');
+  //   $(this).addClass('open');
+  // }
+
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.slidecards__card').removeClass('open');
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).addClass('open');
+  
+});
+
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {

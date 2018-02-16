@@ -14,12 +14,17 @@
   }
   @mixin atHuge {
     clip-path: none;
-    transform: skewY(-2deg);    
+    transform: skewY(-2deg); 
+      
   }
 
   &__wrapper {
     @mixin atLarge {
       background: -webkit-linear-gradient(top, rgba(255,255,255,1) 49%,rgba(135,204,47,1) 49%);
+    }
+
+    @mixin atHuge {
+      margin-top: 100px; 
     }
     
   }

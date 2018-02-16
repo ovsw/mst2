@@ -34,7 +34,7 @@
         $cards = $page->cards_repeater;
         $i = 0;
         foreach ($cards as $card) : $i++;?>
-        <div class="slidecards__card closed" style="background-image: url('<?= $card->card_background_image->getCrop("card-small")->url ?>');">
+        <div class="slidecards__card<?= $i==1 ? ' open' : '' ?>" style="background-image: url('<?= $card->card_background_image->getCrop("card-small")->url ?>');">
           <div class="slidecards__card-wrapper n-<?= $i ?>">
             <h3 class="slidecards__card-title n-<?= $i ?>"><span><?= $card->title ?></span></h3>
             <h4 class="slidecards__card-subtitle"><?= $card->subtitle ?></h4>
@@ -47,7 +47,7 @@
         <?php endforeach; ?>
       </div>
       <!-- /.slidecards__cardswrapper -->
-
+      
     </section>
     <!-- /.slidecards -->
 

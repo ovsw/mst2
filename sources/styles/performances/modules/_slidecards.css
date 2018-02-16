@@ -1,5 +1,10 @@
 .slidecards {
 
+  @mixin atHuge {
+    box-shadow: 0 -10px 20px color($black a(20%));
+    display: flex;
+  }
+
   &__heading-wrapper {
     background-color: $white;
     color: $msGreen;
@@ -10,14 +15,50 @@
     }
   }
 
+  &__cards-wrapper{
+    @mixin atMedium {
+      max-width: 500px;
+      margin: 3rem auto 0 auto;
+    }
+
+    @mixin atLarge {
+      max-width: 100%;
+      margin: 0;
+      display: flex;
+    }
+  }
+
   &__card {
     background-size: cover;    
     padding: 0px;
     color: $white;
     border-top: 2px solid $msGreen;
+    overflow: hidden;
 
     box-shadow: 0 -10px 16px color($black a(30%));
     position: relative;
+    max-height: 7rem;
+    transition: max-height 0.5s ease-out;
+
+    @mixin atLarge {
+      max-height: 1500px;
+      flex-basis: 17.5%;
+      box-shadow: none;
+      border: none;
+      transition: flex-basis 500ms ease-in-out;
+      min-height: 400px;
+    }
+
+    &.open {
+      max-height: 1500px;
+      transition: max-height 0.5s ease-in;
+
+      @mixin atLarge{
+        flex-basis: 30%;
+      }
+    }
+
+    
   }
 
   $c1: #360F30;
@@ -28,6 +69,8 @@
 
   &__card-wrapper {
     padding: 1rem;
+
+    height: 100%;
 
     &.n-1 {
       background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHklEQVQYV2M05TN4xsD4fzMDAwMDoym//kwQA4MDAIiFBSiMSUiQAAAAAElFTkSuQmCC');
@@ -60,6 +103,10 @@
       font-size: 1.5rem;
     }
 
+    @mixin atHuge {
+      font-size: 1.7rem;
+    }
+    
     span {
       background-color: color($white a(70%));
       box-shadow: 0.5rem 0 0 color($white a(70%)), -0.5rem 0 0 color($white a(70%));
@@ -98,12 +145,22 @@
   }
 
   &__card-description {
-    margin: 4rem 0 4rem 0;
+    
     font-size: 1.1rem;
+    transition: all 0.5s;
 
-    .closed & {
+    @mixin atTiny {
+      margin: 4rem 0 4rem 0;
+    }
+
+    @mixin atLarge {
+
       display: none;
-    } 
+
+      .open & {
+        display: block;
+      }
+    }
    
   }
 
@@ -112,10 +169,18 @@
     color: $msGreen;
     box-shadow: -3px 3px 0 color($msGreen a(90%));
     /* padding: 0.82rem 1.5rem; */
+    transition: all 0.5s;
 
-    .closed & {
+    @mixin atLarge {
       display: none;
-    } 
+
+      .open & {
+        display: inline-block;
+      }
+    }
+
+
+
 
     &.n-1 {
       color: $c1;

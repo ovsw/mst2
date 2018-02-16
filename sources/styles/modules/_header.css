@@ -83,7 +83,7 @@
         }
     }
 
-    @mixin atLarge {
+    @mixin atMedium {
       display: none;  
     }
   }

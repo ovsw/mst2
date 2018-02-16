@@ -2,7 +2,7 @@
   display: none;
 }
 
-$mobile_break: atLarge;
+$mobile_break: atMedium;
 
 .top-nav {
 
