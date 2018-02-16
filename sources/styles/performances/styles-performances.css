@@ -1,8 +1,29 @@
-@import "normalize.css";
-@import "../base/_variables";
-@import "../base/_global";
-
 @import "base/_variables";
 @import "base/_mixins";
 
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_global";
+@import "../modules/_header";
+@import "../modules/_top-nav";
+@import "../modules/_footer";
+
+@import "modules/_header";
+
+@import "modules/_hero";
+@import "modules/_footer";
 @import "modules/_performance-wizard";
+
+
+
+body  {
+  background-color: $msGreen;
+  font-family: $body-font;
+  font-weight: 300;
+}
+
+p {
+  strong {
+    font-weight: 700;
+  }
+}
