@@ -420,6 +420,16 @@ small, .font_small {font-size: 0.75em;}
     min-height: 100px;
     padding: 1rem;
   }
+@media (min-width: 1024px) {
+.header__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between
+  }
+ }
 .header__logo {
     display: block;
     margin: 0 auto;
@@ -492,7 +502,7 @@ small, .font_small {font-size: 0.75em;}
           -webkit-transform: translateX(4px) rotate(-45deg) scaleX(1.25);
                   transform: translateX(4px) rotate(-45deg) scaleX(1.25);
         }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .header__menu-icon {
       display: none
   }
@@ -517,7 +527,7 @@ small, .font_small {font-size: 0.75em;}
   transition: all 0.3s ease-out;
 
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav {
     display:  block;
     position: static;
@@ -547,7 +557,7 @@ small, .font_small {font-size: 0.75em;}
       margin-top: 3rem
   }
  }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav__mobile-title {
       display: none
   }
@@ -558,7 +568,7 @@ small, .font_small {font-size: 0.75em;}
     padding: 0;
     border-top: 1px solid rgba(#fff, 0.3);
   }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav__outer-list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -567,30 +577,27 @@ small, .font_small {font-size: 0.75em;}
   }
  }
 .top-nav__item-level-1 {
-    background-color: #87CC2F;
     position: relative;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 .top-nav__item-level-1:last-child {
       border-bottom: none;
     }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav__item-level-1 {
       display: inline-block;  
-      border-radius: 0 0 10px 10px ;
       margin-left: 10px;
       -webkit-box-shadow: 2px 2px 3px rgba(#000, 0.3), -2px -2px 3px rgba(#000, 0.3);
               box-shadow: 2px 2px 3px rgba(#000, 0.3), -2px -2px 3px rgba(#000, 0.3)
   }
  }
 .top-nav__item-level-1 a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-decoration: none;
-    color: #301111;
-    padding: 1.2rem  1.5rem;
+    color: #fff;
+    padding: 0.5rem  0.5rem;
     display: block; 
   }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav__item-level-1 a {
     display: inline-block 
   }
@@ -598,16 +605,11 @@ small, .font_small {font-size: 0.75em;}
 .top-nav__item-level-1.p-1031 {
     background-color: orange;
   }
-@media (min-width: 768px) {
-.top-nav__item-level-1:hover {
-      background-color: green;
-      padding-top:0.2rem
-    
-  }
+@media (min-width: 1024px) {
  }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav__item-level-1:hover a {
-      padding-bottom: 1rem
+      color: #87CC2F
   }
  }
 .top-nav__inner-list {
@@ -615,7 +617,7 @@ small, .font_small {font-size: 0.75em;}
     margin: 0;
     padding: 0;
   }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav__inner-list {
       height: auto;
       display: none;
@@ -633,13 +635,13 @@ small, .font_small {font-size: 0.75em;}
     background-color: #301111;
     height: 0;
   }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav__item-level-2 {
       height: auto;
       border-top: 1px solid rgba(#fff, 0.2)
   }
  }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav__item-level-2:first-child {
       border-top: none
   }
@@ -696,7 +698,7 @@ small, .font_small {font-size: 0.75em;}
 .top-nav__has-children.submenu-open .top-nav__item-level-2.top-nav__current {
           background-color: rgb(13, 128, 13);
         }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
       .top-nav__has-children > .top-nav__submenu-button {display: none;}
 
@@ -710,7 +712,7 @@ small, .font_small {font-size: 0.75em;}
       }
  }
 /* end icons */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
         .top-nav__has-children:hover {
           background-color: green;
           border-radius: 0;

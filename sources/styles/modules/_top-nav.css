@@ -2,7 +2,7 @@
   display: none;
 }
 
-$mobile_break: atMedium;
+$mobile_break: atLarge;
 
 .top-nav {
 
@@ -60,9 +60,7 @@ $mobile_break: atMedium;
   }
 
   &__item-level-1 {
-    background-color: $msGreen;
     position: relative;
-    border-bottom: 1px solid color($white a(50%));
 
     &:last-child {
       border-bottom: none;
@@ -70,17 +68,16 @@ $mobile_break: atMedium;
 
     @mixin $mobile_break{
       display: inline-block;  
-      border-radius: 0 0 10px 10px ;
       margin-left: 10px;
       box-shadow: 2px 2px 3px rgba($black, 0.3), -2px -2px 3px rgba($black, 0.3);
     }
   }
   
   &__item-level-1 a {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-decoration: none;
-    color: $oasisBlue;
-    padding: 1.2rem  1.5rem;
+    color: $white;
+    padding: 0.5rem  0.5rem;
     display: block; 
    
    @mixin $mobile_break {
@@ -94,15 +91,14 @@ $mobile_break: atMedium;
 
   &__item-level-1:hover {
     @mixin $mobile_break {
-      background-color: $oasisGreen;
-      padding-top:0.2rem;
+     
     }
     
   }
 
   &__item-level-1:hover a {
     @mixin $mobile_break {
-      padding-bottom: 1rem;
+      color: $msGreen;
     }
   }
 
