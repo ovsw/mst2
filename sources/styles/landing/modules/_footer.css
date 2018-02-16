@@ -19,7 +19,6 @@
 
   &__wrapper {
     @mixin atLarge {
-      background-color: $white;
       background: -webkit-linear-gradient(top, rgba(255,255,255,1) 49%,rgba(135,204,47,1) 49%);
     }
     
