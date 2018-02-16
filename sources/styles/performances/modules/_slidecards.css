@@ -1,0 +1,146 @@
+.slidecards {
+
+  &__heading-wrapper {
+    background-color: $white;
+    color: $msGreen;
+    padding: 2rem;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  &__card {
+    background-size: cover;    
+    padding: 0px;
+    color: $white;
+    border-top: 2px solid $msGreen;
+
+    box-shadow: 0 -10px 16px color($black a(30%));
+    position: relative;
+  }
+
+  $c1: #360F30;
+  $c2: #482F85;
+  $c3: #993E28;
+  $c4: #1F7E83;
+  $c5: #1F7E31;
+
+  &__card-wrapper {
+    padding: 1rem;
+
+    &.n-1 {
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHklEQVQYV2M05TN4xsD4fzMDAwMDoym//kwQA4MDAIiFBSiMSUiQAAAAAElFTkSuQmCC');
+    }
+
+     &.n-2 {
+      background:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHklEQVQYV2P00G/9z8DAMIuBgYGB0UO/dSaIgcEBAI6oBcPNE2jMAAAAAElFTkSuQmCC');
+    }
+
+     &.n-3 {
+      background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHklEQVQYV2Ocaafxn4GBYRYDAwMD40w7jZkgBgYHAJGKBcwppAtDAAAAAElFTkSuQmCC');
+    }
+
+     &.n-4 {
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHklEQVQYV2OUr2v+/////1kMDAwMjHK1TTNBDAwOAPqHCSYq/CpdAAAAAElFTkSuQmCC');
+    }
+
+     &.n-5 {
+       background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHklEQVQYV2OUrzP8/////1kMDAwMjHK1BjNBDAwOAORtCDAw46YTAAAAAElFTkSuQmCC');      
+    }
+  }
+
+  &__card-title {
+    margin: 0;
+    color: $black;
+    margin-right: 40px;
+    font-size: 1.3rem;
+
+    @mixin atTiny {
+      font-size: 1.5rem;
+    }
+
+    span {
+      background-color: color($white a(70%));
+      box-shadow: 0.5rem 0 0 color($white a(70%)), -0.5rem 0 0 color($white a(70%));
+      padding: 0 1px;
+      line-height: 1.4;
+    }
+
+    &.n-1 {
+      color: $c1;
+    }
+
+    &.n-2 {
+      color: $c2;
+    }
+
+    &.n-3 {
+      color: $c3;
+    }
+
+    &.n-4 {
+      color: $c4;
+    }
+
+    &.n-5 {
+      color: $c5;
+    }
+  }
+
+  &__card-subtitle {
+    font-size: 1rem;
+    font-family: $body-font;
+    color: color($white a(70%));
+    letter-spacing: 0.1rem;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  &__card-description {
+    margin: 4rem 0 4rem 0;
+    font-size: 1.1rem;
+
+    .closed & {
+      display: none;
+    } 
+   
+  }
+
+  &__card-button {
+    background-color: $white;
+    color: $msGreen;
+    box-shadow: -3px 3px 0 color($msGreen a(90%));
+    /* padding: 0.82rem 1.5rem; */
+
+    .closed & {
+      display: none;
+    } 
+
+    &.n-1 {
+      color: $c1;
+      box-shadow: -3px 3px 0 color($c1 a(90%));
+    }
+
+    &.n-2 {
+      color: $c2;
+      box-shadow: -3px 3px 0 color($c2 a(90%));
+    }
+
+    &.n-3 {
+      color: $c3;
+      box-shadow: -3px 3px 0 color($c3 a(90%));
+    }
+
+    &.n-4 {
+      color: $c4;
+      box-shadow: -3px 3px 0 color($c4 a(90%));
+    }
+
+    &.n-5 {
+      color: $c5;
+      box-shadow: -3px 3px 0 color($c5 a(90%));
+    }
+  }
+
+}

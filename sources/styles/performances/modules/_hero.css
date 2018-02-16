@@ -4,6 +4,7 @@
     padding-top: 1rem;
     margin-top: 70px;
     text-align: center;
+    padding-bottom: 3rem;
 
     &__heading {
     font-size: 2.8rem;
@@ -41,10 +42,11 @@
   }
 
   &__cta {
+    display: inline-block;
     background-color: #fff;
     color: #301111;
     text-decoration: none;
-    box-shadow: -5px 5px 0 color($black a(60%));
+    box-shadow: -5px 5px 0 color($black a(30%));
   }
 
 }
