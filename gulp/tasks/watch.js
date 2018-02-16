@@ -27,6 +27,18 @@ gulp.task('watch', function(){
 		gulp.start('cssInjectPerformances');
 	});
 
+	watch('./sources/styles/global/**/*.css', function(){
+		gulp.start('cssInjectLanding');
+		gulp.start('cssInjectProgramming');
+		gulp.start('cssInjectPerformances');
+	});
+	watch('./sources/styles/modules/**/*.css', function(){
+		gulp.start('cssInjectLanding');
+		gulp.start('cssInjectProgramming');
+		gulp.start('cssInjectPerformances');
+	});
+
+
 	watch('./sources/scripts/**/*.js', function(){
 		gulp.start('scriptsRefresh');
 	});
