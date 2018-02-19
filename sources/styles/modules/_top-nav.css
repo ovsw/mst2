@@ -9,7 +9,7 @@ $mobile_break: atLarge;
   opacity: 0;
   transform: scaleX(0);
   transform-origin: 100% 50%;
-  background-color: $oasisBlue;
+  background-color: $msDarkBrown;
   height: 100vh;
   position: absolute;
   top:0;
@@ -96,7 +96,7 @@ $mobile_break: atLarge;
     
   }
 
-  &__item-level-1:hover a {
+  &__item-level-1:hover>a {
     @mixin $mobile_break {
       color: $msGreen;
     }
@@ -106,27 +106,29 @@ $mobile_break: atLarge;
     list-style: none;
     margin: 0;
     padding: 0;
+    
 
     @mixin $mobile_break {
       height: auto;
       display: none;
       position: absolute;
-      top: 3.70rem;
+      top: 2.7rem;
       left: 0;
       min-width: 100%;
       width: 200px;
       z-index: 999;
       box-shadow: 2px 2px 6px rgba($black, 0.3), -2px 0 6px rgba($black, 0.3);
+      border: 1px solid color($white a(20%));
     }
   }
 
   &__item-level-2 {
-    background-color: $oasisBlue;
+    background-color: $msDarkBrown;
     height: 0;
 
     @mixin $mobile_break {
       height: auto;
-      border-top: 1px solid rgba($white, 0.2);
+      border-top: 1px solid color($white a(20%));
     }
   }
 
@@ -180,11 +182,13 @@ $mobile_break: atLarge;
     }
 
     &.submenu-open {
+
       > .top-nav__submenu-button {
-          background-color: $oasisBlue;
+          background-color: $msDarkBrown;
         .top-nav__ico-plus {display: none;}
         .top-nav__ico-minus {display: inline-block;}
       }
+      
       .top-nav__item-level-2 {
         height: auto;
         border-top: 1px dotted rgba($white, 0.2);
@@ -221,12 +225,12 @@ $mobile_break: atLarge;
 
     &:hover {
 
-      @mixin $mobile_break {
+      /* @mixin $mobile_break {
         & {
           background-color: $oasisGreen;
           border-radius: 0;
         }
-      }
+      } */
 
       > .top-nav__inner-list {
         display:block;
