@@ -38,23 +38,19 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
+  <header class="header">
+      <div class="header__wrapper">
+        <a href="/" class="header__logo">
+          <img src="<?= $config->urls->templates ?>assets/images/mainstages-logo-horizontal.png" alt="Mainstages Logo"> 
+        </a>
+        <?php require($config->paths->templates."includes/modules/topnav-programming.inc"); ?>
+      </div>
+      <!-- /.header__wrapper -->
+    </header>
 
-<div  class="nav-icon"><span></span><span></span><span></span><span></span></div>
-<div id="sideNav" class="sidenav">
-  <a href="#">About Us</a>
-  <a href="#">Staff</a>
-  <a href="#">Families</a>
-  <a href="#">Enroll Now</a>
-  <a href="#">Contact Us</a>
-</div>
-
-<!-- Use any element to open the sidenav -->
-
-
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div class="mainWrapper">
   
-  <?php require($config->paths->templates."includes/modules/topnav-programming.inc") ?>
+ 
 
 
     <section class="package-slide hero-section packageSlide0">
