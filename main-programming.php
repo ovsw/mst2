@@ -53,28 +53,8 @@
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div class="mainWrapper">
-     <header class="mainHeader">
-      
-      <a href="/" class="main-logo"><img src="<?= $config->urls->templates ?>assets/images/mainstages-logo-horizontal.png" alt="Oasis Day Camp logo"></a>
-      
-      <nav role="navigation" class="mainNavWrapper">
-        <ul class="mainNav">
-          <li>
-            <a href="#">About Us</a>
-            <ul>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Staff</a></li>
-          <li><a href="#">Families</a></li>
-          <li><a href="#">Enroll Now</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-
-     </header>
+  
+  <?php require($config->paths->templates."includes/modules/topnav-programming.inc") ?>
 
 
     <section class="package-slide hero-section packageSlide0">
