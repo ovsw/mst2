@@ -53,13 +53,14 @@
  
 
 
-    <section class="package-slide hero-section packageSlide0">
-      <div class="package-slide__content-wrapper">
+    <section class="package-slide hero packageSlide0">
+      <div class="package-slide__content-wrapper ">
         <div class="package-slide__content">
-              <span class="headerPrefix">meet the</span>
-              <h1 class="mainTitle">  Mainstages Theater Program</h1>
-              <p class="tagLine">for both Camp and After-School Services <br><!--  customized &#9679; supervized &#9679; full-featured --></p>
-              <h2 class="mainSubtitle">the perfect answer to your Theater Program needs</h2>
+              <span class="hero__headerPrefix">meet the</span>
+              <h1 class="hero__mainTitle">  Mainstages Theater Program</h1>
+              <p class="hero__tagLine">for both Camp and <br> After-School Services</p>
+              <img class="package-slide__mobile-image" src="/site/templates/assets/images/programming/main-cover.png" alt="Mainstages Theater ina Box">
+              <h2 class="hero__mainSubtitle">the perfect answer to your Theater Program needs</h2>
         </div>
         <!-- /.content -->
         <a href="#" class="scrollBtn"><span></span>Down for More</a>
@@ -68,7 +69,19 @@
     </section>
     <!-- /.hero-section -->
 
-    <?php $i = 0; foreach ($page->programming_hp_slides as $slide) : $i++;?>
+    <?php $i = 0; foreach ($page->programming_hp_slides as $slide) : $i++; 
+
+      $imageArray = [
+        "/site/templates/assets/images/programming/main-cover.png",
+        "/site/templates/assets/images/programming/whole-adnotated.png",
+        "/site/templates/assets/images/programming/base-adnotated.png",
+        "/site/templates/assets/images/programming/back-adnotated.png",
+        "/site/templates/assets/images/programming/left-adnotated.png",
+        "/site/templates/assets/images/programming/right-adnotated.png",
+        "/site/templates/assets/images/programming/front-adnotated.png"
+      ];
+    
+    ?>
 
     <section class="package-slide packageSlide<?= $i ?>">
       <div class="package-slide__content-wrapper">
@@ -76,6 +89,7 @@
               <!-- <h2 class="slideTitle">A comprehensive package</h2> -->
               <h2 class="package-slide__title"><?= $slide->title ?></h2>
               <p class="package-slide__undertitle"><?= $slide->subtitle ?></p>
+              <img class="package-slide__mobile-image" src="<?= $imageArray[$i] ?>" alt="Mainstages Theater ina Box">
               <div class="package-slide__rte">
                 <?= $slide->programming_slide_rte ?>
               </div>

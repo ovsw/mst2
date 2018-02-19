@@ -5,52 +5,113 @@
   padding: 1px;
 
 
-  &__content-wrapper {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 20% 50%;
-    padding: 10% 5% 5% 5%;
-    min-height: 100vh;
+  &__content-wrapper { 
+    background-position: top left;
     position: relative;
-
+    padding: 1rem;
+    
+    $spotlight-gradient: 25% 57%;
+    
     .packageSlide0 & {
-      background-image: url('../../assets/images/programming/main-cover.png'), radial-gradient(ellipse at $spotlight-gradient, #dffdc6 0%, #98d874 30%);
+        background-image: radial-gradient(circle at 15% 50%, #dffdc6 0%, #98d874 60%);
     }
-
+    
     .packageSlide1 & {
-      background-image: url('../../assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #e4e4e4 30%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #e4e4e4 60%);
     }
 
     .packageSlide2 & {
-      background-image: url('../../assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #d7ffbd 0%, #c9fda8 30%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #c9fda8 60%);
     }
 
     .packageSlide3 & {
-       /* #cec3e4 */
-      background-image: url('../../assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #deceff 30%);
+      /* #cec3e4 deceff */
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #deceff 60%);
+      
     }
 
     .packageSlide4 & {
-      background-image: url('../../assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #c8f8ff 30%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #c8f8ff 60%);
       /* #97dfea */
     }
 
     .packageSlide5 & {
-      background-image: url('../../assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #ffcfd7 30%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #ffcfd7 60%);
     }
 
     .packageSlide6 & {
-      background-image: url('../../assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #fdedb0 30%);      
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #fdedb0 60%);      
+    }
+
+    @mixin atMedium {
+      min-height: 100vh;
+      background-repeat: no-repeat;
+      padding: 10% 5% 5% 5%;
+      background-position: 20% 50%;
+      background-attachment: fixed;
+      background-size: auto;
+    
+
+      .packageSlide0 & {
+        background-image: url('/site/templates/assets/images/programming/main-cover.png'), radial-gradient(ellipse at $spotlight-gradient, #dffdc6 0%, #98d874 30%);
+      }
+
+      .packageSlide1 & {
+        background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #e4e4e4 30%);
+      }
+
+      .packageSlide2 & {
+        background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #d7ffbd 0%, #c9fda8 30%);
+      }
+
+      .packageSlide3 & {
+        /* #cec3e4 */
+        background-image: url('/site/templates/assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #deceff 30%);
+      }
+
+      .packageSlide4 & {
+        background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #c8f8ff 30%);
+        /* #97dfea */
+      }
+
+      .packageSlide5 & {
+        background-image: url('/site/templates/assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #ffcfd7 30%);
+      }
+
+      .packageSlide6 & {
+        background-image: url('/site/templates/assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #fdedb0 30%);      
+      }
+
     }
 
   }
   /* end __content-wrapper */
 
+  &__mobile-image {
+    display: block;
+    margin: 0 auto;
+
+    @mixin atMedium {
+      display: none;
+    }
+  
+  }
+
   &__content {
-    margin-left: 55%;
+    
+    @mixin atMedium {
+      margin-left: 55%;
+    }
+    
   }   
 
   &__rte {
+    margin-top: -3rem;
+
+    @mixin atMedium {
+      margin-top: 0;
+    }
+
     p {
       line-height: 1.8em;
       font-family: $body-font;
@@ -59,10 +120,15 @@
     }
 
     ul li {
-      line-height: 1.7em;
+      line-height: 1.5em;
       font-family: $body-font;
       color: gray;
-      font-size: 20px;
+      font-size: 1.1rem;
+      margin-bottom: 0.7rem;
+
+      @mixin atMedium {
+        font-size: 1.25rem;              
+      }
     }
 
     ul li a {
@@ -80,19 +146,28 @@
 
   &__title {
     font-weight:  300;
-    font-size:  50px;
+    font-size: 2rem;
     text-align:left;
     margin-top: 20px;
     color: #57b543;
-    margin-bottom:0;
+    margin-bottom: 0;
+
+    @mixin atMedium {
+      font-size:  3.125rem;
+      margin-bottom:0;  
+    }
   }
 
   &__undertitle {
-    font-size: 20px;
-
+    font-size: 1rem;
     font-weight:  400;
-    color: #688c64;
-    margin-bottom: 60px;
-    color: #b3b3b3;
+    color: color($msDarkBrown a(80%));
+   
+    margin-bottom: 1rem;
+
+    @mixin atMedium {
+      margin-bottom: 60px;
+      font-size: 1.25rem;
+    }
   }
 }
