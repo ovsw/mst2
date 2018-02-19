@@ -58,8 +58,8 @@
 
 
     <section class="package-slide hero-section packageSlide0">
-      <div class="content-wrapper">
-        <div class="content">
+      <div class="package-slide__content-wrapper">
+        <div class="package-slide__content">
               <span class="headerPrefix">meet the</span>
               <h1 class="mainTitle">  Mainstages Theater Program</h1>
               <p class="tagLine">for both Camp and After-School Services <br><!--  customized &#9679; supervized &#9679; full-featured --></p>
@@ -74,13 +74,16 @@
 
     <?php $i = 0; foreach ($page->programming_hp_slides as $slide) : $i++;?>
 
-    <section class="package-slide alternate packageSlide<?= $i ?>">
-      <div class="content-wrapper">
-        <div class="content">
+    <section class="package-slide packageSlide<?= $i ?>">
+      <div class="package-slide__content-wrapper">
+        <div class="package-slide__content">
               <!-- <h2 class="slideTitle">A comprehensive package</h2> -->
-              <h2 class="slideSubtitle"><?= $slide->title ?></h2>
-              <p class="slideUdertitle"><?= $slide->subtitle ?></p>
-              <?= $slide->programming_slide_rte ?>
+              <h2 class="package-slide__title"><?= $slide->title ?></h2>
+              <p class="package-slide__undertitle"><?= $slide->subtitle ?></p>
+              <div class="package-slide__rte">
+                <?= $slide->programming_slide_rte ?>
+              </div>
+              <!-- /.package-slide__rte -->
         </div>
         <!-- /.content -->
       </div>

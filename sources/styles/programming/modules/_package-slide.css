@@ -1,0 +1,96 @@
+.package-slide {
+  margin: 0;
+  background-position: top left;
+  background-attachment: fixed;
+
+
+  &__content-wrapper {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    padding: 17vh 5% 0 5%;
+    min-height: 120vh; 
+
+    .packageSlide0 & {
+      background-image: url('../../assets/images/programming/main-cover.png'), radial-gradient(ellipse at $spotlight-gradient, #dffdc6 0%, #98d874 30%);
+    }
+
+    .packageSlide1 & {
+      background-image: url('../../assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #e4e4e4 30%);
+    }
+
+    .packageSlide2 & {
+      background-image: url('../../assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #d7ffbd 0%, #c9fda8 30%);
+    }
+
+    .packageSlide3 & {
+       /* #cec3e4 */
+      background-image: url('../../assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #deceff 30%);
+    }
+
+    .packageSlide4 & {
+      background-image: url('../../assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #c8f8ff 30%);
+      /* #97dfea */
+    }
+
+    .packageSlide5 & {
+      background-image: url('../../assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #ffcfd7 30%);
+    }
+
+    .packageSlide6 & {
+      background-image: url('../../assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #fdedb0 30%);      
+    }
+
+  }
+  /* end __content-wrapper */
+
+  &__content {
+    margin-left: 50%;
+  }   
+
+  &__rte {
+    p {
+      line-height: 1.8em;
+      font-family: $body-font;
+      color: gray;
+      font-size: 18px;
+    }
+
+    ul li {
+      line-height: 1.7em;
+      font-family: $body-font;
+      color: gray;
+      font-size: 20px;
+    }
+
+    ul li a {
+        color: green;
+    }
+
+    h3 {
+      line-height: 1.8em;
+      font-family: $body-font;
+      color: #7d5454;
+      font-size: 20px;
+    }
+  }
+  /* end __rte */
+
+  &__title {
+    font-weight:  300;
+    font-size:  50px;
+    text-align:left;
+    margin-top: 20px;
+    color: #57b543;
+    margin-bottom:0;
+  }
+
+  &__undertitle {
+    font-size: 20px;
+
+    font-weight:  400;
+    color: #688c64;
+    margin-bottom: 60px;
+    color: #b3b3b3;
+  }
+}

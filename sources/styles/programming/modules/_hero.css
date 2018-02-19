@@ -1,0 +1,77 @@
+.hero-section {
+  /* background-color: rgba(100, 100, 100, .5);
+  background: radial-gradient(circle, #297354 0%, #0e713a 100%); */
+  text-align: center;
+  color: $white;
+}
+
+.headerPrefix {
+  font-family: $heading-font;
+  font-style: italic;
+  font-size:  30px;
+}
+
+.mainTitle{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:  900;
+  text-align: left;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: #7b9086 3px 2px 0;
+  line-height: 1.2em;
+  margin-top: 20px;
+  margin-bottom:30px;
+}
+
+.tagLine {
+  margin-bottom: 60px;
+  line-height: 1.8em;
+  font-family: $body-font;
+  color: gray;
+  font-size: 18px;
+}
+
+.mainSubtitle {
+  font-weight:  300;
+  font-size:  50px;
+  text-align:left;
+  color:#d6ffcf;
+  margin-top: 20px;
+}
+
+
+/* scroll button */
+
+.scrollBtn {
+  padding-top: 60px;
+  display:  block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font-size:  18px;
+
+  text-decoration: none;
+  transition: opacity .3s;
+  clear:both;
+}
+.scrollBtn span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+.scrollBtn :hover {
+  opacity: .5;
+}

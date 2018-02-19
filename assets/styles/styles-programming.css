@@ -598,88 +598,12 @@ small, .font_small {font-size: 0.75em;}
   text-align: center;
   color: #fff;
 }
-/* .package-wrapper {
-  background-color: red;
-  width: 200px;
-  height: 200px;
-  z-index: 900;
-} */
-.package-slide {
-  min-height: 120vh;
-  margin: 0;
-  background-position: top left;
-  background-attachment: fixed;
-}
-.content-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  bottom: 0;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 20% 50%;
-  padding: 17vh 5% 0 5%;
-}
-.packageSlide0 {
-  height:  100vh;
-}
-.packageSlide0 .content-wrapper {
-    background-image: url('../../assets/images/programming/main-cover.png'), radial-gradient(ellipse at 25% 57%, #dffdc6 0%, #98d874 30%);
-  }
-.packageSlide1 .content-wrapper {    
-    background-image: url('../../assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #e4e4e4 30%);
-  }
-.packageSlide2 .content-wrapper {
-    background-image: url('../../assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at 25% 57%, #d7ffbd 0%, #c9fda8 30%);
-  }
-.packageSlide3 .content-wrapper { 
-    background-image: url('../../assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #deceff 30%);
-    /* #cec3e4 */
-  }
-.packageSlide4 .content-wrapper { 
-    background-image: url('../../assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #c8f8ff 30%);
-    /* #97dfea */
-  }
-.packageSlide5 .content-wrapper {
-    background-image: url('../../assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #ffcfd7 30%);
-  }
-.packageSlide6 .content-wrapper {
-    background-image: url('../../assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #fdedb0 30%);
-  }
-.content-wrapper .content {
-  width:  50%;
-  float:  right;
-  text-align: left;
-}
-/* general slide styles */
-.content-wrapper .content p {
-  line-height: 1.8em;
-  font-family: europa, sans-serif;
-  color: gray;
-  font-size: 18px;
-}
-.content-wrapper .content ul li {
-  line-height: 1.7em;
-  font-family: europa, sans-serif;
-  color: gray;
-  font-size: 20px;
-}
-.content-wrapper .content ul li a {
-    color: green;
-}
 .headerPrefix {
   font-family: Jubilat, serif;
   font-style: italic;
   font-size:  30px;
 }
-.content-wrapper .content h3 {
-  line-height: 1.8em;
-  font-family: europa, sans-serif;
-  color: #7d5454;
-  font-size: 20px;
-}
-.mainTitle, .slideTitle {
+.mainTitle{
   font-family: 'Open Sans', sans-serif;
   font-weight:  900;
   text-align: left;
@@ -690,32 +614,21 @@ small, .font_small {font-size: 0.75em;}
   margin-top: 20px;
   margin-bottom:30px;
 }
-.slideTitle {
-  color: #57b543;
-  text-shadow: #fff 3px 2px 0;
-  font-size:  45px;
-}
-.tagLine, .slideUdertitle {
-  font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight:  400;
-  color: #688c64;
-}
-.content-wrapper .content p.slideUdertitle {
+.tagLine {
   margin-bottom: 60px;
-  color: #b3b3b3;
+  line-height: 1.8em;
+  font-family: europa, sans-serif;
+  color: gray;
+  font-size: 18px;
 }
-.mainSubtitle, .slideSubtitle {
+.mainSubtitle {
   font-weight:  300;
   font-size:  50px;
   text-align:left;
   color:#d6ffcf;
   margin-top: 20px;
 }
-.slideSubtitle {
-  color: #57b543;
-  margin-bottom:0;
-}
+/* scroll button */
 .scrollBtn {
   padding-top: 60px;
   display:  block;
@@ -751,4 +664,84 @@ small, .font_small {font-size: 0.75em;}
 .scrollBtn :hover {
   opacity: .5;
 }
+.package-slide {
+  margin: 0;
+  background-position: top left;
+  background-attachment: fixed;
+}
+.package-slide__content-wrapper {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    padding: 17vh 5% 0 5%;
+    min-height: 120vh;
+
+  }
+.packageSlide0 .package-slide__content-wrapper {
+      background-image: url('../../assets/images/programming/main-cover.png'), radial-gradient(ellipse at 25% 57%, #dffdc6 0%, #98d874 30%);
+    }
+.packageSlide1 .package-slide__content-wrapper {
+      background-image: url('../../assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #e4e4e4 30%);
+    }
+.packageSlide2 .package-slide__content-wrapper {
+      background-image: url('../../assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at 25% 57%, #d7ffbd 0%, #c9fda8 30%);
+    }
+.packageSlide3 .package-slide__content-wrapper {
+       /* #cec3e4 */
+      background-image: url('../../assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #deceff 30%);
+    }
+.packageSlide4 .package-slide__content-wrapper {
+      background-image: url('../../assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #c8f8ff 30%);
+      /* #97dfea */
+    }
+.packageSlide5 .package-slide__content-wrapper {
+      background-image: url('../../assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #ffcfd7 30%);
+    }
+.packageSlide6 .package-slide__content-wrapper {
+      background-image: url('../../assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #fdedb0 30%);      
+    }
+/* end __content-wrapper */
+.package-slide__content {
+    margin-left: 50%;
+  }
+.package-slide__rte p {
+      line-height: 1.8em;
+      font-family: europa, sans-serif;
+      color: gray;
+      font-size: 18px;
+    }
+.package-slide__rte ul li {
+      line-height: 1.7em;
+      font-family: europa, sans-serif;
+      color: gray;
+      font-size: 20px;
+    }
+.package-slide__rte ul li a {
+        color: green;
+    }
+.package-slide__rte h3 {
+      line-height: 1.8em;
+      font-family: europa, sans-serif;
+      color: #7d5454;
+      font-size: 20px;
+    }
+/* end __rte */
+.package-slide__title {
+    font-weight:  300;
+    font-size:  50px;
+    text-align:left;
+    margin-top: 20px;
+    color: #57b543;
+    margin-bottom:0;
+  }
+.package-slide__undertitle {
+    font-size: 20px;
+
+    font-weight:  400;
+    color: #688c64;
+    margin-bottom: 60px;
+    color: #b3b3b3;
+  }
+
+
 /*# sourceMappingURL=maps/styles-programming.css.map */
