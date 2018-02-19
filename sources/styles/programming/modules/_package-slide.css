@@ -2,14 +2,16 @@
   margin: 0;
   background-position: top left;
   background-attachment: fixed;
+  padding: 1px;
 
 
   &__content-wrapper {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 20% 50%;
-    padding: 17vh 5% 0 5%;
-    min-height: 120vh; 
+    padding: 10% 5% 5% 5%;
+    min-height: 100vh;
+    position: relative;
 
     .packageSlide0 & {
       background-image: url('../../assets/images/programming/main-cover.png'), radial-gradient(ellipse at $spotlight-gradient, #dffdc6 0%, #98d874 30%);
@@ -45,7 +47,7 @@
   /* end __content-wrapper */
 
   &__content {
-    margin-left: 50%;
+    margin-left: 55%;
   }   
 
   &__rte {
