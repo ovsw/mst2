@@ -50,21 +50,21 @@ $(document).ready(function(){
     controller.scrollTo('.packageSlide6');
   });
   // loop through all package sections
-  $($('.package-slide')).each(function(){
+  // $($('.package-slide')).each(function(){
 
-  	var packageSlidePin  = new ScrollMagic.Scene({
-      triggerElement: this,
-      triggerHook: '0',
-      pushFollowers: true,
-      duartion: '100%'
-      })
-      .setPin(this)
-      .addIndicators({
-        colorTrigger: 'pink',
-        colorStart: 'red'
-      })
-      .addTo(controller);
-  });
+  // 	var packageSlidePin  = new ScrollMagic.Scene({
+  //     triggerElement: this,
+  //     triggerHook: '0',
+  //     pushFollowers: true,
+  //     duartion: '100%'
+  //     })
+  //     .setPin(this)
+  //     .addIndicators({
+  //       colorTrigger: 'pink',
+  //       colorStart: 'red'
+  //     })
+  //     .addTo(controller);
+  // });
 
 	// pin hero
   // var heroPin  = new ScrollMagic.Scene({
