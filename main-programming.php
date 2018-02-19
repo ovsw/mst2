@@ -72,121 +72,24 @@
     </section>
     <!-- /.hero-section -->
 
+    <?php $i = 0; foreach ($page->programming_hp_slides as $slide) : $i++;?>
 
-    <section class="package-slide alternate packageSlide1">
+    <section class="package-slide alternate packageSlide<?= $i ?>">
       <div class="content-wrapper">
         <div class="content">
               <!-- <h2 class="slideTitle">A comprehensive package</h2> -->
-              <h2 class="slideSubtitle">A comprehensive package</h2>
-              <p class="slideUdertitle"> Customized to <storng> your </storng>needs</p>
-              <p>We provide ALL the tools for your theater program with kids to ensure success, including:</p>
-                <ul>
-                  <li><a href="#" class="staff-slideLink">dynamic staff</a></li>
-                  <li><a href="#" class="programDev-slideLink">innovative activities</a></li>
-                  <li><a href="#" class="supplies-slideLink">scripts, costumes, backdrops, fun giveaways</a></li>
-                  <li><a href="#" class="supervision-slideLink">supervision to maintain a high standard of service</a></li>
-                  <li><a href="#" class="support-slideLink">ongoing support to deal with any issues</a></li>
-                  <li>and more</li>
-                </ul>   
-              <p>Our process-oriented, development-driven approach results in impactful and easy-to-implement performing arts programs at camps  across the nation.</p>
+              <h2 class="slideSubtitle"><?= $slide->title ?></h2>
+              <p class="slideUdertitle"><?= $slide->subtitle ?></p>
+              <?= $slide->programming_slide_rte ?>
         </div>
         <!-- /.content -->
       </div>
       <!-- /.diagram-container -->
     </section>
-    <!-- /.package-slide #packageSlide1 -->
+    <!-- /.package-slide #packageSlide<?= $i ?> -->
 
-    <section class="package-slide packageSlide2">
-      <div class="content-wrapper">
-        <div class="content">
-              <!-- <h2 class="slideTitle">A comprehensive package</h2> -->
-              <h2 class="slideSubtitle">Staffing and Training</h2>
-             <!--  <p class="slideUdertitle"> Subtitle here</p> -->
-              <p>The Staff are the core of a good program, so we're deicated to making sure your Theater Program has the best staff available.</p>
-              
-              <h3>Direct Placement (Our own staff)</h3>
-              <p>The best option -  we provide our own skilled staff to run your program - and we guarantee for their performance.</p>
-              
-              <h3>Training for existing staff</h3>
-              <p>If you already have the staff, we'll provide training for our custom program, as well as guidance and supervision throughout.</p>
-
-              <h3>Staff Referrals</h3>
-              <p>In case none of the above suit you, we can also provide referrals for qualified potential staff members which you can review and hire on your own.</p>
-        </div>
-        <!-- /.content -->
-      </div>
-      <!-- /.diagram-container -->
-    </section>
-    <!-- /.package-slide #packageSlide2 --> 
-     
-    <section class="package-slide alternate packageSlide3">
-      <div class="content-wrapper">
-        <div class="content">
-              <!-- <h2 class="slideTitle">A comprehensive package</h2> -->
-              <h2 class="slideSubtitle">Program development</h2>
-              <p class="slideUdertitle"> Subtitle here</p>
-              <p>With a focused detail on your needs and a wide scope of influence on your camp community, we ensure an impact that reaches beyond your theater program.</p>
-                <ul>
-                  <li>Oversee overall program design &amp; strategy of program;</li>
-                  <li>Facilitate conference calls, webinars and one-on-one conversations with program staff;</li>
-                  <li>Create lesson and activity plans that include an activities track for everyday periods and a performance track for clubs and intensives.</li>
-                  <li>Develop itineraries and program outlines that build upon  previous skills and applications. </li>
-                  <li>Integrate  relevant mission driven themes and activity resources into curriculum.</li>
+    <?php endforeach; ?>
     
-                </ul>    
-        </div>
-        <!-- /.content -->
-      </div>
-      <!-- /.diagram-container -->
-    </section>
-    <!-- /.package-slide #packageSlide3 -->
-
-    <section class="package-slide packageSlide4">
-      <div class="content-wrapper">
-        <div class="content">
-              <!-- <h2 class="slideTitle">A comprehensive package</h2> -->
-              <h2 class="slideSubtitle">Production Supplies</h2>
-              <p>Take in the applause with our stage and sound packages! These packages provide access to portable, easy to set up visual and audio displays to effectively present a show in what may otherwise be a limited performance space.</p>
-              <h3>Theater Essentials Kit</h3>
-              <p>Our Theater Essentials Kit provides all the necessary facilitation supplies to run a successful program.</p>
-              <h3>Production Base</h3>
-              <p>Our Production Base is a portable, easy to setup, display to effectively present a show in what may otherwise be a limited performance space.</p>
-              <h3>Full-Scale Production Kits</h3>
-              <p>Our full-scale production kits are your complete resource for professionally staged children’s theater performances.  Production kits are available both as individual lease items without theatrical royalties or in tandem with selections available as part of our Directory of Plays.</p>
-        </div>
-        <!-- /.content -->
-      </div>
-      <!-- /.diagram-container -->
-    </section>
-    <!-- /.package-slide #packageSlide4 -->
-
-    <section class="package-slide alternate packageSlide5">
-      <div class="content-wrapper">
-        <div class="content">
-              <!-- <h2 class="slideTitle">A comprehensive package</h2> -->
-              <h2 class="slideSubtitle">Program Supervision</h2>
-              <p class="slideUdertitle"> Subtitle here</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil minus quidem quas voluptatibus facere voluptatem suscipit repellat qui dicta voluptate. Suscipit iste et nobis itaque quaerat, est, distinctio enim quas?</p>
-        </div>
-        <!-- /.content -->
-      </div>
-      <!-- /.diagram-container -->
-    </section>
-    <!-- /.package-slide #packageSlide5 -->
-
-    <section class="package-slide packageSlide6">
-      <div class="content-wrapper">
-        <div class="content">
-              <!-- <h2 class="slideTitle">A comprehensive package</h2> -->
-              <h2 class="slideSubtitle">Ongoing Support</h2>
-              <p class="slideUdertitle"> Subtitle here</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, id sequi excepturi quis maiores voluptatibus harum saepe cum repellat odio! Earum voluptate, nisi maiores! Dolorem, ullam vitae quas provident reprehenderit!</p>
-        </div>
-        <!-- /.content -->
-      </div>
-      <!-- /.diagram-container -->
-    </section>
-    <!-- /.package-slide #packageSlide5 -->
 </div>
 <!-- /.mainWrapper -->
 
