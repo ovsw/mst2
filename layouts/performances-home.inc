@@ -1,11 +1,6 @@
-<section class="hero">
-      <video class="hero__video-bg" playsinline autoplay muted loop poster="http://odcv-ac97.kxcdn.com/oasis-intro-video-cover.jpg">
-        <source src="<?= $config->urls->templates ?>assets/video/mainstages-intro-montage.mp4" type="video/mp4">
-        <!-- http://odcv-ac97.kxcdn.com/oasis-intro-short-hq.mp4 -->
-        <!-- <source src="http://odcv-ac97.kxcdn.com/oasis-intro-short-hq.ogv" type="video/ogg">
-        <source src="http://odcv-ac97.kxcdn.com/oasis-intro-short-hq.webm" type="video/webm"> -->
-      </video> 
-      <!-- /.large_hero__video-bg -->
+    <section class="hero">
+      <?php require($config->paths->templates."includes/modules/hero-video-performances.inc");
+       ?>
       <div class="hero__content">
         <h1 class="hero__heading">Our Performances</h1>
         <p class="hero__hookline"><span>Thre are over 30 shows for you to choose from.<br> Use the performance wizard to find the right one for your needs.</span></p>
