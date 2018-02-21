@@ -634,10 +634,6 @@ small, .font_small {font-size: 0.75em;}
   }
  }
 
-/* .svg-inline--fa {
-  display: none;
-} */
-
 .top-nav {
 
   opacity: 0;
@@ -649,10 +645,12 @@ small, .font_small {font-size: 0.75em;}
   height: 100vh;
   position: absolute;
   top:0;
-  left: 0;
+  right: 0;
   width: 100%;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  -webkit-box-shadow: -10px 0 5px rgba(0, 0, 0, 0.5), -100px 0 0 rgba(0, 0, 0, 0.6);
+          box-shadow: -10px 0 5px rgba(0, 0, 0, 0.5), -100px 0 0 rgba(0, 0, 0, 0.6);
 
 }
 
@@ -673,10 +671,15 @@ small, .font_small {font-size: 0.75em;}
 }
  }
 
+.top-nav .svg-inline--fa {
+    display: none;
+  }
+
 .top-nav.top-nav__visible {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
     opacity: 1;
+    width: 80%;
   }
 
 .top-nav__mobile-title {
@@ -718,6 +721,7 @@ small, .font_small {font-size: 0.75em;}
 
 .top-nav__item-level-1 {
     position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
 .top-nav__item-level-1:last-child {
@@ -740,6 +744,7 @@ small, .font_small {font-size: 0.75em;}
     color: #fff;
     padding: 0.5rem  0.5rem;
     display: block; 
+    margin-left: 0.5rem; 
   }
 
 @media (min-width: 1024px) {
@@ -759,7 +764,7 @@ small, .font_small {font-size: 0.75em;}
 @media (min-width: 1024px) {
 
 .top-nav__item-level-1:hover>a {
-      color: #87CC2F
+      color: rgb(179, 198, 154)
   }
  }
 
@@ -767,6 +772,7 @@ small, .font_small {font-size: 0.75em;}
     list-style: none;
     margin: 0;
     padding: 0;
+    display: none;
   }
 
 @media (min-width: 1024px) {
@@ -811,13 +817,17 @@ small, .font_small {font-size: 0.75em;}
   }
 
 .top-nav__item-level-2:hover {
-    background-color: green;
+    background-color: rgb(95, 150, 23);
   }
 
 .top-nav__current,
   .top-nav__active-parent {
-    background-color: green;
+    background-color: rgb(95, 150, 23);
   }
+
+.top-nav__current a:hover, .top-nav__active-parent a:hover {
+      color: #fff;
+    }
 
 .top-nav__submenu-button {
     height: 100%;
@@ -826,7 +836,7 @@ small, .font_small {font-size: 0.75em;}
     top: 0;
     right: 0;
     width: 50px;
-    border-left: 1px solid rgba(#fff, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
   }
 
@@ -849,8 +859,12 @@ small, .font_small {font-size: 0.75em;}
 
 .top-nav__has-children > .top-nav__submenu-button .top-nav__ico-plus {display: inline-block;}
 
+.top-nav__has-children.submenu-open > .top-nav__inner-list {
+        display: block;
+      }
+
 .top-nav__has-children.submenu-open > .top-nav__submenu-button {
-          background-color: #301111;
+          background-color: rgb(84, 59, 59);
       }
 
 .top-nav__has-children.submenu-open > .top-nav__submenu-button .top-nav__ico-plus {display: none;}
@@ -859,17 +873,17 @@ small, .font_small {font-size: 0.75em;}
 
 .top-nav__has-children.submenu-open .top-nav__item-level-2 {
         height: auto;
-        border-top: 1px dotted rgba(#fff, 0.2);
-        background-color: #197bc1;
+        border-top: 1px dotted rgba(255, 255, 255, 0.2);
+        background-color: rgb(84, 59, 59);
         
       }
 
 .top-nav__has-children.submenu-open .top-nav__item-level-2 a {
-          padding: 0.9rem  2rem ;
+          padding: 0.9rem  1rem ;
         }
 
 .top-nav__has-children.submenu-open .top-nav__item-level-2.top-nav__current {
-          background-color: rgb(13, 128, 13);
+          background-color: rgb(95, 150, 23);
         }
 
 @media (min-width: 1024px) {
@@ -883,6 +897,8 @@ small, .font_small {font-size: 0.75em;}
       .top-nav__has-children > a .top-nav__ico-down {
         display: inline-block;
         margin-left: 5px;
+        position: relative;
+        top:2px;
       }
  }
 
@@ -895,9 +911,11 @@ small, .font_small {font-size: 0.75em;}
         }
       } */
 
-.top-nav__has-children:hover > .top-nav__inner-list {
-        display:block;
-      }
+@media (min-width: 1024px) {
+        .top-nav__has-children:hover > .top-nav__inner-list {
+          display:block;
+        }
+ }
 
 .header__wrapper {
     min-height: 90px;
