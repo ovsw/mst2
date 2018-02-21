@@ -106,6 +106,8 @@
 </div>
 <!-- /.mainWrapper -->
 
+  <?php require($config->paths->templates."includes/footer.inc"); ?> 
+
   <?php require($config->paths->templates."includes/foot-programming.inc"); ?>
 
   </body>

@@ -35,7 +35,7 @@
       ?>
 
 
-    <?php require($config->paths->templates."includes/footer-performances.inc"); ?>
+    <?php require($config->paths->templates."includes/footer.inc"); ?>
 
   <?php require($config->paths->templates . 'includes/foot-performances.inc');  ?>
   </body>
