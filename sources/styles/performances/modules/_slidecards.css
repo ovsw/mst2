@@ -2,17 +2,20 @@
 
   @mixin atHuge {
     box-shadow: 0 -10px 20px color($black a(20%));
-    display: flex;
+    
   }
 
   &__heading-wrapper {
     background-color: $white;
     color: $msGreen;
     padding: 2rem;
+    text-align: center;
 
     h2 {
       margin: 0;
     }
+
+    
   }
 
   &__cards-wrapper{
