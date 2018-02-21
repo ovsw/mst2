@@ -25,16 +25,57 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-// mixitup.use(mixitupMultifilter);
-// var containerEl = document.querySelector('.performance-wizard');
-// var mixer = mixitup(containerEl, {
-//     multifilter: {
-//         enable: true // enable the multifilter extension for the mixer
-//     },
-//     controls: {
-//         toggleDefault: 'all'
-//     }
-// });
+
+__WEBPACK_IMPORTED_MODULE_1_mixitup___default.a.use(__WEBPACK_IMPORTED_MODULE_2__modules_mixitup_multifilter___default.a);
+var wizardContainerEl = document.querySelector('.performance-wizard');
+if (wizardContainerEl != null) {
+  var mixer = __WEBPACK_IMPORTED_MODULE_1_mixitup___default()(wizardContainerEl, {
+      multifilter: {
+          enable: true // enable the multifilter extension for the mixer
+      },
+      controls: {
+          toggleDefault: 'all'
+      },
+      callbacks: {
+        onMixEnd: function(state) {
+            renderTotalShow(state);
+            renderActiveFilters();
+        }
+    }
+  });
+}
+
+
+
+function renderTotalShow(state) {
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.itemCount').html(state.totalShow);
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.wizard-status-message, .performance-wizard').addClass("highlight").delay(1000).queue(function(){
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).removeClass("highlight").dequeue();
+  });
+}
+
+function renderActiveFilters() {
+  var activeControls = Array.from(document.querySelectorAll('.mixitup-control-active'));
+    var activeFiltersDiv = document.querySelector('.active-filters');
+
+    activeFiltersDiv.innerHTML = '';
+
+    var activeLabels = activeControls.map(function(activeControl) {
+        return activeControl.getAttribute('data-label');
+    });
+
+    activeFiltersDiv.innerHTML = activeLabels.join(', '); // eg: 'Filter 1, Filter 2, Filter 3'
+}
+
+// extra criteria toggle
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.themeFilterToggle').click(function(){
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.performance-wizard__ThemeFilters').slideToggle();
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.performance-wizard__ThemeFilters').find('.mixitup-control-active').trigger('click');
+});
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.holidayFilterToggle').click(function(){
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.performance-wizard__holidayFilters').slideToggle();
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.performance-wizard__holidayFilters').find('.mixitup-control-active').trigger('click');
+});
 
 // mobile menu toggle
 __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.header__menu-icon').click(function(){
