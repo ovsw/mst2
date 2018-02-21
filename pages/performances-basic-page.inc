@@ -1,4 +1,4 @@
 <div class="body-rte">
-  <?= $page->content ?>
+  <?= $page->body ?>
 </div>
 <!-- /.body-rte -->
