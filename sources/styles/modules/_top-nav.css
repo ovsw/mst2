@@ -15,7 +15,8 @@ $mobileSubitemsBg: color($msDarkBrown l(+15%) s(-30%));
   right: 0;
   width: 100%;
   transition: all 0.3s ease-out;
-  box-shadow: -10px 0 5px color($black a(50%)), -100px 0 0 color($black a(60%)) ;
+  box-shadow: -5px 0 3px color($black a(40%)), -100px 0 0 color($black a(70%));
+  
 
   @mixin $mobile_break {
     display:  block;
@@ -26,6 +27,8 @@ $mobileSubitemsBg: color($msDarkBrown l(+15%) s(-30%));
     transform: none;
     height: auto;
     background-color: transparent;
+    width: auto;
+    box-shadow: none;
   }
   
    .svg-inline--fa {
@@ -76,7 +79,8 @@ $mobileSubitemsBg: color($msDarkBrown l(+15%) s(-30%));
     @mixin $mobile_break{
       display: inline-block;  
       margin-left: 10px;
-      box-shadow: 2px 2px 3px rgba($black, 0.3), -2px -2px 3px rgba($black, 0.3);
+      box-shadow:none;
+      border-bottom: none;
     }
   }
   
