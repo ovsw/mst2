@@ -2,6 +2,15 @@
     <footer class="footer">
       <div class="footer__inner-wrapper">
         
+        <div class="footer__social-media">
+          <a href="https://www.facebook.com/mainstages" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/mainstages" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/mainstages/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/user/mainstages" target="_blank"><i class="fab fa-youtube"></i></a>
+          
+        </div>
+        <!-- /.footer__social-media -->
+
         <div class="footer__logos">
           <a href="#" class="footer__logo-link"><img src="<?= $config->urls->templates ?>assets/images/nystea-logo.png" alt="Mainstages Logo"></a>
           <a href="#" class="footer__logo-link"><img src="<?= $config->urls->templates ?>assets/images/mainstages-logo.png" alt="Mainstages Logo"></a>
