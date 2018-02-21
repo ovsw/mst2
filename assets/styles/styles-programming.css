@@ -679,7 +679,7 @@ small, .font_small {font-size: 0.75em;}
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
     opacity: 1;
-    width: 80%;
+    width: 85%;
   }
 
 .top-nav__mobile-title {
@@ -739,12 +739,13 @@ small, .font_small {font-size: 0.75em;}
  }
 
 .top-nav__item-level-1 a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #fff;
     padding: 0.5rem  0.5rem;
     display: block; 
-    margin-left: 0.5rem; 
+    margin-left: 0.5rem;
+    font-weight: 300; 
   }
 
 @media (min-width: 1024px) {

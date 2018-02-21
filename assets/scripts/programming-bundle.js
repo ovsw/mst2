@@ -9,101 +9,35 @@ module.exports = __webpack_require__(9);
 /***/ }),
 
 /***/ 9:
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-//import $ from 'jquery';
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 
-// Blank
-$(document).ready(function(){
 
-  //used to disable scroll while mobile side menu is open
-    function noscroll() {
-      window.scrollTo( 0, 0 );
-    }
 
-    // mobile nav toggle
-    $('.nav-icon').click(function(){
-      $(this).toggleClass('open');
-      $("#sideNav").toggleClass("navOpen");
-      $(".mainWrapper").toggleClass("withMobileMenuOpen");
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function(){
 
-      // disable scroll while mobile side menu is open
-      if ($('#sideNav').hasClass('navOpen')) {window.addEventListener('scroll', noscroll);}
-      else{window.removeEventListener('scroll', noscroll);}
-    });
 
-    // *************************
-    // box animation magicscroll
-    // *************************
+// mobile menu toggle
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.header__menu-icon').click(function(){
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.top-nav').toggleClass('top-nav__visible');
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).toggleClass('header__menu-icon--close-x');
+});
 
-    // init ScrollMagic
-    //var controller = new ScrollMagic.Controller({container: ".mainWrapper"});
-    var controller = new ScrollMagic.Controller();
-    
-  // scroll button in hero
-  controller.scrollTo(function (newScrollPos) {
-    $("html, body").animate({scrollTop: newScrollPos}, 1000);
-  });
-  $('.scrollBtn').click(function(){
-    controller.scrollTo('.packageSlide1');
-  });
-   $('.staff-slideLink').click(function(){
-    controller.scrollTo('.packageSlide2');
-  });
-  $('.programDev-slideLink').click(function(){
-    controller.scrollTo('.packageSlide3');
-  });
-  $('.supplies-slideLink').click(function(){
-    controller.scrollTo('.packageSlide4');
-  });  
-  $('.supervision-slideLink').click(function(){
-    controller.scrollTo('.packageSlide5');
-  });
-  $('.support-slideLink').click(function(){
-    controller.scrollTo('.packageSlide6');
-  });
-  // loop through all package sections
-  // $($('.package-slide')).each(function(){
+// mobile menu sub-items toggle
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()('.top-nav__submenu-button').click(function(){
+var menuItem = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).parent();
 
-  // 	var packageSlidePin  = new ScrollMagic.Scene({
-  //     triggerElement: this,
-  //     triggerHook: '0',
-  //     pushFollowers: true,
-  //     duartion: '100%'
-  //     })
-  //     .setPin(this)
-  //     .addIndicators({
-  //       colorTrigger: 'pink',
-  //       colorStart: 'red'
-  //     })
-  //     .addTo(controller);
-  // });
-
-	// pin hero
-  // var heroPin  = new ScrollMagic.Scene({
-  //   triggerElement: '.hero-section',
-  //   triggerHook: '0',
-  //   pushFollowers: true,
-  //   duartion: '100%'
-  //   })
-  //   .setPin('.hero-section')
-  //   .addIndicators()
-  //   .addTo(controller);
-
-    // build scene
-    // var scene = new ScrollMagic.Scene({
-    // 	triggerElement: '.package1'
-    // 	// ,duration: 300
-    // 	,triggerHook: 0
-    // })
-    // .setClassToggle('.package1','scrolled')
-    // .addIndicators({
-    // 	name: 'myindicator',
-    // 	colorTrigger: 'black',
-    // 	colorStart: 'red'
-    // })
-    // .addTo(controller);
-
+if (menuItem.hasClass('submenu-open')) {
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.top-nav__has-children').removeClass('submenu-open');
+}else{
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.top-nav__has-children').removeClass('submenu-open');
+  menuItem.addClass('submenu-open');
+}
+});
 
 
 });

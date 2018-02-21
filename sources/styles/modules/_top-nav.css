@@ -36,7 +36,7 @@ $mobileSubitemsBg: color($msDarkBrown l(+15%) s(-30%));
   &.top-nav__visible {
     transform: scaleX(1);
     opacity: 1;
-    width: 80%;
+    width: 85%;
   }
 
   &__mobile-title {
@@ -81,12 +81,13 @@ $mobileSubitemsBg: color($msDarkBrown l(+15%) s(-30%));
   }
   
   &__item-level-1 a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: $white;
     padding: 0.5rem  0.5rem;
     display: block; 
     margin-left: 0.5rem;
+    font-weight: 300;
    
    @mixin $mobile_break {
     display: inline-block;
