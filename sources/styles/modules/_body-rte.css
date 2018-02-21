@@ -1,0 +1,35 @@
+.body-rte {
+
+  padding: 0 2rem 1rem 2rem;
+
+  h2 {
+    color: color($msGreen l(-10%));
+  }
+
+  h3 {
+    color: $msDarkBrown;
+    text-transform: uppercase;
+    background-color: color($msGreen a(50%));
+    padding: 0.5rem 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+  
+  img {
+    border: 10px solid white;
+    box-shadow: 0 0 6px color($black a(60%));
+  }
+
+  .align_right {
+    float: right;
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  .align_left {
+    float: left;
+    margin: 1rem 1rem 1rem 0;
+  }
+
+}

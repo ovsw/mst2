@@ -743,6 +743,36 @@ small, .font_small {font-size: 0.75em;}
           display:block;
         }
  }
+.body-rte {
+
+  padding: 0 2rem 1rem 2rem;
+
+}
+.body-rte h2 {
+    color: rgb(108, 162, 37);
+  }
+.body-rte h3 {
+    color: #301111;
+    text-transform: uppercase;
+    background-color: rgba(135, 204, 47, 0.5);
+    padding: 0.5rem 1rem;
+  }
+.body-rte p {
+    font-size: 1.1rem;
+  }
+.body-rte img {
+    border: 10px solid white;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  }
+.body-rte .align_right {
+    float: right;
+    margin: 1rem 0 1rem 1rem;
+  }
+.body-rte .align_left {
+    float: left;
+    margin: 1rem 1rem 1rem 0;
+  }
 .footer {
   background-color: #450d0d;
   -webkit-clip-path: polygon(0 20%, 1600px 0, 1600px 80%, 0 100%);
