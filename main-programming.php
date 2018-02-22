@@ -58,7 +58,7 @@
         <div class="package-slide__content">
               <span class="hero__headerPrefix">meet the</span>
               <h1 class="hero__mainTitle">  Mainstages Theater Program</h1>
-              <p class="hero__tagLine">for both Camp and <br> After-School Services</p>
+              <p class="hero__tagLine">for Summer Camps and <br> After-Schools</p>
               <img class="package-slide__mobile-image" src="/site/templates/assets/images/programming/main-cover.png" alt="Mainstages Theater ina Box">
               <h2 class="hero__mainSubtitle">the perfect answer to your Theater Program needs</h2>
         </div>

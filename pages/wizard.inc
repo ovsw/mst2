@@ -1,5 +1,6 @@
 
-<p>Please select from the folowing criteria. The list will be updated dynamically to match your selection.</p>
+<p>Please select from the following criteria. The list will be updated dynamically to match your selection.</p>
+<p>Allready know the performance name? <a href="#">Book us here</a>.</p>
 
 <form class="performance-wizard__controls">
       <fieldset data-filter-group class="performance-wizard__controls__fieldset small">
@@ -16,7 +17,7 @@
       </fieldset>
 
       <fieldset data-filter-group class="performance-wizard__controls__fieldset small">
-        <label for="no_of_participants"># of participants</label>
+        <label for="no_of_participants">Est. # of participants</label>
         <select class="performance-wizard__controls__select" name="no_of_participants">
           <option value="" default>any</option>
           <?php 
@@ -29,7 +30,7 @@
       </fieldset>
 
       <fieldset data-filter-group class="performance-wizard__controls__fieldset">
-          Age range:
+          Age range: (all that apply)
           <?php 
           $field = $fields->get('age_range');
           $fieldOptions = $field->type->getOptions($field);
@@ -137,6 +138,6 @@
             <div class="gap"></div>
             <div class="gap"></div>
 
-      <p class="no-results-message">Sorry, no results found! <span>Please try using other criteria...</span></p>
+      <p class="no-results-message">Sorry, no results found! <span>That doesn't mean we can't make something amazing for you. <a href="#">Contact us to</a> discuss your custom experience.</span></p>
     </div>
     <!-- /.performance-wizard -->  
