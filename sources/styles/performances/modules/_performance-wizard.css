@@ -57,7 +57,7 @@
 
 .mix {
 
-    background: #f1ee95;
+    background: #fffdc4;
     border-top: .2rem solid $mainstagesGreen;
     border-radius: 2px;
     margin-bottom: 1rem;
@@ -101,7 +101,7 @@
 	&__details {
 		font-size: 0.85rem ;
 		padding: 0 1rem 0 1rem;
-		background-color: color(#f1ee95 l(-5%));
+		background-color: #f4f091;
 		
 		.icon {
 			color:color($msGreen l(-5%));
