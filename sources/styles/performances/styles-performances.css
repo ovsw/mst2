@@ -6,6 +6,7 @@
 @import "../base/_global";
 @import "../modules/_header";
 @import "../modules/_top-nav";
+@import "../modules/_basic-page";
 @import "../modules/_body-rte";
 @import "../modules/_footer";
 

@@ -522,8 +522,8 @@ small, .font_small {font-size: 0.75em;}
   width: 100%;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  -webkit-box-shadow: -5px 0 3px rgba(0, 0, 0, 0.4), -100px 0 0 rgba(0, 0, 0, 0.7);
-          box-shadow: -5px 0 3px rgba(0, 0, 0, 0.4), -100px 0 0 rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: -5px 0 3px rgba(0, 0, 0, 0.4), -500px 0 0 rgba(0, 0, 0, 0.7);
+          box-shadow: -5px 0 3px rgba(0, 0, 0, 0.4), -500px 0 0 rgba(0, 0, 0, 0.7);
 
 }
 @media (min-width: 1024px) {
@@ -552,6 +552,9 @@ small, .font_small {font-size: 0.75em;}
             transform: scaleX(1);
     opacity: 1;
     width: 85%;
+    max-width: 550px;
+
+    
   }
 .top-nav__mobile-title {
     color: #fff;
@@ -743,6 +746,98 @@ small, .font_small {font-size: 0.75em;}
           display:block;
         }
  }
+.basic-page__header {
+    position: relative;
+    
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    background-color: #87CC2F;
+  }
+@media (min-width: 768px) {
+.basic-page__header {
+      /* background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII='); */
+      
+      padding-top: 9rem;
+      padding-bottom: 0
+  }
+ }
+@media (min-width: 1024px) {
+ }
+.basic-page .hero__video-bg {
+    display: none;
+  }
+@media (min-width: 768px) {
+.basic-page .hero__video-bg {
+      display: block
+  }
+ }
+.basic-page__header-title {
+    font-size: 2rem;
+  }
+@media (min-width: 768px) {
+.basic-page__header-title {
+      font-size: 3.157rem
+  }
+ }
+@media (min-width: 1024px) {
+.basic-page__header-title {
+      font-size: 2.369rem
+  }
+ }
+.basic-page__content {
+    background-color: ;
+  }
+@media (min-width: 768px) {
+.basic-page__content {
+      padding: 2rem
+  }
+ }
+.basic-page__content-wrapper {
+    background-color: #fbfde8;
+    padding: 1rem;
+  }
+@media (min-width: 768px) {
+.basic-page__content-wrapper {
+      padding: 1rem 2rem;
+      -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), -3px 0 3px rgba(0, 0, 0, 0.3);
+              box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), -3px 0 3px rgba(0, 0, 0, 0.3);
+      font-size: 1.125rem
+  }
+ }
+@media (min-width: 1024px) {
+.basic-page__content-wrapper {
+      max-width: 800px;
+      margin: 0 auto
+  }
+ }
+.basic-page__content-wrapper p a, .basic-page__content-wrapper li a {
+      text-shadow: .03em 0 #fbfde8, -.03em 0 #fbfde8, 0 .03em #fbfde8, 0 -.03em #fbfde8, .06em 0 #fbfde8, -.06em 0 #fbfde8, .09em 0 #fbfde8, -.09em 0 #fbfde8, .12em 0 #fbfde8, -.12em 0 #fbfde8, .15em 0 #fbfde8, -.15em 0 #fbfde8;
+      color: rgb(94, 141, 32);
+      text-decoration: none; 
+      background-image:
+        -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)),
+        -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)),
+        -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)); 
+      background-image:
+        linear-gradient(#87CC2F, #87CC2F),
+        linear-gradient(#87CC2F, #87CC2F),
+        linear-gradient(#87CC2F, #87CC2F);
+      background-size: .05em 2px, .05em 2px, 2px 2px;
+      background-repeat: no-repeat, no-repeat, repeat-x;
+      background-position: 10% 90%, 100% 90%, 0% 90%;
+      padding-bottom: 0.3em;
+
+      padding: 0 0.05em;
+    }
+.basic-page__content-wrapper p a:hover, .basic-page__content-wrapper li a:hover {
+        /* background-image:  linear-gradient(color($msGreen l(+20%)), color($msGreen l(+20%))); */
+        color: rgb(104, 184, 0);
+        /* background-size: auto; */
+        
+      }
 .body-rte {
 
   padding: 0 2rem 1rem 2rem;
@@ -758,7 +853,7 @@ small, .font_small {font-size: 0.75em;}
     padding: 0.5rem 1rem;
   }
 .body-rte p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 .body-rte img {
     border: 10px solid white;
@@ -1250,72 +1345,6 @@ small, .font_small {font-size: 0.75em;}
       -webkit-box-shadow: -3px 3px 0 rgba(31, 126, 49, 0.9);
               box-shadow: -3px 3px 0 rgba(31, 126, 49, 0.9);
     }
-.basic-page__header {
-    position: relative;
-    
-    padding-top: 7rem;
-    padding-bottom: 1rem;
-    color: #fff;
-    overflow: hidden;
-    text-align: center;
-    background-color: #87CC2F;
-  }
-@media (min-width: 768px) {
-.basic-page__header {
-      /* background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII='); */
-      
-      padding-top: 9rem;
-      padding-bottom: 0
-  }
- }
-@media (min-width: 1024px) {
- }
-.basic-page .hero__video-bg {
-    display: none;
-  }
-@media (min-width: 768px) {
-.basic-page .hero__video-bg {
-      display: block
-  }
- }
-.basic-page__header-title {
-    font-size: 2rem;
-  }
-@media (min-width: 768px) {
-.basic-page__header-title {
-      font-size: 3.157rem
-  }
- }
-@media (min-width: 1024px) {
-.basic-page__header-title {
-      font-size: 2.369rem
-  }
- }
-.basic-page__content {
-    background-color: ;
-  }
-@media (min-width: 768px) {
-.basic-page__content {
-      padding: 2rem
-  }
- }
-.basic-page__content-wrapper {
-    background-color: #fbfde8;
-    padding: 1rem;
-  }
-@media (min-width: 768px) {
-.basic-page__content-wrapper {
-      padding: 1rem 2rem;
-      -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), -3px 0 3px rgba(0, 0, 0, 0.3);
-              box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), -3px 0 3px rgba(0, 0, 0, 0.3)
-  }
- }
-@media (min-width: 1024px) {
-.basic-page__content-wrapper {
-      max-width: 960px;
-      margin: 0 auto
-  }
- }
 .performance-wizard {
 	padding: 1rem;
     display: -webkit-box;
@@ -1383,7 +1412,7 @@ small, .font_small {font-size: 0.75em;}
  	}
 .mix {
 
-    background: #f1ee95;
+    background: #fffdc4;
     border-top: .2rem solid #58a238;
     border-radius: 2px;
     margin-bottom: 1rem;
@@ -1432,7 +1461,7 @@ small, .font_small {font-size: 0.75em;}
 .performance__details {
 		font-size: 0.85rem ;
 		padding: 0 1rem 0 1rem;
-		background-color: rgb(238, 234, 124);
+		background-color: #f4f091;
 	}
 .performance__details .icon {
 			color:rgb(122, 183, 42);
