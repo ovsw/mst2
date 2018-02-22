@@ -29,8 +29,8 @@
         </select>
       </fieldset>
 
-      <fieldset data-filter-group class="performance-wizard__controls__fieldset">
-          Age range: (all that apply)
+      <fieldset data-filter-group class="performance-wizard__controls__fieldset" style="clear:both">
+          Age range:
           <?php 
           $field = $fields->get('age_range');
           $fieldOptions = $field->type->getOptions($field);
