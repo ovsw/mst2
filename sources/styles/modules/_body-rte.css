@@ -1,35 +1,122 @@
 .body-rte {
 
-  padding: 0 2rem 1rem 2rem;
+  /* padding: 0 2rem 1rem 2rem; */
+  color: color($black l(+45%));
+
+  strong {
+    font-weight: 700;
+  }
 
   h2 {
     color: color($msGreen l(-10%));
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  h2:first-child {
+    color: color($msGreen l(-10%));
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 
   h3 {
-    color: $msDarkBrown;
-    text-transform: uppercase;
-    background-color: color($msGreen a(50%));
-    padding: 0.5rem 1rem;
+    color: color($msDarkBrown l(+20%) s(-10%));
+    /* text-transform: uppercase; */
+    /* background-color: color($msGreen a(50%));
+    padding: 0.5rem 1rem; */
+    font-weight: 400;
+  }
+  
+  h4 {
+    color($msGreen l(-20%))
+    color: color($msDarkBrown l(+20%) s(-10%));
+    font-weight: 300;
+    font-style: italic;
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.9;
+    margin: 40px auto;
+    font-weight: 400;
   }
   
+  ul {
+    font-family: 'Open Sans', sans-serif;
+  }
+
   img {
-    border: 10px solid white;
+    margin: 0 auto;
     box-shadow: 0 0 6px color($black a(60%));
+    display: block;
+
+    @mixin atMedium {
+      border: 10px solid white;
+    }
   }
 
-  .align_right {
-    float: right;
-    margin: 1rem 0 1rem 1rem;
+  figcaption {
+    text-align: center;
   }
 
-  .align_left {
+  table {
+    th {
+      background-color: color($msDarkBrown l(+20%));
+      color: $white;
+      font-weight: 300;
+      padding: 0.5rem;
+      border-right: 1px solid color(white a(60%));
+      border-bottom: 1px solid color(white a(60%));
+
+      &:last-child {
+        border-right:none;
+      }
+    }
+    
+    td {
+      background-color: $white;
+      border-right: 1px solid color(brown a(60%));
+      border-bottom: 1px solid color(brown a(60%));
+      text-align: center;
+    }
+  }
+
+  &__pullquote{
+    
+    
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: color($msGreen l(-10%));
+    font-style: italic;
+    font-family: $heading-font;
+
+    @mixin atMedium {
+      font-size: 2rem;
+      float: right;
+      width: 30%;
+    }
+  }
+
+  &__text-w-side-image {
+
+  }
+
+  &__side-image {
     float: left;
-    margin: 1rem 1rem 1rem 0;
+    width: 150px!important;
+    margin: 2rem!important;
+    border-width: 3px !important;
+    display: block!important;
+    
+  }
+
+  &__rounded-image {
+    border-radius: 50%!important;
   }
 
 }

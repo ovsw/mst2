@@ -824,7 +824,7 @@ small, .font_small {font-size: 0.75em;}
  }
 @media (min-width: 1024px) {
 .basic-page__hero-title {
-        font-size: 7rem
+        font-size: 4rem
     }
  }
 .basic-page__content {
@@ -844,12 +844,13 @@ small, .font_small {font-size: 0.75em;}
 @media (min-width: 1024px) {
 .basic-page__content-wrapper {
       max-width: 800px;
-      margin: 0 auto
+      margin: 0 auto;
+      padding: 1rem 0
   }
  }
 .basic-page__content-wrapper p a, .basic-page__content-wrapper li a {
       text-shadow: .03em 0 #fbfde8, -.03em 0 #fbfde8, 0 .03em #fbfde8, 0 -.03em #fbfde8, .06em 0 #fbfde8, -.06em 0 #fbfde8, .09em 0 #fbfde8, -.09em 0 #fbfde8, .12em 0 #fbfde8, -.12em 0 #fbfde8, .15em 0 #fbfde8, -.15em 0 #fbfde8;
-      color: rgb(94, 141, 32);
+      color: rgb(104, 184, 0);
       text-decoration: none; 
       background-image:
         -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)),
@@ -861,46 +862,123 @@ small, .font_small {font-size: 0.75em;}
         linear-gradient(#87CC2F, #87CC2F);
       background-size: .05em 2px, .05em 2px, 2px 2px;
       background-repeat: no-repeat, no-repeat, repeat-x;
-      background-position: 10% 90%, 100% 90%, 0% 90%;
-      padding-bottom: 0.3em;
-
+      background-position: 0% 100%, 100% 100%, 0% 100%;
+      padding-bottom: 1rem;
+      
       padding: 0 0.05em;
     }
 .basic-page__content-wrapper p a:hover, .basic-page__content-wrapper li a:hover {
         /* background-image:  linear-gradient(color($msGreen l(+20%)), color($msGreen l(+20%))); */
-        color: rgb(104, 184, 0);
+        color: rgb(94, 141, 32);
         /* background-size: auto; */
         
       }
 .body-rte {
 
-  padding: 0 2rem 1rem 2rem;
+  /* padding: 0 2rem 1rem 2rem; */
+  color: rgb(115, 115, 115);
 
 }
+.body-rte strong {
+    font-weight: 700;
+  }
 .body-rte h2 {
     color: rgb(108, 162, 37);
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-style: italic;
+  }
+.body-rte h2:first-child {
+    color: rgb(108, 162, 37);
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 .body-rte h3 {
-    color: #301111;
-    text-transform: uppercase;
-    background-color: rgba(135, 204, 47, 0.5);
-    padding: 0.5rem 1rem;
+    color: rgb(116, 52, 52);
+    /* text-transform: uppercase; */
+    /* background-color: color($msGreen a(50%));
+    padding: 0.5rem 1rem; */
+    font-weight: 400;
+  }
+.body-rte h4 {
+    color($msGreen l(-20%))
+    color: rgb(116, 52, 52);
+    font-weight: 300;
+    font-style: italic;
   }
 .body-rte p {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.9;
+    margin: 40px auto;
+    font-weight: 400;
+  }
+.body-rte ul {
+    font-family: 'Open Sans', sans-serif;
   }
 .body-rte img {
-    border: 10px solid white;
+    margin: 0 auto;
     -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    display: block;
   }
-.body-rte .align_right {
-    float: right;
-    margin: 1rem 0 1rem 1rem;
+@media (min-width: 768px) {
+.body-rte img {
+      border: 10px solid white
   }
-.body-rte .align_left {
+ }
+.body-rte figcaption {
+    text-align: center;
+  }
+.body-rte table th {
+      background-color: rgb(125, 44, 44);
+      color: #fff;
+      font-weight: 300;
+      padding: 0.5rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    }
+.body-rte table th:last-child {
+        border-right:none;
+      }
+.body-rte table td {
+      background-color: #fff;
+      border-right: 1px solid rgba(165, 42, 42, 0.6);
+      border-bottom: 1px solid rgba(165, 42, 42, 0.6);
+      text-align: center;
+    }
+.body-rte__pullquote{
+    
+    
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: rgb(108, 162, 37);
+    font-style: italic;
+    font-family: Jubilat, serif;
+  }
+@media (min-width: 768px) {
+.body-rte__pullquote{
+      font-size: 2rem;
+      float: right;
+      width: 30%
+  }
+ }
+.body-rte__text-w-side-image {
+
+  }
+.body-rte__side-image {
     float: left;
-    margin: 1rem 1rem 1rem 0;
+    width: 150px!important;
+    margin: 2rem!important;
+    border-width: 3px !important;
+    display: block!important;
+    
+  }
+.body-rte__rounded-image {
+    border-radius: 50%!important;
   }
 .footer {
   background-color: #450d0d;
@@ -937,7 +1015,7 @@ small, .font_small {font-size: 0.75em;}
  }
 @media (min-width: 1200px) {
 .footer__wrapper {
-      margin-top: 100px
+      padding-top: 100px
     
   }
  }

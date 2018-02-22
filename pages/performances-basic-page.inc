@@ -1,4 +1,4 @@
 <div class="body-rte">
-  <?= $page->body ?>
+  <?=$page->render('modular_content'); ?>
 </div>
 <!-- /.body-rte -->

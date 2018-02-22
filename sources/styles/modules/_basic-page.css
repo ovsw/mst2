@@ -76,7 +76,7 @@
       }
 
       @mixin atLarge {
-        font-size: 7rem;
+        font-size: 4rem;
         
       }
     }
@@ -101,11 +101,12 @@
     @mixin atLarge {
       max-width: 800px;
       margin: 0 auto;
+      padding: 1rem 0;
     }
 
     p a, li a {
       text-shadow: .03em 0 $off-white, -.03em 0 $off-white, 0 .03em $off-white, 0 -.03em $off-white, .06em 0 $off-white, -.06em 0 $off-white, .09em 0 $off-white, -.09em 0 $off-white, .12em 0 $off-white, -.12em 0 $off-white, .15em 0 $off-white, -.15em 0 $off-white;
-      color: color($msGreen l(-15%));
+      color: color($msGreen l(-5%) w(-30%));
       text-decoration: none; 
       background-image:
         linear-gradient($msGreen, $msGreen),
@@ -113,14 +114,14 @@
         linear-gradient($msGreen, $msGreen);
       background-size: .05em 2px, .05em 2px, 2px 2px;
       background-repeat: no-repeat, no-repeat, repeat-x;
-      background-position: 10% 90%, 100% 90%, 0% 90%;
-      padding-bottom: 0.3em;
-
+      background-position: 0% 100%, 100% 100%, 0% 100%;
+      padding-bottom: 1rem;
+      
       padding: 0 0.05em;
 
       &:hover {
         /* background-image:  linear-gradient(color($msGreen l(+20%)), color($msGreen l(+20%))); */
-        color: color($msGreen l(-5%) w(-30%));
+        color: color($msGreen l(-15%));
         /* background-size: auto; */
         
       }

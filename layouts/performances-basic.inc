@@ -6,8 +6,7 @@
       <picture>
         <source srcset="<?= $heroImage ? $heroImage->getCrop("small")->url : "http://placehold.it/400x300" ?>" media="(max-width: 767px)">
         <source srcset="<?= $heroImage ? $heroImage->getCrop("medium")->url : "http://placehold.it/1024x400" ?>" media="(max-width: 1200px)">
-        <source srcset="<?= $heroImage ? $heroImage->getCrop("large")->url : "http://placehold.it/1920x580" ?>">
-        <img class="basic-page__hero-bg-image" src="img_flowers.jpg" alt="<?= $page->title ?>">
+        <img class="basic-page__hero-bg-image" src="<?= $heroImage ? $heroImage->getCrop("large")->url : "http://placehold.it/1920x580" ?>" alt="<?= $page->title ?>">
       </picture>
     </div>
     <!-- /.basic-page__hero-bg-image-source -->
