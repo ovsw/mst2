@@ -1,4 +1,4 @@
-
+<p>Performance Wizard is for recommending a performance for summer camps, schools, community centers, Jewish organizations and anyone looking to entertain groups of kids in a community setting.</p>
 <p>Please select from the following criteria. The list will be updated dynamically to match your selection.</p>
 <p>Allready know the performance name? <a href="#">Book us here</a>.</p>
 
