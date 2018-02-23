@@ -754,8 +754,8 @@ small, .font_small {font-size: 0.75em;}
     position: relative;
     color: #fff;
     margin-top: 5rem;
-     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
   }
+/* background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII='); */
 @media (min-width: 768px) {
 .basic-page__hero {
       height: 400px
