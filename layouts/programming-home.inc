@@ -25,6 +25,8 @@
         "/site/templates/assets/images/programming/right-adnotated.png",
         "/site/templates/assets/images/programming/front-adnotated.png"
       ];
+
+      $linksArray = $pages->get('1081')->children();
     
     ?>
 
@@ -35,8 +37,11 @@
               <h2 class="package-slide__title"><?= $slide->title ?></h2>
               <p class="package-slide__undertitle"><?= $slide->subtitle ?></p>
               <img class="package-slide__mobile-image" src="<?= $imageArray[$i] ?>" alt="Mainstages Theater ina Box">
-              <div class="package-slide__rte">
+              <div class="body-rte">
                 <?= $slide->programming_slide_rte ?>
+                <?php if ( $i > 1 ) : ?>
+                <a class="button package-slide__button" href="<?= $linksArray[($i-2)]->url?>">Click for Details</a>
+                <?php endif; ?>
               </div>
               <!-- /.package-slide__rte -->
         </div>

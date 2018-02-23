@@ -851,6 +851,7 @@ small, .font_small {font-size: 0.75em;}
  }
 .basic-page__content-wrapper p a, .basic-page__content-wrapper li a {
       text-shadow: .03em 0 #fbfde8, -.03em 0 #fbfde8, 0 .03em #fbfde8, 0 -.03em #fbfde8, .06em 0 #fbfde8, -.06em 0 #fbfde8, .09em 0 #fbfde8, -.09em 0 #fbfde8, .12em 0 #fbfde8, -.12em 0 #fbfde8, .15em 0 #fbfde8, -.15em 0 #fbfde8;
+      
       color: rgb(104, 184, 0);
       text-decoration: none; 
       background-image:
@@ -870,7 +871,7 @@ small, .font_small {font-size: 0.75em;}
     }
 .basic-page__content-wrapper p a:hover, .basic-page__content-wrapper li a:hover {
         /* background-image:  linear-gradient(color($msGreen l(+20%)), color($msGreen l(+20%))); */
-        color: rgb(94, 141, 32);
+        color: rgb(80, 121, 27);
         /* background-size: auto; */
         
       }
@@ -878,7 +879,7 @@ small, .font_small {font-size: 0.75em;}
 
   /* padding: 0 2rem 1rem 2rem; */
   color: rgb(115, 115, 115);
-
+  
 }
 .body-rte strong {
     font-weight: 700;
@@ -920,6 +921,9 @@ small, .font_small {font-size: 0.75em;}
 .body-rte ul {
     font-family: 'Open Sans', sans-serif;
   }
+.body-rte ul li {
+      margin-bottom: 1rem;
+    }
 .body-rte img {
     margin: 0 auto;
     -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
@@ -981,6 +985,31 @@ small, .font_small {font-size: 0.75em;}
 .body-rte__rounded-image {
     border-radius: 50%!important;
   }
+.body-rte p a, .body-rte li a {
+      text-shadow: .03em 0 #fbfde8, -.03em 0 #fbfde8, 0 .03em #fbfde8, 0 -.03em #fbfde8, .06em 0 #fbfde8, -.06em 0 #fbfde8, .09em 0 #fbfde8, -.09em 0 #fbfde8, .12em 0 #fbfde8, -.12em 0 #fbfde8, .15em 0 #fbfde8, -.15em 0 #fbfde8;
+      color: rgb(92, 163, 0);
+      text-decoration: none; 
+      background-image:
+        -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)),
+        -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)),
+        -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)); 
+      background-image:
+        linear-gradient(#87CC2F, #87CC2F),
+        linear-gradient(#87CC2F, #87CC2F),
+        linear-gradient(#87CC2F, #87CC2F);
+      background-size: .05em 2px, .05em 2px, 2px 2px;
+      background-repeat: no-repeat, no-repeat, repeat-x;
+      background-position: 0% 100%, 100% 100%, 0% 100%;
+      padding-bottom: 1rem;
+      
+      padding: 0 0.05em;
+    }
+.body-rte p a:hover, .body-rte li a:hover {
+        /* background-image:  linear-gradient(color($msGreen l(+20%)), color($msGreen l(+20%))); */
+        color: rgb(80, 121, 27);
+        /* background-size: auto; */
+        
+      }
 .footer {
   background-color: #450d0d;
   -webkit-clip-path: polygon(0 20%, 1600px 0, 1600px 80%, 0 100%);

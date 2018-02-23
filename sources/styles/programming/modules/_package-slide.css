@@ -1,3 +1,12 @@
+$s0-color: #98d874;
+$s1-color: #e4e4e4;
+$s2-color: #c9fda8;
+$s3-color: #deceff;
+$s4-color: #c8f8ff;
+$s5-color: #ffcfd7;
+$s6-color: #fdedb0;
+
+
 .package-slide {
   margin: 0;
   background-position: top left;
@@ -13,34 +22,34 @@
     $spotlight-gradient: 25% 57%;
     
     .packageSlide0 & {
-        background-image: radial-gradient(circle at 15% 50%, #dffdc6 0%, #98d874 60%);
+        background-image: radial-gradient(circle at 15% 50%, #dffdc6 0%, $s0-color 60%);
     }
     
     .packageSlide1 & {
-      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #e4e4e4 60%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, $s1-color 60%);
     }
 
     .packageSlide2 & {
-      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #c9fda8 60%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, $s2-color 60%);
     }
 
     .packageSlide3 & {
       /* #cec3e4 deceff */
-      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #deceff 60%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, $s3-color 60%);
       
     }
 
     .packageSlide4 & {
-      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #c8f8ff 60%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, $s4-color 60%);
       /* #97dfea */
     }
 
     .packageSlide5 & {
-      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #ffcfd7 60%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, $s5-color 60%);
     }
 
     .packageSlide6 & {
-      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #fdedb0 60%);      
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, $s6-color 60%);      
     }
 
     @mixin atMedium {
@@ -53,33 +62,33 @@
     
 
       .packageSlide0 & {
-        background-image: url('/site/templates/assets/images/programming/main-cover.png'), radial-gradient(ellipse at $spotlight-gradient, #dffdc6 0%, #98d874 30%);
+        background-image: url('/site/templates/assets/images/programming/main-cover.png'), radial-gradient(ellipse at $spotlight-gradient, #dffdc6 0%, $s0-color 30%);
       }
 
       .packageSlide1 & {
-        background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #e4e4e4 30%);
+        background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, $s1-color 30%);
       }
 
       .packageSlide2 & {
-        background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #d7ffbd 0%, #c9fda8 30%);
+        background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #d7ffbd 0%, $s2-color 30%);
       }
 
       .packageSlide3 & {
         /* #cec3e4 */
-        background-image: url('/site/templates/assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #deceff 30%);
+        background-image: url('/site/templates/assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, $s3-color 30%);
       }
 
       .packageSlide4 & {
-        background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #c8f8ff 30%);
+        background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, $s4-color 30%);
         /* #97dfea */
       }
 
       .packageSlide5 & {
-        background-image: url('/site/templates/assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #ffcfd7 30%);
+        background-image: url('/site/templates/assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, $s5-color 30%);
       }
 
       .packageSlide6 & {
-        background-image: url('/site/templates/assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, #fdedb0 30%);      
+        background-image: url('/site/templates/assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, $s6-color 30%);      
       }
 
     }
@@ -104,6 +113,19 @@
     }
     
   }   
+
+  .body-rte{
+    h3 {
+      font-size: 1.4rem;
+    }
+    p {
+      color: color($msDarkBrown l(40%) s(-40%));
+    }
+
+    p a, li a {
+      text-shadow: none;
+    }
+  }
 
   &__rte {
     margin-top: -3rem;
@@ -169,5 +191,68 @@
       margin-bottom: 60px;
       font-size: 1.25rem;
     }
+  }
+
+  &__button {
+    font-size: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    box-shadow: -3px 3px color($white );
+    
+    background-color: color(#57b543 l(+5%));
+      
+      &:hover {
+        background-color: $white;
+        color: color($s2-color s(+30%) l(-25%) b(+20%));
+        box-shadow: -3px 3px color(#57b543 l(+5%));
+      }
+
+    /* .packageSlide2 & {
+      background-color: color($s2-color s(+30%) l(-25%) b(+20%));
+      
+      &:hover {
+        background-color: $white;
+        color: color($s2-color s(+30%) l(-25%) b(+20%));
+      }
+    }
+
+    .packageSlide3 & {
+      background-color: color($s3-color s(+30%) l(-25%) b(+20%));
+      
+      &:hover {
+        background-color: $white;
+        color: color($s3-color s(+30%) l(-25%) b(+20%));
+      }
+    }
+
+    .packageSlide4 & {
+      background-color: color($s4-color s(+30%) l(-25%) b(+20%));
+      
+      &:hover {
+        background-color: $white;
+        color: color($s4-color s(+30%) l(-25%) b(+20%));
+      }
+    }
+
+    .packageSlide5 & {
+      background-color: color($s5-color s(+30%) l(-25%) b(+20%));
+      
+      &:hover {
+        background-color: $white;
+        color: color($s5-color s(+30%) l(-25%) b(+20%));
+      }
+    }
+
+    .packageSlide6 & {
+      background-color: color($s6-color s(+30%) l(-25%) b(+20%));
+      
+      &:hover {
+        background-color: $white;
+        color: color($s6-color s(+30%) l(-25%) b(+20%));
+      }
+    } */
+
   }
 }

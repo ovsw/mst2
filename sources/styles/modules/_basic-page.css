@@ -106,6 +106,7 @@
 
     p a, li a {
       text-shadow: .03em 0 $off-white, -.03em 0 $off-white, 0 .03em $off-white, 0 -.03em $off-white, .06em 0 $off-white, -.06em 0 $off-white, .09em 0 $off-white, -.09em 0 $off-white, .12em 0 $off-white, -.12em 0 $off-white, .15em 0 $off-white, -.15em 0 $off-white;
+      
       color: color($msGreen l(-5%) w(-30%));
       text-decoration: none; 
       background-image:
@@ -121,7 +122,7 @@
 
       &:hover {
         /* background-image:  linear-gradient(color($msGreen l(+20%)), color($msGreen l(+20%))); */
-        color: color($msGreen l(-15%));
+        color: color($msGreen l(-20%));
         /* background-size: auto; */
         
       }
