@@ -1193,47 +1193,50 @@ small, .font_small {font-size: 0.75em;}
     font-weight: 300;
     margin-top: 2rem;
     display: block;
+    text-align: center;
   }
 @media (min-width: 768px) {
 .hero__headerPrefix {
-      font-size: 2rem
+      font-size: 2rem;
+      text-align-last: left
   }
  }
 .hero__mainTitle{
 
     font-family: 'Open Sans', sans-serif;
     font-weight:  900;
-    text-align: left;
     text-transform: uppercase;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
     line-height: 1.2em;
     margin-top: 20px;
     margin-bottom:30px;
     font-size: 2.5rem;
+    text-align: center;
     
   }
 @media (min-width: 768px) {
 .hero__mainTitle{
-      font-size: 3.7rem
+      font-size: 3.7rem;
+      text-align: left
     
   }
  }
 .hero__tagLine {
     line-height: 1.8em;
     font-family: europa, sans-serif;
-    color: #98D874;
+    color: #301111;
     font-size: 1rem;
-    background-color: #fff;
-    padding: 0.2rem 1rem;
+    text-align: center;  
     display: block;
     
   }
 @media (min-width: 768px) {
 .hero__tagLine {
-      font-size: 18px;
+      font-size: 1.125rem;
       display: inline-block
     
   }
+     
       
       .hero__tagLine br  {
         display: none;
@@ -1245,7 +1248,13 @@ small, .font_small {font-size: 0.75em;}
     text-align:left;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 0;
+    text-align: center;
   }
+@media (min-width: 768px) {
+.hero__mainSubtitle {
+      text-align-last: left
+  }
+ }
 /* scroll button */
 .scrollBtn {
   display:  block;
