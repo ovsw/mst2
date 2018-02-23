@@ -15,7 +15,7 @@ $mobileSubitemsBg: color($msDarkBrown l(+15%) s(-30%));
   right: 0;
   width: 100%;
   transition: all 0.3s ease-out;
-  box-shadow: -5px 0 3px color($black a(40%)), -500px 0 0 color($black a(70%));
+  box-shadow: -5px 0 3px color($black a(40%)), -300px 0 0 color($black a(70%));
   
 
   @mixin $mobile_break {
@@ -98,6 +98,7 @@ $mobileSubitemsBg: color($msDarkBrown l(+15%) s(-30%));
    
    @mixin $mobile_break {
     display: inline-block;
+    margin-left: 0;
    } 
   }
 
