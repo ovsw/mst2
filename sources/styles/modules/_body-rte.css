@@ -103,7 +103,7 @@
   }
 
   &__text-w-side-image {
-
+    clear:both;
   }
 
   &__side-image {

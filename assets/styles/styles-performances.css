@@ -967,7 +967,7 @@ small, .font_small {font-size: 0.75em;}
   }
  }
 .body-rte__text-w-side-image {
-
+    clear:both;
   }
 .body-rte__side-image {
     float: left;
