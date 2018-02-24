@@ -15,6 +15,11 @@
 @import "modules/_package-slide";
 @import "../performances/modules/_footer";
 
+@import "../modules/vendor/lightslider.min";
+
+@import "../performances/modules/_testimonial-slider";
+@import "modules/_testimonial-slider";
+
 body  {
   background-color: $msGreen;
   font-family: $body-font;

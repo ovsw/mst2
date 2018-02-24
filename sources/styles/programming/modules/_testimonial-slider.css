@@ -1,0 +1,20 @@
+.testimonial-slider {
+  background-color: #98d874;
+
+  &__heading {
+    padding-top: 2rem;
+    text-align: center;
+    margin: 0;
+    color: $white;
+  }
+
+  &__text {
+    span {
+     color: color($white a(50%));
+    }
+  }
+}
+
+.lSSlideOuter .lSPager.lSpg>li.active a, .lSSlideOuter .lSPager.lSpg>li:hover a {
+  background-color: $white;
+}

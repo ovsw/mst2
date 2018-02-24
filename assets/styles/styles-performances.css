@@ -1765,6 +1765,11 @@ small, .font_small {font-size: 0.75em;}
       margin: 0 auto
   }
  }
+@media (min-width: 1024px) {
+.testimonial-slider__content {
+      max-width: 800px
+  }
+ }
 .testimonial-slider__text {
     font-size: 1.2rem;
     position: relative;
@@ -1784,7 +1789,7 @@ small, .font_small {font-size: 0.75em;}
     }
 .testimonial-slider__text .endquote {
       position: absolute;
-      bottom: 0;
+      bottom: -1rem;
       right: 0;
       left: auto;
       top: auto;
@@ -1792,10 +1797,18 @@ small, .font_small {font-size: 0.75em;}
 .testimonial-slider__author {
     font-family: europa, sans-serif;
     color: rgba(48, 17, 17, 0.7);
+    font-weight: 600;
+    font-size: 1.2rem;
   }
 .testimonial-slider__company {
-
+    font-weight: 300;
+    font-size: 1rem;
   }
+.lSSlideOuter .lSPager.lSpg>li a {
+  width: 1rem;
+  height: 1rem;
+  background-color: rgba(48, 17, 17, 0.7);
+}
 .lSSlideOuter .lSPager.lSpg>li.active a, .lSSlideOuter .lSPager.lSpg>li:hover a {
   background-color: #87CC2F;
 }

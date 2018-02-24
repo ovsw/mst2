@@ -30,6 +30,10 @@
       max-width: 500px;
       margin: 0 auto;
     }
+
+    @mixin atLarge {
+      max-width: 800px;
+    }
   }
 
   &__text {
@@ -50,7 +54,7 @@
     }
     .endquote {
       position: absolute;
-      bottom: 0;
+      bottom: -1rem;
       right: 0;
       left: auto;
       top: auto;
@@ -60,12 +64,21 @@
   &__author {
     font-family: $body-font;
     color: color($msDarkBrown a(70%));
+    font-weight: 600;
+    font-size: 1.2rem;
   }
 
   &__company {
-
+    font-weight: 300;
+    font-size: 1rem;
   }
 
+}
+
+.lSSlideOuter .lSPager.lSpg>li a {
+  width: 1rem;
+  height: 1rem;
+  background-color: color($msDarkBrown a(70%));
 }
 
 .lSSlideOuter .lSPager.lSpg>li.active a, .lSSlideOuter .lSPager.lSpg>li:hover a {
