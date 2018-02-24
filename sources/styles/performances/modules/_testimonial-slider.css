@@ -1,0 +1,77 @@
+.testimonial-slider {
+  background-color: $off-white;
+
+  #light-slider {
+    li {
+      display: none;
+    }
+  
+    &.lightSlider {
+      li {
+        display: block;
+      }
+    }
+  }
+
+  &__heading {
+    padding-top: 2rem;
+    text-align: center;
+    margin: 0;
+    color: $msGreen;
+  }
+
+  &__content {
+    padding: 1rem;
+    font-style: italic;
+    font-family: $heading-font;
+    text-align: center;
+
+    @mixin atMedium {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    position: relative;
+
+    @mixin atLarge {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 4rem;
+      line-height: 0em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: color($msGreen a(50%));
+    }
+    .endquote {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: auto;
+      top: auto;
+    }
+  }
+
+  &__author {
+    font-family: $body-font;
+    color: color($msDarkBrown a(70%));
+  }
+
+  &__company {
+
+  }
+
+}
+
+.lSSlideOuter .lSPager.lSpg>li.active a, .lSSlideOuter .lSPager.lSpg>li:hover a {
+  background-color: $msGreen;
+}
+
+.lSSlideOuter .lSPager.lSpg {
+  margin: 1rem;
+}

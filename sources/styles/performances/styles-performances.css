@@ -18,6 +18,10 @@
 @import "modules/_performance-wizard";
 @import "modules/_footer";
 
+@import "../modules/vendor/lightslider.min";
+
+@import "modules/_testimonial-slider";
+
 
 body  {
   background-color: $msGreen;
