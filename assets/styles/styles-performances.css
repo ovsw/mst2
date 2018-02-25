@@ -1584,7 +1584,16 @@ small, .font_small {font-size: 0.75em;}
 	        justify-content: space-between;
 	-webkit-box-shadow: -3px 3px 0 rgba(0,0,0,0.3);
 	        box-shadow: -3px 3px 0 rgba(0,0,0,0.3);
+	text-decoration: none;
 }
+.performance:hover {
+		background-color: rgb(135, 204, 47);
+		color: #fff;
+		
+	}
+.performance:hover .performance__details {
+			color: #000;
+		}
 .performance__title {
 		margin-top: 0;
 		 padding: 1rem 1rem 0.5rem 1rem;

@@ -81,6 +81,17 @@
 	flex-direction: column;
 	justify-content: space-between;
 	box-shadow: -3px 3px 0 rgba(0,0,0,0.3);
+	text-decoration: none;
+
+	&:hover {
+		background-color: color($msGreen);
+		color: $white;
+		
+		.performance__details {
+			color: $black;
+		}
+		
+	}
 
 	&__title {
 		margin-top: 0;

@@ -101,7 +101,7 @@
       foreach ($performance->holidays as $holliday) {$performanceItemClass .= ' '.$holliday->value;}
       ?>
 
-      <div class="<?= $performanceItemClass ?>">
+      <a href="<?= $performance->url ?>" class="<?= $performanceItemClass ?>">
         <h3 class="performance__title"><?= $performance->title ?></h3>
         <p class="performance__description"><?= $performance->short_description != "" ?  $performance->short-description : "Placeholder performance description goes here lorem ipsum dolor sit amet consequitur adipiscit elit." ?></p> 
         <div class="performance__details">
@@ -130,7 +130,7 @@
           
         </div>
         <!-- /.performance__details -->
-      </div>
+          </a>
       <!-- /.performance --> 
       <?php endforeach ?>
 
