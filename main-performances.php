@@ -27,6 +27,9 @@
         case "wizard":
           $layout = "performances-basic.inc";
           break;
+        case "performance":
+          $layout = "performances-basic.inc";
+          break;
         default:
           echo "<h1>No Template File Found!</h1>";
       } 

@@ -1823,4 +1823,20 @@ body  {
 p strong {
     font-weight: 700;
   }
+.basic-page__content-wrapper .performance-cta-btn  {
+
+  text-align: center;
+  
+}
+.basic-page__content-wrapper .performance-cta-btn a {
+    background-color: #87CC2F;
+    color: #fff;
+    text-shadow: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+.basic-page__content-wrapper .performance-cta-btn a:hover {
+      background-color: rgb(159, 216, 85);
+    }
 /*# sourceMappingURL=maps/styles-performances.css.map */
