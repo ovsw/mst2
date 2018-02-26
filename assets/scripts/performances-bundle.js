@@ -5,14 +5,15 @@ webpackJsonp([0],[
 /* 3 */,
 /* 4 */,
 /* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(7);
+module.exports = __webpack_require__(8);
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20,10 +21,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_jquery_global_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lightslider__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lightslider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lightslider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mixitup__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mixitup__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mixitup___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mixitup__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_mixitup_multifilter__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_mixitup_multifilter__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_mixitup_multifilter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__modules_mixitup_multifilter__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_faqs_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_faqs_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__modules_faqs_js__);
+
 
 
 
@@ -165,17 +169,10 @@ $("#light-slider").lightSlider({
   onBeforePrevSlide: function (el) {}
 });
 
-// toggle FAQs
 
-$('.faqs__answer').hide();
-$('.faqs__question').click(function() {
-  var toggle = $(this).nextUntil('.faqs__question');
-  toggle.slideToggle();
-  $('.faqs__answer').not(toggle).slideUp();
-});
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**!
@@ -10832,7 +10829,7 @@ $('.faqs__question').click(function() {
 })(window);
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**!
@@ -11961,4 +11958,4 @@ $('.faqs__question').click(function() {
     }})(window);
 
 /***/ })
-],[6]);
+],[7]);

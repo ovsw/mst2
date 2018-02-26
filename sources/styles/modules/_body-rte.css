@@ -154,13 +154,14 @@
       
       &__question {
         padding-top: 0.5rem;
+        cursor: pointer;
       }
 
       &__question-text {
         margin: 0;
         padding: 1rem;
-        background-color: color($msGreen a(90%));
-        color: $white;
+        background-color: color($msGreen a(70%));
+        color: $msDarkBrown;
         font-size: 1rem;
         
         @mixin atMedium {
@@ -169,15 +170,13 @@
       }
 
       &__answer {
-        background-color: color($msGreen a(30%));
+        background-color: color($msGreen a(20%));
         margin: 0;
         padding: 1rem;
-        
-
-        
+        display: none;  
 
         p, li {
-          font-size: 1rem;
+          font-size: 0.9rem;
 
           @mixin atMedium {
             font-size: 1.125rem;

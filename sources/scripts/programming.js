@@ -1,5 +1,6 @@
 import './modules/jquery-global.js';
 import lightSlider from 'lightslider';
+import './modules/faqs.js';
 
 
 $(document).ready(function(){

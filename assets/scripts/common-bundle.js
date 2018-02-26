@@ -11567,5 +11567,18 @@ window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 }(jQuery));
 
 
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+// toggle FAQs
+
+$('.faqs__answer').hide();
+$('.faqs__question').click(function() {
+  var toggle = $(this).nextUntil('.faqs__question');
+  toggle.slideToggle();
+  $('.faqs__answer').not(toggle).slideUp();
+});
+
 /***/ })
 /******/ ]);

@@ -1,14 +1,14 @@
 webpackJsonp([2],{
 
-/***/ 10:
+/***/ 11:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(11);
+module.exports = __webpack_require__(12);
 
 
 /***/ }),
 
-/***/ 11:
+/***/ 12:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16,6 +16,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_jquery_global_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lightslider__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lightslider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lightslider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_faqs_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_faqs_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__modules_faqs_js__);
+
 
 
 
@@ -101,4 +104,4 @@ $(document).ready(function(){
 
 /***/ })
 
-},[10]);
+},[11]);

@@ -2,6 +2,7 @@ import './modules/jquery-global.js';
 import lightSlider from 'lightslider';
 import mixitup from 'mixitup';
 import mixitupMultifilter from './modules/mixitup-multifilter';
+import './modules/faqs.js';
 
 
 mixitup.use(mixitupMultifilter);
@@ -139,11 +140,3 @@ $("#light-slider").lightSlider({
   onBeforePrevSlide: function (el) {}
 });
 
-// toggle FAQs
-
-$('.faqs__answer').hide();
-$('.faqs__question').click(function() {
-  var toggle = $(this).nextUntil('.faqs__question');
-  toggle.slideToggle();
-  $('.faqs__answer').not(toggle).slideUp();
-});
