@@ -1783,6 +1783,7 @@ small, .font_small {font-size: 0.75em;}
 .lightSlider.lsGrabbing>*{cursor:move;cursor:-webkit-grabbing;cursor:-o-grabbing;cursor:-ms-grabbing;cursor:grabbing}
 .testimonial-slider {
   background-color: #fbfde8;
+  padding-top: 2rem;
 
 }
 .testimonial-slider #light-slider li {

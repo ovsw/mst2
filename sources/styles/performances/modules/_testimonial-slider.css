@@ -1,5 +1,6 @@
 .testimonial-slider {
   background-color: $off-white;
+  padding-top: 2rem;
 
   #light-slider {
     li {

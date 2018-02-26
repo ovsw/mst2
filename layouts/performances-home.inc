@@ -38,7 +38,7 @@
     <!-- /.slidecards -->
 
     <section class="testimonial-slider">
-      <h2 class="testimonial-slider__heading">Testimonials</h2>
+      <!-- <h2 class="testimonial-slider__heading">Testimonials</h2> -->
       <ul id="light-slider">
         
         <?php foreach ($page->testimonials_repeater as $testimonial) : ?>
