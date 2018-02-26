@@ -93,12 +93,14 @@
       transform: skewY(-3deg);
       box-shadow: -10px 5px 5px color($black a(30%));
       transition: all 0.5s;
+
+      &:hover {
+        transform: skewY(0deg) scale(1.2, 1.2) translateX(-50px);
+        box-shadow: -10px 5px 50px color($black a(30%));
+      }
     }
 
-    &:hover {
-      transform: skewY(0deg) scale(1.2, 1.2) translateX(-50px);
-      box-shadow: -10px 5px 50px color($black a(30%));
-    }
+ 
 
     @mixin atHuge {
       margin-right: 20px;
