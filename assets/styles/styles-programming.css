@@ -1074,12 +1074,11 @@ small, .font_small {font-size: 0.75em;}
             transform: skewY(-2deg)
 }
  }
-@media (min-width: 1024px) {
 .footer__wrapper {
-      background: -webkit-linear-gradient(top, rgba(255,255,255,1) 49%,rgba(135,204,47,1) 49%)
+    
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 49%,rgba(135,204,47,1) 49%);
     
   }
- }
 @media (min-width: 1200px) {
 .footer__wrapper {
       padding-top: 100px
