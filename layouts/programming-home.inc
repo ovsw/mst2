@@ -57,7 +57,7 @@
       <h2 class="testimonial-slider__heading">Testimonials</h2>
       <ul id="light-slider">
         
-        <?php foreach ($page->testimonials_repeater as $testimonial) : ?>
+        <?php foreach ($pages->get('1150')->testimonials_repeater as $testimonial) : ?>
         <li>
           <div class="testimonial-slider__content">
             <p class="testimonial-slider__text"><span>“ </span><?= $testimonial->testimonial_content ?><span class="endquote">”</span></p>
