@@ -13,7 +13,7 @@
             'firstlast' => true,
             'collapsed' => false,
             'show_root' => true,
-            'selector' => '',
+            'selector' => 'template!=blog-post',
             'selector_field' => 'nav_selector',
             'outer_tpl' => '<ul class="top-nav__outer-list">||</ul>',
             'inner_tpl' => '<ul class="top-nav__inner-list">||</ul>',
