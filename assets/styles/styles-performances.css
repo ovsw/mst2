@@ -1120,7 +1120,7 @@ small, .font_small {font-size: 0.75em;}
       width: 70%;
       font-size: 1.1rem;
       padding-bottom: 2rem;
-      padding-top: 1rem
+      padding-top: 3rem;
   }
  }
 @media (min-width: 1200px) {
