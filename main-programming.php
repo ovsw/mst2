@@ -62,8 +62,14 @@
     case "wizard":
       $layout = "programming-basic.inc";
       break;
+    case "blog-home":
+      $layout = "programming-basic.inc";
+      break;
+    case "blog-post":
+      $layout = "programming-basic.inc";
+      break;
     default:
-      echo "<h1>No Template File Found!</h1>";
+    $layout = "programming-basic.inc";
   } 
   
   require ($config->paths->templates."layouts/".$layout);

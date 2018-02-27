@@ -20,6 +20,8 @@
 @import "../performances/modules/_testimonial-slider";
 @import "modules/_testimonial-slider";
 
+@import "../modules/_blog";
+
 body  {
   background-color: $msGreen;
   font-family: $body-font;
