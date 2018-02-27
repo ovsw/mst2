@@ -21,6 +21,9 @@
         case "performances-home":
           $layout = "performances-home.inc";
           break;
+        case "families-home":
+          $layout = "families-home.inc";
+          break;
         case "performances-basic-page":
           $layout = "performances-basic.inc";
           break;
