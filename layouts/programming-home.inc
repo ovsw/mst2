@@ -1,11 +1,11 @@
 <section class="package-slide hero packageSlide0">
       <div class="package-slide__content-wrapper ">
         <div class="package-slide__content">
-              <span class="hero__headerPrefix">meet the</span>
-              <h1 class="hero__mainTitle">  Mainstages Theater Program</h1>
-              <p class="hero__tagLine">for Summer Camps and <br> After-Schools</p>
+              <span class="hero__headerPrefix"><?= $page->caption ?></span>
+              <h1 class="hero__mainTitle">  <?= $page->title ?></h1>
+              <p class="hero__tagLine"><?= $page->subtitle ?></p>
               <img class="package-slide__mobile-image" src="/site/templates/assets/images/programming/main-cover.png" alt="Mainstages Theater ina Box">
-              <h2 class="hero__mainSubtitle">the perfect answer to your Theater Program needs</h2>
+              <h2 class="hero__mainSubtitle"><?= $page->blurb ?></h2>
         </div>
         <!-- /.content -->
         <a href="#" class="scrollBtn"><span></span>Down for More</a>
@@ -54,7 +54,7 @@
     <?php endforeach; ?>
 
     <section class="testimonial-slider">
-      <h2 class="testimonial-slider__heading">Testimonials</h2>
+      
       <ul id="light-slider">
         <?php $testimonialsPage = $pages->get('1150');?> 
         <?php require($config->paths->templates.'includes/modules/hp-testimonials.inc'); ?>

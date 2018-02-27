@@ -1,18 +1,9 @@
-<section class="hero">
-      <?php require($config->paths->templates."includes/modules/hero-video-performances.inc");
-       ?>
-      <div class="hero__content">
-        <h1 class="hero__heading">Our Performances</h1>
-        <p class="hero__hookline"><span>Thre are over 30 shows for you to choose from.<br> Use the performance wizard to find the right one for your needs.</span></p>
-        <a class="button hero__cta" href="#">find your performance -></a>
-      </div>
-      <!-- /.hero__content -->
-    </section>
+<?php require($config->paths->templates.'includes/modules/hp_hero-perf-fam.inc'); ?>
 
     <section class="slidecards">
       
       <div class="slidecards__heading-wrapper">
-        <h2>Explore Performances</h2>
+        <h2><?= $page->hp_cards_heading ?></h2>
       </div>
 
       <div class="slidecards__cards-wrapper">
