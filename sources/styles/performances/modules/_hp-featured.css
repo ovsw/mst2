@@ -29,6 +29,8 @@
 
   &__image {
 
+    min-width: 100%;
+
    @mixin atMedium {
       position: absolute;
       top: 50%;
@@ -36,6 +38,11 @@
       transform: translate(-50%,-50%);
       height: 100%;
       max-width: none;
+   }
+
+   @mixin atLarge {
+     height: auto;
+     max-width: 100%;
    }
   }
 

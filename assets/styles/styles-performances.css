@@ -1897,6 +1897,10 @@ small, .font_small {font-size: 0.75em;}
     position: relative;
     overflow: hidden;
   }
+.hp-featured__image {
+
+    min-width: 100%;
+  }
 @media (min-width: 768px) {
 .hp-featured__image {
       position: absolute;
@@ -1906,6 +1910,12 @@ small, .font_small {font-size: 0.75em;}
               transform: translate(-50%,-50%);
       height: 100%;
       max-width: none
+  }
+ }
+@media (min-width: 1024px) {
+.hp-featured__image {
+     height: auto;
+     max-width: 100%
   }
  }
 .hp-featured__content-wrapper{
