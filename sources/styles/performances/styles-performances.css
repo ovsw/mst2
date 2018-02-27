@@ -21,6 +21,7 @@
 @import "../modules/vendor/lightslider.min";
 
 @import "modules/_testimonial-slider";
+@import "modules/_hp-featured";
 
 
 body  {
