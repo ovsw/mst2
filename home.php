@@ -35,7 +35,6 @@
               <div class="hero__card-text n-<?= $i ?>">
               
                 <h2 class="hero__card-title"><?= $card->title ?></h2>
-                <div class="hero__card-icon" style="background-image: url('<?= $card->card_icon->url ?>')"></div>
                 <div class="hero__card-description n-<?= $i ?>"><?= $card->card_short_desc ?></div>
                 <a class="button hero__card-button n-<?= $i ?>" href="<?= $card->read_more_link ?>">Learn more</a>
               <a class="button hero__card-button n-<?= $i ?>" href="<?= $card->cta_link ?>">Book us</a>
