@@ -19,7 +19,7 @@ $s6-color: #fdedb0;
     position: relative;
     padding: 1rem;
     
-    $spotlight-gradient: 25% 57%;
+    
     
     .packageSlide0 & {
         background-image: radial-gradient(circle at 15% 50%, #dffdc6 0%, $s0-color 60%);
@@ -52,14 +52,16 @@ $s6-color: #fdedb0;
       background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, $s6-color 60%);      
     }
 
+    
     @mixin atMedium {
-      min-height: 80vh;
+      /* min-height: 80vh; */
       background-repeat: no-repeat;
       padding: 10% 5% 5% 5%;
-      background-position: 20% 50%;
+      background-position: 10% 14rem, top left;
       background-attachment: fixed;
-      background-size: auto;
-    
+      background-size: 300px, auto;
+
+      $spotlight-gradient: 20% 43%;
 
       .packageSlide0 & {
         background-image: url('/site/templates/assets/images/programming/main-cover.png'), radial-gradient(ellipse at $spotlight-gradient, #dffdc6 0%, $s0-color 30%);
@@ -70,7 +72,7 @@ $s6-color: #fdedb0;
       }
 
       .packageSlide2 & {
-        background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #d7ffbd 0%, $s2-color 30%);
+        background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), radial-gradient(circle at $spotlight-gradient, #ffffff 0%, $s2-color 30%);
       }
 
       .packageSlide3 & {
@@ -91,6 +93,24 @@ $s6-color: #fdedb0;
         background-image: url('/site/templates/assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, $s6-color 30%);      
       }
 
+    }
+
+    @mixin atLarge{
+      padding: 10% 5% 5% 5%;
+      background-position: 10% 13rem, top left;
+      background-size: 400px, auto;
+    }
+
+    @mixin atHuge{
+      padding: 10% 5% 5% 5%;
+      background-position: 15% 13rem, top left;
+      background-size: auto;
+    }
+
+    @mixin atXHuge{
+      padding: 10% 5% 5% 5%;
+      background-position: 20% 13rem, top left;
+      background-size: auto;
     }
 
   }
@@ -193,15 +213,33 @@ $s6-color: #fdedb0;
     }
   }
 
+  &__button-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @mixin atMedium {
+      margin-top: 2rem;
+    }
+
+    @mixin atLarge {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+    }
+  }
+
   &__button {
     font-size: 1.5rem;
     padding: 0.7rem 1.5rem;
-    margin-top: 1.5rem;
+    
     font-weight: 300;
     letter-spacing: 0.05em;
     box-shadow: -3px 3px color($white );
-    
+
+
     background-color: color(#57b543 l(+5%));
+
+   
       
       &:hover {
         background-color: $white;

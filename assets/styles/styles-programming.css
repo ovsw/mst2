@@ -1221,6 +1221,11 @@ small, .font_small {font-size: 0.75em;}
       padding-bottom: 5rem
   }
  }
+@media (min-width: 1600px) {
+.hero .package-slide__content {
+      padding-top: 2rem
+  }
+ }
 .hero__headerPrefix {
     font-family: Jubilat, serif;
     font-style: italic;
@@ -1365,45 +1370,68 @@ small, .font_small {font-size: 0.75em;}
     }
 @media (min-width: 768px) {
 .package-slide__content-wrapper {
-      min-height: 80vh;
+      /* min-height: 80vh; */
       background-repeat: no-repeat;
       padding: 10% 5% 5% 5%;
-      background-position: 20% 50%;
+      background-position: 10% 14rem, top left;
       background-attachment: fixed;
-      background-size: auto
+      background-size: 300px, auto
 
   }
-    
 
       .packageSlide0 .package-slide__content-wrapper {
-        background-image: url('/site/templates/assets/images/programming/main-cover.png'), radial-gradient(ellipse at 25% 57%, #dffdc6 0%, #98d874 30%);
+        background-image: url('/site/templates/assets/images/programming/main-cover.png'), radial-gradient(ellipse at 20% 43%, #dffdc6 0%, #98d874 30%);
       }
 
       .packageSlide1 .package-slide__content-wrapper {
-        background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #e4e4e4 30%);
+        background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #e4e4e4 30%);
       }
 
       .packageSlide2 .package-slide__content-wrapper {
-        background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), radial-gradient(ellipse at 25% 57%, #d7ffbd 0%, #c9fda8 30%);
+        background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), radial-gradient(circle at 20% 43%, #ffffff 0%, #c9fda8 30%);
       }
 
       .packageSlide3 .package-slide__content-wrapper {
         /* #cec3e4 */
-        background-image: url('/site/templates/assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #deceff 30%);
+        background-image: url('/site/templates/assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #deceff 30%);
       }
 
       .packageSlide4 .package-slide__content-wrapper {
-        background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #c8f8ff 30%);
+        background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #c8f8ff 30%);
         /* #97dfea */
       }
 
       .packageSlide5 .package-slide__content-wrapper {
-        background-image: url('/site/templates/assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #ffcfd7 30%);
+        background-image: url('/site/templates/assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #ffcfd7 30%);
       }
 
       .packageSlide6 .package-slide__content-wrapper {
-        background-image: url('/site/templates/assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at 25% 57%, #ffffff 0%, #fdedb0 30%);      
+        background-image: url('/site/templates/assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #fdedb0 30%);      
       }
+ }
+@media (min-width: 1024px) {
+.package-slide__content-wrapper {
+      padding: 10% 5% 5% 5%;
+      background-position: 10% 13rem, top left;
+      background-size: 400px, auto
+
+  }
+ }
+@media (min-width: 1200px) {
+.package-slide__content-wrapper {
+      padding: 10% 5% 5% 5%;
+      background-position: 15% 13rem, top left;
+      background-size: auto
+
+  }
+ }
+@media (min-width: 1600px) {
+.package-slide__content-wrapper {
+      padding: 10% 5% 5% 5%;
+      background-position: 20% 13rem, top left;
+      background-size: auto
+
+  }
  }
 /* end __content-wrapper */
 .package-slide__mobile-image {
@@ -1495,15 +1523,32 @@ small, .font_small {font-size: 0.75em;}
       font-size: 1.25rem
   }
  }
+.package-slide__button-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+@media (min-width: 768px) {
+.package-slide__button-wrapper {
+      margin-top: 2rem
+  }
+ }
+@media (min-width: 1024px) {
+.package-slide__button-wrapper {
+      margin-top: 4rem;
+      margin-bottom: 3rem
+  }
+ }
 .package-slide__button {
     font-size: 1.5rem;
     padding: 0.7rem 1.5rem;
-    margin-top: 1.5rem;
+    
     font-weight: 300;
     letter-spacing: 0.05em;
     -webkit-box-shadow: -3px 3px rgb(255, 255, 255);
             box-shadow: -3px 3px rgb(255, 255, 255);
-    
+
+
     background-color: rgb(104, 192, 84);
 
     /* .packageSlide2 & {

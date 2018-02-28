@@ -12,6 +12,10 @@
     @mixin atMedium {
       padding-bottom: 5rem;
     }
+
+    @mixin atXHuge {
+      padding-top: 2rem;
+    }
   }
 
   &__headerPrefix {

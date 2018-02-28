@@ -33,6 +33,12 @@
  }
 }
 
+@define-mixin atXHuge {
+ @media (min-width: 1600px) {
+  @mixin-content;
+ }
+}
+
 @define-mixin hideAtTooShort {
  @media (max-height: 450px) {
   display: none;

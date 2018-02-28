@@ -2,7 +2,7 @@
       <div class="package-slide__content-wrapper ">
         <div class="package-slide__content">
               <span class="hero__headerPrefix"><?= $page->caption ?></span>
-              <h1 class="hero__mainTitle">  <?= $page->title ?></h1>
+              <h1 class="hero__mainTitle">  <?= $page->hero_title ?></h1>
               <p class="hero__tagLine"><?= $page->subtitle ?></p>
               <img class="package-slide__mobile-image" src="/site/templates/assets/images/programming/main-cover.png" alt="Mainstages Theater ina Box">
               <h2 class="hero__mainSubtitle"><?= $page->blurb ?></h2>
@@ -40,7 +40,10 @@
               <div class="body-rte">
                 <?= $slide->programming_slide_rte ?>
                 <?php if ( $i > 1 ) : ?>
-                <a class="button package-slide__button" href="<?= $linksArray[($i-2)]->url?>">Click for Details</a>
+                <div class="package-slide__button-wrapper">
+                  <a class="button package-slide__button" href="<?= $linksArray[($i-2)]->url?>">Click for Details</a>
+                </div>
+                <!-- /.package-slide__button-wrapper -->
                 <?php endif; ?>
               </div>
               <!-- /.package-slide__rte -->
