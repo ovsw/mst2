@@ -6,7 +6,7 @@
 
   .package-slide__content {
     padding-top: 4.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 10rem;
     
 
     @mixin atMedium {
@@ -22,6 +22,7 @@
     margin-top: 2rem;
     display: block;
     text-align: center;
+    
 
     @mixin atMedium {
       font-size: 2rem;
@@ -42,8 +43,12 @@
     text-align: center;
     
     @mixin atMedium {
-      font-size: 3.7rem;
       text-align: left;
+    }
+
+    @mixin atLarge {
+      font-size: 3.7rem;
+      
     }
     
   }
@@ -74,12 +79,12 @@
     font-weight:  300;
     font-size:  2rem;
     text-align:left;
-    color: color($white a(90%));
+    color: $msDarkBrown;
     margin-top: 0;
     text-align: center;
 
     @mixin atMedium {
-      text-align-last: left;
+      text-align: left;
     }
   }
 }
@@ -93,11 +98,13 @@
   font-size:  18px;
   text-decoration: none;
   padding-top: 40px;
-  position: relative;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  width: 100%;
   color: #fff;
   text-align: center;
   transition: opacity .3s;
-  
 }
 .scrollBtn span {
   position: absolute;

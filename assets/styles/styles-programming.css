@@ -1214,7 +1214,7 @@ small, .font_small {font-size: 0.75em;}
 }
 .hero .package-slide__content {
     padding-top: 4.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 10rem;
   }
 @media (min-width: 768px) {
 .hero .package-slide__content {
@@ -1251,8 +1251,13 @@ small, .font_small {font-size: 0.75em;}
   }
 @media (min-width: 768px) {
 .hero__mainTitle{
-      font-size: 3.7rem;
       text-align: left
+    
+  }
+ }
+@media (min-width: 1024px) {
+.hero__mainTitle{
+      font-size: 3.7rem
     
   }
  }
@@ -1281,13 +1286,13 @@ small, .font_small {font-size: 0.75em;}
     font-weight:  300;
     font-size:  2rem;
     text-align:left;
-    color: rgba(255, 255, 255, 0.9);
+    color: #301111;
     margin-top: 0;
     text-align: center;
   }
 @media (min-width: 768px) {
 .hero__mainSubtitle {
-      text-align-last: left
+      text-align: left
   }
  }
 /* scroll button */
@@ -1296,12 +1301,14 @@ small, .font_small {font-size: 0.75em;}
   font-size:  18px;
   text-decoration: none;
   padding-top: 40px;
-  position: relative;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  width: 100%;
   color: #fff;
   text-align: center;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
-  
 }
 .scrollBtn span {
   position: absolute;
@@ -1358,7 +1365,7 @@ small, .font_small {font-size: 0.75em;}
     }
 @media (min-width: 768px) {
 .package-slide__content-wrapper {
-      min-height: 100vh;
+      min-height: 80vh;
       background-repeat: no-repeat;
       padding: 10% 5% 5% 5%;
       background-position: 20% 50%;
