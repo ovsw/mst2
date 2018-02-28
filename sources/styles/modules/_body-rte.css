@@ -9,7 +9,7 @@
 
   h2 {
     color: color($msGreen l(-10%));
-    margin-bottom: 40px;
+    margin-bottom: 1.5rem;
     font-weight: 600;
     font-style: italic;
   }
@@ -42,12 +42,13 @@
     font-size: 1.125rem;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.9;
-    margin: 40px auto;
+    margin: 0 auto 2.5rem auto;
     font-weight: 400;
   }
   
-  ul {
+  ul, ol {
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2.5rem;
     
     li {
       margin-bottom: 1rem;
@@ -91,7 +92,6 @@
   }
 
   &__pullquote{
-    
     
     margin: 2rem;
     font-size: 1.5rem;
