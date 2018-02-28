@@ -4,7 +4,7 @@
       <div class="hero__content">
         <h1 class="hero__heading"><?= $page->hero_title ?></h1>
         <p class="hero__hookline"><span><?= $page->blurb ?></span></p>
-        <a class="button hero__cta" href="#">find your performance -></a>
+        <a class="button hero__cta" href="<?= $pages->get($wizardPageid)->url ?>">find your performance -></a>
       </div>
       <!-- /.hero__content -->
     </section>

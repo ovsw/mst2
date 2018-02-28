@@ -1,4 +1,4 @@
-<?php require($config->paths->templates.'includes/modules/hp_hero-perf-fam.inc'); ?>
+<?php $wizardPageid = '1015'; require($config->paths->templates.'includes/modules/hp_hero-perf-fam.inc'); ?>
 
     <section class="slidecards">
       
