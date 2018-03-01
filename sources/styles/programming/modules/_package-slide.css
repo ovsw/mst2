@@ -2,10 +2,11 @@ $s0-color: #98d874;
 $s1-color: #e4e4e4;
 $s2-color: #c9fda8;
 $s3-color: #deceff;
-$s4-color: #c8f8ff;
+$s4-color: #adf5ff;
 $s5-color: #ffcfd7;
 $s6-color: #fdedb0;
 
+/* $s4-color:#c8f8ff; */
 
 .package-slide {
   margin: 0;

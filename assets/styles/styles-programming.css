@@ -1332,6 +1332,7 @@ small, .font_small {font-size: 0.75em;}
 .scrollBtn :hover {
   opacity: .5;
 }
+/* $s4-color:#c8f8ff; */
 .package-slide {
   margin: 0;
   background-position: top left;
@@ -1359,7 +1360,7 @@ small, .font_small {font-size: 0.75em;}
       
     }
 .packageSlide4 .package-slide__content-wrapper {
-      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #c8f8ff 60%);
+      background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #adf5ff 60%);
       /* #97dfea */
     }
 .packageSlide5 .package-slide__content-wrapper {
@@ -1397,7 +1398,7 @@ small, .font_small {font-size: 0.75em;}
       }
 
       .packageSlide4 .package-slide__content-wrapper {
-        background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #c8f8ff 30%);
+        background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #adf5ff 30%);
         /* #97dfea */
       }
 
