@@ -11,20 +11,17 @@
         <a href="/" class="header__logo">
           <img src="<?= $config->urls->templates ?>assets/images/mainstages-logo-horizontal.png" alt="Mainstages Logo"> 
         </a>
-        <?php require($config->paths->templates."includes/modules/topnav-performances.inc"); ?>
+        <?php require($config->paths->templates."includes/modules/topnav-families.inc"); ?>
       </div>
       <!-- /.header__wrapper -->
     </header>
 
     <?php 
       switch ($page->template) {
-        case "performances-home":
-          $layout = "performances-home.inc";
+        case "families-home":
+          $layout = "families-home.inc";
           break;
         case "performances-basic-page":
-          $layout = "performances-basic.inc";
-          break;
-        case "wizard":
           $layout = "performances-basic.inc";
           break;
         case "performance":

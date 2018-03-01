@@ -34,7 +34,7 @@
     <div class="menu-cross-links">
       <span class="menu-cross-links__title">See also:</span>
       <a href="<?= $pages->get('1058')->url ?>" class="performances">Performances</a>
-      <a href="<?= $pages->get('1336')->url ?>" class="programming">Programming</a>
+      <a href="<?= $pages->get('1051')->url ?>" class="programming">Programming</a>
     </div>
     <!-- /.menu-cross-links -->
 

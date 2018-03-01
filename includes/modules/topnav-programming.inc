@@ -27,7 +27,7 @@
             'debug' => false
         );
           //<i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i>
-          echo $topMenu->render($topMenuOptions, null, $topMenuRootPage);echo $topMenu->render($topMenuOptions, null, $topMenuRootPage);echo $topMenu->render($topMenuOptions, null, $topMenuRootPage); ?>
+          echo $topMenu->render($topMenuOptions, null, $topMenuRootPage);?>
     </div>
     <!-- /.menus -->
 
