@@ -149,6 +149,39 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+module.exports = function(src) {
+	function log(error) {
+		(typeof console !== "undefined")
+		&& (console.error || console.log)("[Script Loader]", error);
+	}
+
+	// Check for IE =< 8
+	function isIE() {
+		return typeof attachEvent !== "undefined" && typeof addEventListener === "undefined";
+	}
+
+	try {
+		if (typeof execScript !== "undefined" && isIE()) {
+			execScript(src);
+		} else if (typeof eval !== "undefined") {
+			eval.call(null, src);
+		} else {
+			log("EvalError: No eval function available");
+		}
+	} catch (error) {
+		log(error);
+	}
+}
+
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10408,18 +10441,24 @@ return jQuery;
 
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 
 window.jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 
 /***/ }),
-/* 2 */
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(0)(__webpack_require__(13))
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports) {
 
 /*! lightslider - v1.1.6 - 2016-10-25
@@ -11568,45 +11607,53 @@ window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 
 
 /***/ }),
-/* 3 */
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(0)(__webpack_require__(14))
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(0)(__webpack_require__(15))
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(0)(__webpack_require__(18))
+
+/***/ }),
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */
 /***/ (function(module, exports) {
 
-// toggle FAQs
+module.exports = "var Project = {\r\n\r\n\tinit: function () {\r\n\t\t$('html').removeClass('no-js')\r\n\t\t$('html, body').attr({\r\n\t\t\t'user-agent': window.navigator.userAgent,\r\n\t\t\t'code-appName': navigator.appName\r\n\t\t});\r\n\t},\r\n\r\n};"
 
-var Faqs = {
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
 
-  init : function() {
+module.exports = "var initSliders = {\r\n\r\n  init : function() {\r\n\r\n    this.cachedom();\r\n    this.initSlider(initSliders.$testimonialSlider, initSliders.$testimonialSliderConfig);\r\n\r\n  },\r\n\r\n  cachedom: function() {\r\n\r\n    this.$testimonialSlider = $(\"#light-slider\");\r\n\r\n    this.$testimonialSliderConfig = {\r\n      item: 3,\r\n      autoWidth: false,\r\n      slideMove: 1, // slidemove will be 1 if loop is true\r\n      slideMargin: 10,\r\n    \r\n      addClass: '',\r\n      mode: \"fade\",\r\n      useCSS: true,\r\n      cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//\r\n      easing: 'linear', //'for jquery animation',////\r\n    \r\n      speed: 400, //ms'\r\n      auto: true,\r\n      pauseOnHover: false,\r\n      loop: true,\r\n      slideEndAnimation: true,\r\n      pause: 4000,\r\n    \r\n      keyPress: false,\r\n      controls: true,\r\n      prevHtml: '',\r\n      nextHtml: '',\r\n    \r\n      rtl:false,\r\n      adaptiveHeight:true,\r\n    \r\n      vertical:false,\r\n      verticalHeight:500,\r\n      vThumbWidth:100,\r\n    \r\n      thumbItem:10,\r\n      pager: true,\r\n      gallery: false,\r\n      galleryMargin: 5,\r\n      thumbMargin: 5,\r\n      currentPagerPosition: 'middle',\r\n    \r\n      enableTouch:true,\r\n      enableDrag:true,\r\n      freeMove:true,\r\n      swipeThreshold: 40,\r\n    \r\n      responsive : [],\r\n    \r\n      onBeforeStart: function (el) {},\r\n      onSliderLoad: function (el) {},\r\n      onBeforeSlide: function (el) {},\r\n      onAfterSlide: function (el) {},\r\n      onBeforeNextSlide: function (el) {},\r\n      onBeforePrevSlide: function (el) {}\r\n    };\r\n  },\r\n\r\n  initSlider : function($slider, $config) {\r\n    $slider.lightSlider($config);\r\n  }\r\n\r\n};\r\n\r\n"
 
-    this.cachedom();
-    this.bindEvents();
+/***/ }),
+/* 15 */
+/***/ (function(module, exports) {
 
-  },
+module.exports = "// mobile menu toggle\r\n$('.header__menu-icon').click(function(){\r\n\r\n  $('.top-nav').toggleClass('top-nav__visible');\r\n\r\n  $(this).toggleClass('header__menu-icon--close-x');\r\n\r\n});\r\n\r\n// mobile menu sub-items toggle\r\n$('.top-nav__submenu-button').click(function(){\r\n\r\n  var menuItem = $(this).parent();\r\n\r\n  if (menuItem.hasClass('submenu-open')) {\r\n\r\n    $('.top-nav__has-children').removeClass('submenu-open');\r\n\r\n  }else{\r\n\r\n    $('.top-nav__has-children').removeClass('submenu-open');\r\n    \r\n    menuItem.addClass('submenu-open');\r\n\r\n  }\r\n\r\n});"
 
-  cachedom: function() {
-    this.$questions = $('.faqs__question');
-    this.$answers = $('.faqs__answer');
-  },
+/***/ }),
+/* 16 */,
+/* 17 */,
+/* 18 */
+/***/ (function(module, exports) {
 
-  bindEvents: function() {
-    this.$questions.on('click', this.hideAllShowCurrent);
-  },
-
-  hideAllShowCurrent: function() {
-    var toggle = $(this).nextUntil('.faqs__question');
-    toggle.slideToggle();
-    Faqs.$answers.not(toggle).slideUp();
-  }
-
-};
-
-Faqs.init();
-
-// $('.faqs__answer').hide();
-// $('.faqs__question').click(function() {
-//   var toggle = $(this).nextUntil('.faqs__question');
-//   toggle.slideToggle();
-//   $('.faqs__answer').not(toggle).slideUp();
-// });
+module.exports = "// toggle FAQs\r\n\r\nvar Faqs = {\r\n\r\n  init : function() {\r\n\r\n    this.cachedom();\r\n    this.bindEvents();\r\n\r\n  },\r\n\r\n  cachedom: function() {\r\n    this.$questions = $('.faqs__question');\r\n    this.$answers = $('.faqs__answer');\r\n  },\r\n\r\n  bindEvents: function() {\r\n    this.$questions.on('click', this.hideAllShowCurrent);\r\n  },\r\n\r\n  hideAllShowCurrent: function() {\r\n    var toggle = $(this).nextUntil('.faqs__question');\r\n    toggle.slideToggle();\r\n    Faqs.$answers.not(toggle).slideUp();\r\n  }\r\n\r\n};\r\n\r\n\r\n\r\n// $('.faqs__answer').hide();\r\n// $('.faqs__question').click(function() {\r\n//   var toggle = $(this).nextUntil('.faqs__question');\r\n//   toggle.slideToggle();\r\n//   $('.faqs__answer').not(toggle).slideUp();\r\n// });"
 
 /***/ })
 /******/ ]);

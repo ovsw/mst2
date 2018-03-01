@@ -26,7 +26,7 @@ var Faqs = {
 
 };
 
-Faqs.init();
+
 
 // $('.faqs__answer').hide();
 // $('.faqs__question').click(function() {
