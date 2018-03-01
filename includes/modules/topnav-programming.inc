@@ -27,7 +27,7 @@
             'debug' => false
         );
           //<i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i>
-          echo $topMenu->render($topMenuOptions, null, $topMenuRootPage);?>
+          echo $topMenu->render($topMenuOptions, null, $topMenuRootPage); echo $topMenu->render($topMenuOptions, null, $topMenuRootPage); echo $topMenu->render($topMenuOptions, null, $topMenuRootPage);?>
     </div>
     <!-- /.menus -->
 
@@ -41,14 +41,16 @@
   </div>
   <!-- /.main-menu-wrapper -->
 
-
-  <!-- <div class="image-buttons-wrapper">
-    <a href="#" class="image-button"><span>Performances</span></a>
+  <div class="top-nav__image-buttons-wrapper">
+    <a href="#" class="image-button"><span>Promotions</span></a>
+    <a href="#" class="image-button"><span>Mainstages Camp</span></a>
+    <!-- <a href="#" class="image-button"><span>Performances</span></a> -->
+    <a href="#" class="image-button"><span>Programming</span></a>
     <a href="#" class="image-button"><span>Families</span></a>
-    <a href="#" class="image-button"><span>Link 1</span></a>
-  </div> -->
-
+    
+  </div>
   <!-- /.image-buttons-wrapper -->
+
 </nav>
 <!-- /.top-nav -->
 

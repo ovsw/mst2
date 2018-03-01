@@ -1,69 +1,3 @@
-
-
-.top-nav__header-menu {
-  position: absolute;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  right: 0;
-  top: 0;
-  background-color: $msDarkBrown;
-  transform: scaleX(0);
-  max-width: 840px;
-  z-index: 1;
-  overflow: auto;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.2s;
-  transform-origin: 100% 50%;
-  width: 100%;
-  min-height: 100vh;
-
-  @mixin atMedium {
-    width: 78.8%;
-    min-height: none;
-  }
-
-  &.visible {
-    top: 0;
-    right: 0;
-    transform: scaleX(1);
-    pointer-events: all;
-    opacity: 1;
-  }
-}
-
-.top-nav__main-menu-wrapper {
-
-  position: relative;
-  width: 100%;
-  padding-top: 70px;
-  overflow: auto;
-  
-  .top-nav__menus {
-    overflow: auto;
-  }
-
-  .top-nav__outer-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    a {
-      color: $white;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-  }
-
-  .top-nav__inner-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-}
-
 nav.ul {
   &::before {
     content: '';
@@ -76,103 +10,78 @@ nav.ul {
   }
 }
 
-.noscroll {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-#overlay {
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  pointer-events: none;
-  opacity: 0;
-  transition: 0.2s;
-  -webkit-overflow-scrolling: touch;
-  z-index: 1;
-
-  &.visible {
-    opacity: 1;
-  }
-}
-
-.menu-cross-links {
-  font-family: $heading-font;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 6rem;
-
-  @mixin atMedium {
-    height: 8rem;
-  }
-
-  &__title {
-    background-color: $white;
-    font-size: 1rem;
-    line-height: 1rem;
-    font-weight: 300;
-    display: block;
-    text-align: center;
-    padding: 1rem;
-
-    @mixin atMedium {
-      font-size: 1.5rem;
-      padding: 1.5rem;
-    }
-  }
-
-  a {
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    color: $white;
-    padding: 1rem;
-    font-size: 1rem;
-    line-height: 1rem;
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
-
-    @mixin atMedium {
-      font-size: 1.5rem;
-      padding: 1.5rem;
-    }
-
-    &.performances {
-      background-color: #ED753D;
-    }
-    &.programming {
-      background-color: #49884a;
-    }
-    &.families {
-      background-color: #8c70ab;
-    }
-  }
-}
-
-
 $menuActiveBg: color($msGreen l(-15%) s(+10%));
 $menuActiveText: color($msGreen s(-35%) l(+20%));
 $mobileSubitemsBg: color($msDarkBrown l(+15%) s(-30%));
 .top-nav {
 
-  opacity: 0;
-  transform: scaleX(0);
-  transform-origin: 100% 50%;
-  background-color: $msDarkBrown;
-  height: 100vh;
-  position: absolute;
-  top:0;
-  right: 0;
-  width: 100%;
-  transition: all 0.3s ease-out;
-  box-shadow: -5px 0 3px color($black a(40%)), -300px 0 0 color($black a(70%));
+  &__header-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    right: 0;
+    top: 0;
+    background-color: $msDarkBrown;
+    transform: scaleX(0);
+    max-width: 840px;
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s;
+    transform-origin: 100% 50%;
+    width: 100%;
+    min-height: 100vh;
+
+    @mixin atMedium {
+      width: 78.8%;
+      min-height: none;
+    }
+
+    &.visible {
+      top: 0;
+      right: 0;
+      transform: scaleX(1);
+      pointer-events: all;
+      opacity: 1;
+    }
+  }
+
+  &__main-menu-wrapper {
+
+    position: relative;
+    width: 100%;
+    padding-top: 70px;
+    overflow: auto;
+
+    @mixin atMedium {
+      width: 50%;
+    }
+    
+    .top-nav__menus {
+      overflow: auto;
+    }
+
+    .top-nav__outer-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+    }
+
+    .top-nav__inner-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
   
   .svg-inline--fa {
     display: none;
@@ -328,4 +237,132 @@ $mobileSubitemsBg: color($msDarkBrown l(+15%) s(-30%));
 
   }
 
+  &__image-buttons-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    display: none;
+
+    @mixin atMedium {
+      display: flex;
+    }
+
+    a {
+      flex: 1;
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      text-decoration: none;
+      font-size: 2rem;
+      font-family: $heading-font;
+      background-image: url('http://placebear.com/300/200');
+      background-size: cover;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        transition: background-color 0.2s;
+      }
+
+      span {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+  }
+
+}
+
+
+
+.noscroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#overlay {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.2s;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.menu-cross-links {
+  font-family: $heading-font;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+
+  @mixin atMedium {
+    height: 0;
+    display: none;
+  }
+
+  &__title {
+    background-color: $white;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+
+    @mixin atMedium {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+    }
+  }
+
+  a {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    color: $white;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+
+    @mixin atMedium {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    &.performances {
+      background-color: #ED753D;
+    }
+    &.programming {
+      background-color: #49884a;
+    }
+    &.families {
+      background-color: #8c70ab;
+    }
+  }
 }

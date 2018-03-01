@@ -21,7 +21,7 @@ var Menu = {
     this.$menuTrigger = $('.header__menu-trigger'); //ok
     
     
-		this.$subMenuTrigger = $('.top-nav__submenu-button'); // need to update
+		this.$subMenuTrigger = $('.top-nav__submenu-button'); // ok
 
 		this.$menusWrapper = $('.top-nav__menus'); //ok
 
