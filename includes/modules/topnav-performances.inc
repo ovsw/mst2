@@ -32,9 +32,9 @@
     <!-- /.menus -->
 
     <div class="menu-cross-links">
-      <span class="menu-cross-links__title">See also:</span>
-      <a href="<?= $pages->get('1051')->url ?>" class="programming">Programming</a>
-      <a href="<?= $pages->get('1336')->url ?>" class="families">Families</a>
+      <!-- <span class="menu-cross-links__title">See also:</span> -->
+      <a href="<?= $pages->get('1051')->url ?>" class="programming">mainstages Programming</a>
+      <a href="<?= $pages->get('1336')->url ?>" class="families">mainstages for Families</a>
     </div>
     <!-- /.menu-cross-links -->
 
