@@ -39,16 +39,17 @@
     <![endif]-->
 
   <header class="header">
-      <div class="header__wrapper">
-        <a href="/" class="header__logo">
-          <img src="<?= $config->urls->templates ?>assets/images/mainstages-logo-horizontal.png" alt="Mainstages Logo"> 
-        </a>
-        <?php require($config->paths->templates."includes/modules/topnav-programming.inc"); ?>
-      </div>
-      <!-- /.header__wrapper -->
-    </header>
+    <div id="overlay"></div>
+    <div class="header__wrapper">
+      <a href="/" class="header__logo">
+        <img src="<?= $config->urls->templates ?>assets/images/mainstages-logo-horizontal.png" alt="Mainstages Logo"> 
+      </a>
+      <?php require($config->paths->templates."includes/modules/topnav-programming.inc"); ?>
+    </div>
+    <!-- /.header__wrapper -->
+  </header>
 
-<div class="mainWrapper">
+<div id="page" class="mainWrapper">
   
  
 <?php 

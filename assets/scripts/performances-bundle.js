@@ -29,8 +29,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lightslider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_lightslider__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_script_loader_modules_initSliders_js__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_script_loader_modules_initSliders_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_script_loader_modules_initSliders_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_script_loader_modules_MobileMenu_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_script_loader_modules_MobileMenu_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_script_loader_modules_MobileMenu_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_script_loader_modules_Menu_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_script_loader_modules_Menu_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_script_loader_modules_Menu_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_script_loader_modules_Slidecards_js__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_script_loader_modules_Slidecards_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_script_loader_modules_Slidecards_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_script_loader_modules_Faqs_js__ = __webpack_require__(7);
@@ -50,7 +50,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 $(document).ready(function(){
 
-  Project.init();  
+  Project.init();
+  Menu.init(); 
   Faqs.init();
   initSliders.init();
   
