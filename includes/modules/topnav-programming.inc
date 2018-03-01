@@ -1,13 +1,14 @@
 <nav class="top-nav__header-menu">
   <div class="top-nav__main-menu-wrapper">
     <div class="top-nav__menus">
+        <!-- <p class="top-nav__mobile-title">Menu</p> -->
         <?php 
           $topMenu = $modules->get("MarkupSimpleNavigation");
           $topMenuRootPage = $pages->get('1051');
           $topMenuOptions = array(
-            'parent_class' => 'top-nav__active-parent',
-            'current_class' => 'top-nav__current',
-            'has_children_class' => 'top-nav__has-children',
+            'parent_class' => 'current-menu-parent',
+            'current_class' => 'current-menu-item',
+            'has_children_class' => 'menu-item-has-children',
             'levels' => true,
             'levels_prefix' => 'top-nav__item-level-',
             'max_levels' => 2,
@@ -16,8 +17,8 @@
             'show_root' => true,
             'selector' => 'template!=blog-post',
             'selector_field' => 'nav_selector',
-            'outer_tpl' => '<ul class="top-nav__outer-list" id="menu-main-menu">||</ul>',
-            'inner_tpl' => '<ul class="top-nav__inner-list">||</ul>',
+            'outer_tpl' => '<ul class="menu" id="menu-main-menu">||</ul>',
+            'inner_tpl' => '<ul class="sub-menu">||</ul>',
             'list_tpl' => '<li%s>||</li>',
             'list_field_class' => 'menu-item p-{id}',
             'item_tpl' => '<a href="{link_url|url}">{menu_title|title}</i></a><span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>',
@@ -26,7 +27,7 @@
             'debug' => false
         );
           //<i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i>
-          echo $topMenu->render($topMenuOptions, null, $topMenuRootPage); ?>
+          echo $topMenu->render($topMenuOptions, null, $topMenuRootPage);echo $topMenu->render($topMenuOptions, null, $topMenuRootPage);echo $topMenu->render($topMenuOptions, null, $topMenuRootPage); ?>
     </div>
     <!-- /.menus -->
 

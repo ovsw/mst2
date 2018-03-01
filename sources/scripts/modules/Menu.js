@@ -21,7 +21,7 @@ var Menu = {
     this.$menuTrigger = $('.header__menu-trigger'); //ok
     
     
-		this.$subMenuTrigger = $('.top-nav__submenu-button'); // need to update
+		this.$subMenuTrigger = $('.top-nav__has-children > a'); // need to update
 
 		this.$menusWrapper = $('.top-nav__menus'); //ok
 
@@ -113,14 +113,13 @@ var Menu = {
 
 		e.preventDefault();
 
-		// $(this).siblings('.top-nav__inner-list').toggleClass('visible');
-		$(this).siblings('.top-nav__inner-list').toggleClass('visible').parent().toggleClass('submenu-open');
+		$(this).siblings('.sub-menu').toggleClass('visible').parent().toggleClass('minus-sign');
 
 	},
 
 	expandCurrentMenuItemAncestors: function() {
 
-		this.$menusWrapper.find('.top-nav__active-parent').addClass('submenu-open').find('.top-nav__inner-list').addClass('visible');
+		this.$menusWrapper.find('.current-menu-ancestor > .sub-menu').addClass('visible');
 
 	},
 
