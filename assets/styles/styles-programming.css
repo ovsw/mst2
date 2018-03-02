@@ -1050,9 +1050,14 @@ nav.ul::after {
     margin-bottom: 40px;
     font-weight: 300;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 2rem;
   }
+@media (min-width: 768px) {
+.body-rte h2:first-child {
+      font-size: 3rem
+  }
+ }
 .body-rte h3 {
     color: rgb(116, 52, 52);
     /* text-transform: uppercase; */
