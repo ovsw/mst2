@@ -2149,6 +2149,12 @@ nav.ul::after {
     display: -ms-flexbox;
     display: flex;
   }
+@media (min-width: 1200px) {
+.hp-featured__content-wrapper{
+      border: 1px solid rgba(255, 255, 255, 0.5);
+       background-color: rgb(159, 216, 85)
+  }
+ }
 .hp-featured__content {
     padding: 1rem 1rem 2rem 1rem; 
   }
@@ -2161,8 +2167,7 @@ nav.ul::after {
  }
 @media (min-width: 1024px) {
 .hp-featured__content {
-      padding: 3rem;
-      background-color: rgb(159, 216, 85) 
+      padding: 3rem 
   }
  }
 .hp-featured__title{

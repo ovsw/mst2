@@ -53,6 +53,12 @@
     flex: 0 0 50%;
     width: 50%;
     display: flex;
+
+    @mixin atHuge {
+      border: 1px solid color($white a(50%));
+       background-color: color($msGreen l(+10%));
+      
+    }
   }
 
   &__content {
@@ -66,7 +72,7 @@
 
     @mixin atLarge {
       padding: 3rem;
-      background-color: color($msGreen l(+10%));
+      
     } 
   }
 
