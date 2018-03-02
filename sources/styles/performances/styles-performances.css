@@ -35,22 +35,3 @@ p {
     font-weight: 700;
   }
 }
-
-.basic-page__content-wrapper .performance-cta-btn  {
-
-  text-align: center;
-
-  a {
-    background-color: $msGreen;
-    color: $white;
-    text-shadow: none;
-    padding: 0.7rem 1.5rem;
-    font-size: 1.7rem;
-    text-align: center;
-
-    &:hover {
-      background-color: color($msGreen l(+10%));
-    }
-  }
-  
-}

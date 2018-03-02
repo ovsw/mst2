@@ -9,7 +9,7 @@
   <?php endif; ?>
   
   <?php if ($page->parent->id == '1081' || $page->parent->id == '1610') : ?>
-    <p class="performance-cta-btn"><a class="button" href="<?= $pages->get('1090')->url ?>"><?= $pages->get('1090')->title ?></a></p>
+    <p class="performance-cta-btn"><a class="button" href="<?= $pages->get('1090')->url ?>"><?= $pages->get('1090')->title ?> <i class="far fa-chevron-right"></i></a></p>
   <?php endif; ?>
 </div>
 <!-- /.body-rte -->

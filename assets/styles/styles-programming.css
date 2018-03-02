@@ -1227,6 +1227,32 @@ nav.ul::after {
     color: #301111;
     font-weight: 800!important;
   }
+.basic-page__content-wrapper .performance-cta-btn  {
+
+  text-align: center;
+  
+}
+.basic-page__content-wrapper .performance-cta-btn a {
+    background-color: #87CC2F;
+    color: #fff;
+    text-shadow: none;
+    padding: 0.3rem 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: europa, sans-serif;
+    -webkit-box-shadow: 2px 2px 0 rgba(48, 17, 17, 0.5);
+            box-shadow: 2px 2px 0 rgba(48, 17, 17, 0.5);
+  }
+.basic-page__content-wrapper .performance-cta-btn a:hover {
+      background-color: rgb(159, 216, 85);
+      position: relative;
+      top: 2px;
+      left: 2px;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+    }
 .footer {
   background-color: #450d0d;
   -webkit-clip-path: polygon(0 20%, 1600px 0, 1600px 80%, 0 100%);
