@@ -1,7 +1,7 @@
 <nav class="top-nav__header-menu">
   <div class="top-nav__main-menu-wrapper">
     <div class="top-nav__menus">
-        <p class="top-nav__mobile-title">Programming</p>
+        <p class="top-nav__mobile-title">Performances</p>
         <?php 
           $topMenu = $modules->get("MarkupSimpleNavigation");
           $topMenuRootPage = $pages->get('1058');
