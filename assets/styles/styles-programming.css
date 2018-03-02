@@ -559,7 +559,7 @@ nav.ul::after {
     -webkit-box-shadow: -5px 0 3px rgba(0, 0, 0, 0.4);
             box-shadow: -5px 0 3px rgba(0, 0, 0, 0.4);
   }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 .top-nav__header-menu {
       width: 78.8%;
       min-height: none

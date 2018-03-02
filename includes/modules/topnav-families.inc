@@ -32,9 +32,9 @@
     <!-- /.menus -->
 
     <div class="menu-cross-links">
-      <span class="menu-cross-links__title">See also:</span>
-      <a href="<?= $pages->get('1058')->url ?>" class="performances">mainstages Performances</a>
-      <a href="<?= $pages->get('1051')->url ?>" class="programming">mainstages Programming</a>
+      <span class="menu-cross-links__title"><a href="tel:1-347-878-2431"><i class="fas fa-phone"></i> 347-878-2431</a> </span>
+      <a class="crosslink" href="<?= $pages->get('1058')->url ?>" class="performances">mainstages Performances</a>
+      <a class="crosslink" href="<?= $pages->get('1051')->url ?>" class="programming">mainstages Programming</a>
     </div>
     <!-- /.menu-cross-links -->
 
@@ -42,13 +42,15 @@
   <!-- /.main-menu-wrapper -->
 
 
-  <!-- <div class="image-buttons-wrapper">
-    <a href="#" class="image-button"><span>Performances</span></a>
-    <a href="#" class="image-button"><span>Families</span></a>
-    <a href="#" class="image-button"><span>Link 1</span></a>
-  </div> -->
+  <div class="top-nav__image-buttons-wrapper">
 
+    <?php foreach ($pages->get('1051')->menu_quick_links_repeater as $item) : ?>
+    <a href="<?= $item->page_selector_any->url ?>" class="image-button" style="background-image: url('<?= $item->menu_quick_link_image->getCrop('crop_size')->url ?>');"><span><?= $item->title ?></span></a>
+    <?php endforeach; ?>
+
+  </div>
   <!-- /.image-buttons-wrapper -->
+  
 </nav>
 <!-- /.top-nav -->
 

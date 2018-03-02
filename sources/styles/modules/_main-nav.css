@@ -36,7 +36,7 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
     min-height: 100vh;
     box-shadow: -5px 0 3px color($black a(40%));
 
-    @mixin atMedium {
+    @mixin atLarge {
       width: 78.8%;
       min-height: none;
     }
