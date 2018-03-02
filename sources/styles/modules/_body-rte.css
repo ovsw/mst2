@@ -234,13 +234,17 @@
     background-color: $msGreen;
     color: $white;
     text-shadow: none;
-    padding: 0.3rem 2rem;
-    font-size: 1.7rem;
+    padding: 0.4rem 2rem;
+    font-size: 1.2rem;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: $body-font;
     box-shadow: 2px 2px 0 color($msDarkBrown a(50%));
+
+    @mixin atMedium {
+      font-size: 1.7rem;
+    }
 
     &:hover {
       background-color: color($msGreen l(+10%));

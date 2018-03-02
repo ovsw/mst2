@@ -1233,8 +1233,8 @@ nav.ul::after {
     background-color: #87CC2F;
     color: #fff;
     text-shadow: none;
-    padding: 0.3rem 2rem;
-    font-size: 1.7rem;
+    padding: 0.4rem 2rem;
+    font-size: 1.2rem;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1242,6 +1242,11 @@ nav.ul::after {
     -webkit-box-shadow: 2px 2px 0 rgba(48, 17, 17, 0.5);
             box-shadow: 2px 2px 0 rgba(48, 17, 17, 0.5);
   }
+@media (min-width: 768px) {
+.basic-page__content-wrapper .performance-cta-btn a {
+      font-size: 1.7rem
+  }
+ }
 .basic-page__content-wrapper .performance-cta-btn a:hover {
       background-color: rgb(159, 216, 85);
       position: relative;
