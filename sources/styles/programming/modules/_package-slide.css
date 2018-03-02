@@ -69,7 +69,10 @@ $s6-color: #fdedb0;
       }
 
       .packageSlide1 & {
-        background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, #ffffff 0%, $s1-color 30%);
+        /* background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, rgba(232,252,219,1) 0%,rgba(241,234,255,1) 31%,rgba(234,252,255,1) 50%,rgba(255,234,238,1) 74%,rgba(252,248,232,1) 100%); */
+        background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, rgba(232,252,219,1) 0%,rgba(234,224,255,1) 31%,rgba(224,250,255,1) 50%,rgba(255,224,230,1) 75%,rgba(249,243,219,1) 100%);
+         
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8fcdb+0,f1eaff+31,eafcff+50,ffeaee+74,fcf8e8+100 */
       }
 
       .packageSlide2 & {
@@ -230,23 +233,27 @@ $s6-color: #fdedb0;
   }
 
   &__button {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0.7rem 1.5rem;
-    
+    margin-top: 1rem;
+    min-width: 90%;
     font-weight: 300;
     letter-spacing: 0.05em;
     box-shadow: -3px 3px color($white );
-
+    position: relative;
+    top: -3rem;
 
     background-color: color(#57b543 l(+5%));
 
-   
-      
-      &:hover {
-        background-color: $white;
-        color: color($s2-color s(+30%) l(-25%) b(+20%));
-        box-shadow: -3px 3px color(#57b543 l(+5%));
-      }
+    &:first-child {
+      margin-top: 0;
+    } 
+
+    &:hover {
+      background-color: $white;
+      color: color($s2-color s(+30%) l(-25%) b(+20%));
+      box-shadow: -3px 3px color(#57b543 l(+5%));
+    }
 
     /* .packageSlide2 & {
       background-color: color($s2-color s(+30%) l(-25%) b(+20%));

@@ -25,32 +25,41 @@
         "/site/templates/assets/images/programming/right-adnotated.png",
         "/site/templates/assets/images/programming/front-adnotated.png"
       ];
-
-      $linksArray = $pages->get('1081')->children();
     
     ?>
 
     <section class="package-slide packageSlide<?= $i ?>">
+
       <div class="package-slide__content-wrapper">
+
         <div class="package-slide__content">
-              <!-- <h2 class="slideTitle">A comprehensive package</h2> -->
+
               <h2 class="package-slide__title"><?= $slide->title ?></h2>
               <p class="package-slide__undertitle"><?= $slide->subtitle ?></p>
               <img class="package-slide__mobile-image" src="<?= $imageArray[$i] ?>" alt="Mainstages Theater ina Box">
               <div class="body-rte">
                 <?= $slide->programming_slide_rte ?>
-                <?php if ( $i > 1 ) : ?>
+                <?php if ( $slide->programming_hp_slides_camp_link != false && $slide->programming_hp_slides_afterschool_link->url !=false ) : ?>
+                <p>See details about <?= $slide->title ?>:</p>
+                <?php endif; ?>
                 <div class="package-slide__button-wrapper">
-                  <a class="button package-slide__button" href="<?= $linksArray[($i-2)]->url?>">Click for Details</a>
+                  <?php if ($slide->programming_hp_slides_camp_link) : ?>
+                    <a class="button package-slide__button" href="<?= $slide->programming_hp_slides_camp_link->url ?>">Camp <?= $slide->title ?> <i class="far fa-chevron-right"></i></a>
+                  <?php endif; ?>
+                  <?php if ($slide->programming_hp_slides_camp_link) : ?>
+                    <a class="button package-slide__button" href="<?= $slide->programming_hp_slides_afterschool_link->url ?>">Afterschool <?= $slide->title ?> <i class="far fa-chevron-right"></i></a> 
+                  <?php endif; ?>
                 </div>
                 <!-- /.package-slide__button-wrapper -->
-                <?php endif; ?>
+                
               </div>
-              <!-- /.package-slide__rte -->
+              <!-- /.body-rte -->
+
         </div>
-        <!-- /.content -->
+        <!-- /.package-slide__content -->
       </div>
-      <!-- /.diagram-container -->
+      <!-- /.package-slide__content-wrapper -->
+
     </section>
     <!-- /.package-slide #packageSlide<?= $i ?> -->
 
