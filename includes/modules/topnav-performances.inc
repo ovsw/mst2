@@ -15,7 +15,7 @@
             'firstlast' => true,
             'collapsed' => false,
             'show_root' => true,
-            'selector' => 'template!=blog-post',
+            'selector' => 'template!=performance',
             'selector_field' => 'nav_selector',
             'outer_tpl' => '<ul class="top-nav__outer-list" id="menu-main-menu">||</ul>',
             'inner_tpl' => '<ul class="top-nav__inner-list">||</ul>',
