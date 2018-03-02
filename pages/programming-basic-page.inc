@@ -1,5 +1,13 @@
 <div class="body-rte">
-  <?=$page->render('modular_content'); ?>
+
+  <?php if ($page->page_content_selector) {
+    $contenPage = $page->page_content_selector;
+  }else{
+    $contenPage = $page;
+  }
+  ?>
+
+  <?=$contenPage->render('modular_content'); ?>
 
   <?php if ($page->parent->id == '1081') : ?>
     <?= $pages->get('1051')->ct_camp_program ?>
