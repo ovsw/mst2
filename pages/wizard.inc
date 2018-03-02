@@ -2,9 +2,11 @@
 <p>Please select from the following criteria. The list will be updated dynamically to match your selection.</p>
 <p>Allready know the performance name? <a href="#">Book us here</a>.</p>
 
+<p class="mobileWarning">If you want to search by theme or holiday, please access the website on a tablet or desktop.</p>
+
 <form class="performance-wizard__controls">
       <fieldset data-filter-group class="performance-wizard__controls__fieldset small">
-        <label for="performance_type">Performance Type</label>
+        <label for="performance_type" style="display:block">Performance Type</label>
         <select class="performance-wizard__controls__select" name="performance_type">
           <option value="" default>any</option>
           <?php 
@@ -17,7 +19,7 @@
       </fieldset>
 
       <fieldset data-filter-group class="performance-wizard__controls__fieldset small">
-        <label for="no_of_participants">Est. # of participants</label>
+        <label for="no_of_participants" style="display:block">Est. # of participants</label>
         <select class="performance-wizard__controls__select" name="no_of_participants">
           <option value="" default>any</option>
           <?php 

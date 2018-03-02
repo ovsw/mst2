@@ -1674,6 +1674,15 @@ nav.ul::after {
       -webkit-box-shadow: -3px 3px 0 rgba(31, 126, 49, 0.9);
               box-shadow: -3px 3px 0 rgba(31, 126, 49, 0.9);
     }
+.mobileWarning {
+
+	color: #87CC2F;
+}
+@media (min-width: 768px) {
+.mobileWarning {
+		display: none
+}
+ }
 .performance-wizard {
 	padding: 1rem;
     display: -webkit-box;
