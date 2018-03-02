@@ -55,7 +55,7 @@
             </div>
             <!-- /.hp-featured__image-wrapper -->
 
-            <div class="hp-featured__content-wrapper">
+            <div class="hp-featured__content-wrapper valign-parent">
               <div class="hp-featured__content">
                 <h2 class="hp-featured__title"><?= $item->title ?></h2>
                 <div class="hp-featured__text">
