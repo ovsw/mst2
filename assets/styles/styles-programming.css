@@ -1206,6 +1206,27 @@ nav.ul::after {
 .body-rte .faqs__answer p:first-child {
           margin-top: 0;
         }
+.testimonials-rte__testimonial {
+    margin-top: 2rem;
+    border-bottom: 1px solid rgba(135, 204, 47, 0.4);
+  }
+.testimonials-rte__testimonial.single {
+      border-top: 1px solid rgba(135, 204, 47, 0.4); 
+    }
+.testimonials-rte__testimonial:last-child {
+      border-bottom: none;
+    }
+.testimonials-rte__testimonial:last-child.single {
+        border-top: 1px solid rgba(135, 204, 47, 0.4);
+      }
+.testimonials-rte__text {
+    margin-bottom:0!important;
+    font-style: italic;
+  }
+.testimonials-rte__author {
+    color: #301111;
+    font-weight: 800!important;
+  }
 .footer {
   background-color: #450d0d;
   -webkit-clip-path: polygon(0 20%, 1600px 0, 1600px 80%, 0 100%);
