@@ -86,8 +86,11 @@
   }
 
   &__column--1 {
-    float:left;
-    text-align: right;
+
+    @mixin atMedium {
+      float:left;
+      text-align: right;
+    }
   }
 
   &__column--2 {

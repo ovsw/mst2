@@ -1361,10 +1361,12 @@ nav.ul::after {
       padding: 1rem
   }
  }
+@media (min-width: 768px) {
 .footer__column--1 {
-    float:left;
-    text-align: right;
+      float:left;
+      text-align: right
   }
+ }
 .footer__column--2 {
     margin-top: 1rem;   
   }
