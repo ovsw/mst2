@@ -11,9 +11,11 @@
   }
   @mixin atLarge {
     margin-top: 0;
+    padding-top: 150px;
   }
   @mixin atHuge {
     clip-path: none;
+     padding-top: 110px;
     transform: skewY(-2deg); 
       
   }
