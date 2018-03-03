@@ -400,6 +400,15 @@ small, .font_small {font-size: 0.75em;}
     background-color: white;
     color: blue; 
   }
+.adminEditLink {
+  padding: 1rem 2rem;
+  background-color: fuchsia;
+  color: #fff;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
+}
 .header {
   background: url('../../assets/images/curtain-top.png') repeat-x bottom left ;
   background-size: 100px;
@@ -2230,4 +2239,13 @@ body  {
 p strong {
     font-weight: 700;
   }
+.adminEditLink {
+  padding: 1rem 2rem;
+  background-color: fuchsia;
+  color: #fff;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
+}
 /*# sourceMappingURL=maps/styles-performances.css.map */

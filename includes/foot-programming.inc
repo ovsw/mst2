@@ -1,6 +1,6 @@
 
 
-    <?php if($page->editable()) echo "<p><a href='$page->editURL'>Edit</a></p>"; ?>
+    <?php if($user->isLoggedin()) echo "<a href='$page->editURL' class='adminEditLink'>Edit</a>"; ?>
 
     <script src="<?= $config->urls->templates?>assets/scripts/common-bundle.js"></script>
     <script src="<?= $config->urls->templates?>assets/scripts/vendor/fontawesome-all.js"></script>

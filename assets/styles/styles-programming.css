@@ -2050,5 +2050,13 @@ body  {
 p strong {
     font-weight: 700;
   }
-
+.adminEditLink {
+  padding: 1rem 2rem;
+  background-color: fuchsia;
+  color: #fff;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
+}
 /*# sourceMappingURL=maps/styles-programming.css.map */
