@@ -102,8 +102,12 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
     color: $white;
     margin: 0.7rem  1rem 1.3rem 1rem;
     font-size:  2em;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     @mixin atMedium {
+      position: static;
       margin-top: 3rem;
     }
   }
