@@ -992,11 +992,11 @@ nav.ul::after {
   }
 .basic-page__content-wrapper {
     background-color: #fbfde8;
-    padding: 1rem;
+    padding: 3rem 1rem;
   }
 @media (min-width: 768px) {
 .basic-page__content-wrapper {
-      padding: 1rem 2rem;
+      padding: 3rem 2rem 2rem 2rem;
       /* box-shadow: 3px 3px 3px color($black a(30%)), -3px 0 3px color($black a(30%)); */
       font-size: 1.125rem
   }
@@ -1005,7 +1005,7 @@ nav.ul::after {
 .basic-page__content-wrapper {
       max-width: 800px;
       margin: 0 auto;
-      padding: 1rem 0
+      padding: 4rem 0
   }
  }
 .basic-page__content-wrapper p a, .basic-page__content-wrapper li a {
@@ -1055,7 +1055,7 @@ nav.ul::after {
     font-weight: 300;
     font-style: normal;
     font-size: 2.5rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 @media (min-width: 768px) {
 .body-rte h2:first-child {
@@ -1068,6 +1068,9 @@ nav.ul::after {
     /* background-color: color($msGreen a(50%));
     padding: 0.5rem 1rem; */
     font-weight: 400;
+  }
+.body-rte h3:first-child {
+    margin-top: 0;
   }
 .body-rte h4 {
     color($msGreen l(-20%))

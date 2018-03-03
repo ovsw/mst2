@@ -90,18 +90,18 @@
 
   &__content-wrapper {
     background-color: $off-white;
-    padding: 1rem;
+    padding: 3rem 1rem;
 
     @mixin atMedium {
-      padding: 1rem 2rem;
+      padding: 3rem 2rem 2rem 2rem;
       /* box-shadow: 3px 3px 3px color($black a(30%)), -3px 0 3px color($black a(30%)); */
-      font-size: 1.125rem;      
+      font-size: 1.125rem;   
     }
 
     @mixin atLarge {
       max-width: 800px;
       margin: 0 auto;
-      padding: 1rem 0;
+      padding: 4rem 0;
     }
 
     p a, li a {
