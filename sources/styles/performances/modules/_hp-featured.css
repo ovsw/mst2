@@ -23,10 +23,15 @@
   }
 
   &__image-wrapper {
-    flex: 0 0 50%;
+    
     position: relative;
     overflow: hidden;
-    width: 50%;
+
+    @mixin atMedium {
+      width: 50%;
+      flex: 0 0 50%;
+    }
+    
   }
 
   &__image {
@@ -50,9 +55,12 @@
   }
 
   &__content-wrapper{
-    flex: 0 0 50%;
-    width: 50%;
-    display: flex;
+
+    @mixin atMedium {
+      flex: 0 0 50%;
+      width: 50%;
+      display: flex;
+    }
 
     @mixin atHuge {
       border: 1px solid color($white a(50%));
