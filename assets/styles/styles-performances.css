@@ -1649,14 +1649,14 @@ nav.ul::after {
     }
 .slidecards__card-wrapper {
     padding: 1rem;
-    position: absolute;
-    top:0;
-    left: 0;
-    bottom: 0;
     height: 100%;
   }
 @media (min-width: 1024px) {
 .slidecards__card-wrapper {
+      position: absolute;
+      top:0;
+      left: 0;
+      bottom: 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
