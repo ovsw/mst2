@@ -85,11 +85,11 @@
   
 
   &__content {
-    background-color: $off-white;
+    /* background-color: $off-white; */
+    background-color: #fcfff2;
   }
 
   &__content-wrapper {
-    background-color: $off-white;
     padding: 3rem 1rem;
 
     @mixin atMedium {
