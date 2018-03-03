@@ -106,4 +106,33 @@
     }
   }
 
+  &__left-curtain, &__right-curtain {
+    position: absolute;
+    bottom:-20px;
+    width: 60%;
+    height: 110%;
+    transition: width 2s;
+    display: none;
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  &__left-curtain {
+    left: 0;
+    
+    &.open {
+      width: 10%;
+    }
+  }
+
+  &__right-curtain {
+    right: 0;
+
+    &.open {
+      width: 10%;
+    }
+  }
+
 }

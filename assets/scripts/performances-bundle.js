@@ -50,6 +50,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 $(document).ready(function(){
 
+  $('.hero__left-curtain, .hero__right-curtain').addClass('open');
+
   Project.init();
   Menu.init(); 
   Faqs.init();

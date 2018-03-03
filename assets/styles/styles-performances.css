@@ -1520,6 +1520,32 @@ nav.ul::after {
       color: #87CC2F;
       background-color: #fff;
     }
+.hero__left-curtain, .hero__right-curtain {
+    position: absolute;
+    bottom:-20px;
+    width: 60%;
+    height: 110%;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    display: none;
+  }
+@media (min-width: 768px) {
+.hero__left-curtain, .hero__right-curtain {
+      display: block
+  }
+ }
+.hero__left-curtain {
+    left: 0;
+  }
+.hero__left-curtain.open {
+      width: 10%;
+    }
+.hero__right-curtain {
+    right: 0;
+  }
+.hero__right-curtain.open {
+      width: 10%;
+    }
 @media (min-width: 1200px) {
 .slidecards {
     -webkit-box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2);
