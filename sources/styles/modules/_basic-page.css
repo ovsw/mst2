@@ -104,6 +104,10 @@
       padding: 4rem 0;
     }
 
+    h2 {
+      color: $msGreen;
+    }
+
     p a, li a {
       text-shadow: .03em 0 $off-white, -.03em 0 $off-white, 0 .03em $off-white, 0 -.03em $off-white, .06em 0 $off-white, -.06em 0 $off-white, .09em 0 $off-white, -.09em 0 $off-white, .12em 0 $off-white, -.12em 0 $off-white, .15em 0 $off-white, -.15em 0 $off-white;
       

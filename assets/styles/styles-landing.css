@@ -400,6 +400,10 @@ small, .font_small {font-size: 0.75em;}
     background-color: white;
     color: blue; 
   }
+.content-anchor {
+  position: relative;
+  top: -100px;
+}
 .header {
   background: url('../../assets/images/curtain-top.png') repeat-x bottom left ;
   background-size: 100px;

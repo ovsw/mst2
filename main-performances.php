@@ -27,6 +27,9 @@
         case "wizard":
           $layout = "performances-basic.inc";
           break;
+        case "performances-list":
+            $layout = "performances-basic.inc";
+            break;
         case "performance":
           $layout = "performances-basic.inc";
           break;

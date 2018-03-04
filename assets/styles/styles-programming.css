@@ -403,6 +403,10 @@ small, .font_small {font-size: 0.75em;}
     background-color: white;
     color: blue; 
   }
+.content-anchor {
+  position: relative;
+  top: -100px;
+}
 .header {
   background: url('../../assets/images/curtain-top.png') repeat-x bottom left ;
   background-size: 100px;
@@ -1008,6 +1012,9 @@ nav.ul::after {
       padding: 4rem 0
   }
  }
+.basic-page__content-wrapper h2 {
+      color: #87CC2F;
+    }
 .basic-page__content-wrapper p a, .basic-page__content-wrapper li a {
       text-shadow: .03em 0 #fbfde8, -.03em 0 #fbfde8, 0 .03em #fbfde8, 0 -.03em #fbfde8, .06em 0 #fbfde8, -.06em 0 #fbfde8, .09em 0 #fbfde8, -.09em 0 #fbfde8, .12em 0 #fbfde8, -.12em 0 #fbfde8, .15em 0 #fbfde8, -.15em 0 #fbfde8;
       
