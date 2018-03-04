@@ -3,13 +3,18 @@
   &__wrapper {
     max-width: 1200px;
     margin: 0 auto;
+
+    @mixin atMedium {
+      display: flex;
+    }
   }
 
   &__item {
 
     @mixin atMedium {
       display: flex;
-      min-height: 30rem;      
+      min-height: 30rem;   
+      width: 100%;   
     }
 
     @mixin atLarge {

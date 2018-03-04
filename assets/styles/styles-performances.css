@@ -2159,11 +2159,19 @@ nav.ul::after {
     margin: 0 auto;
   }
 @media (min-width: 768px) {
+.hp-featured__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }
+ }
+@media (min-width: 768px) {
 .hp-featured__item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      min-height: 30rem
+      min-height: 30rem;   
+      width: 100%
 
   }
  }
