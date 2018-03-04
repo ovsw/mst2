@@ -230,20 +230,44 @@ $s6-color: #fdedb0;
       margin-top: 4rem;
       margin-bottom: 3rem;
     }
+
+    br {
+      display: none;
+
+      @mixin atLarge {
+        display: inline;
+      }
+    }
   }
 
   &__button {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.7rem 1.5rem;
     margin-top: 1rem;
-    min-width: 90%;
+    display: block;
     font-weight: 300;
     letter-spacing: 0.05em;
     box-shadow: -3px 3px color($white );
-    position: relative;
-    top: -3rem;
+    
+    
 
     background-color: color(#57b543 l(+5%));
+
+    @mixin atMedium {
+      max-width: 80%;
+      margin: 0 auto;
+      margin-top: 1rem;
+    }
+
+    @mixin atLarge {
+      
+    }
+
+    @mixin atHuge {
+      font-size: 1.2rem;
+      display: inline-block;
+      
+    }
 
     &:first-child {
       margin-top: 0;
