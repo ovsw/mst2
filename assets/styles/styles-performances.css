@@ -430,7 +430,7 @@ small, .font_small {font-size: 0.75em;}
 .header__logo {
     display: block;
     margin: 0;
-    max-width: 300px;
+    width: 300px;
   }
 .header__menu-trigger {
     display: -webkit-box;

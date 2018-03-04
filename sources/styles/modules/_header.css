@@ -23,7 +23,7 @@
   &__logo {
     display: block;
     margin: 0;
-    max-width: 300px;
+    width: 300px;
   }
 
   &__menu-trigger {
