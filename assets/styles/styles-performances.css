@@ -1678,7 +1678,8 @@ nav.ul::after {
               justify-content: space-between;
       -webkit-box-align: start;
           -ms-flex-align: start;
-              align-items: flex-start
+              align-items: flex-start;
+      width: 100%
   }
  }
 .slidecards__card-wrapper.n-1 {
