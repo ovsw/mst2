@@ -80,7 +80,9 @@
 
   &__card {
     clip-path: polygon(0 20%, 1600px 0, 1600px 80%, 0 100%);  
-    padding: 180px 0 130px 40%;
+    padding: 180px 0 130px 30%;
+    display: block;
+    text-decoration: none!important;
     
     @mixin atMedium {
       padding-left: 60%;
@@ -95,8 +97,8 @@
       transition: all 0.5s;
 
       &:hover {
-        transform: skewY(0deg) scale(1.2, 1.2) translateX(-50px);
-        box-shadow: -10px 5px 50px color($black a(30%));
+        transform: translateY(-50px) skewY(-3deg);
+        /* box-shadow: -10px 5px 50px color($black a(30%)); */
       }
     }
 
@@ -118,7 +120,7 @@
 
       &:hover {
         @mixin atLarge {
-          transform: skewY(0deg) scale(1.2, 1.2) translateX(50px);
+          transform: translateY(-50px) skewY(-3deg);
           z-index: 900;
         }
       }

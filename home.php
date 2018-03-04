@@ -31,17 +31,17 @@
       $i = 0;
       foreach ($page->landing_cards as $card) : $i++; ?>      
         
-            <div class="hero__card n-<?= $i ?>">
+            <a class="hero__card n-<?= $i ?>" href="<?= $card->read_more_link ?>">
               <div class="hero__card-text n-<?= $i ?>">
               
                 <h2 class="hero__card-title"><?= $card->title ?></h2>
                 <div class="hero__card-description n-<?= $i ?>"><?= $card->card_short_desc ?></div>
-                <a class="button hero__card-button n-<?= $i ?>" href="<?= $card->read_more_link ?>">Learn more</a>
-              <a class="button hero__card-button n-<?= $i ?>" href="<?= $card->cta_link ?>">Book us</a>
+                <!-- <span class="button hero__card-button n-<?= $i ?>">Enter</span> -->
+              <!-- <a class="button hero__card-button n-<?= $i ?>" href="<?= $card->cta_link ?>">Book us</a> -->
               </div>
               <!-- /.hero__card-text -->
 
-            </div>
+            </a>
             <!-- /.hero__card -->
        
       <?php endforeach; ?>
