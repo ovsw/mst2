@@ -422,6 +422,10 @@ small, .font_small {font-size: 0.75em;}
     
     background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, rgba(48,17,17,1)),color-stop(65%, rgba(255,255,255,0)));
     
+    background: -webkit-linear-gradient(top, rgba(48,17,17,1) 65%,rgba(255,255,255,0) 65%);
+    
+    background: -o-linear-gradient(top, rgba(48,17,17,1) 65%,rgba(255,255,255,0) 65%);
+    
     background: linear-gradient(to bottom, rgba(48,17,17,1) 65%,rgba(255,255,255,0) 65%);
     
     min-height: 100px;
@@ -474,9 +478,11 @@ small, .font_small {font-size: 0.75em;}
       height: 3px;
       background-color: #fff;
       -webkit-transform-origin: 0 0;
+          -ms-transform-origin: 0 0;
               transform-origin: 0 0;
       -webkit-transition: -webkit-transform 0.3s ease-out;
       transition: -webkit-transform 0.3s ease-out;
+      -o-transition: transform 0.3s ease-out;
       transition: transform 0.3s ease-out;
       transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     }
@@ -489,6 +495,7 @@ small, .font_small {font-size: 0.75em;}
       height: 3px;
       background-color: #fff;
       -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out;
     }
 .header__menu-icon::after {
@@ -500,26 +507,31 @@ small, .font_small {font-size: 0.75em;}
       height: 3px;
       background-color: #fff;
       -webkit-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
               transform-origin: 0 100%;
       -webkit-transition: -webkit-transform 0.3s ease-out;
       transition: -webkit-transform 0.3s ease-out;
+      -o-transition: transform 0.3s ease-out;
       transition: transform 0.3s ease-out;
       transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     }
 .header__menu-icon.open::before {
           background-color: white;
           -webkit-transform: translateX(4px) rotate(45deg) scaleX(1.1) translateY(1px);
+              -ms-transform: translateX(4px) rotate(45deg) scaleX(1.1) translateY(1px);
                   transform: translateX(4px) rotate(45deg) scaleX(1.1) translateY(1px);
         }
 .header__menu-icon.open .header__menu-icon__middle {
           background-color: white;
           -webkit-transform: scaleX(0);
+              -ms-transform: scaleX(0);
                   transform: scaleX(0);
           opacity: 0;
         }
 .header__menu-icon.open::after {
           background-color: white;
           -webkit-transform: translateX(4px) rotate(-45deg) scaleX(1.1);
+              -ms-transform: translateX(4px) rotate(-45deg) scaleX(1.1);
                   transform: translateX(4px) rotate(-45deg) scaleX(1.1);
         }
 nav.ul::before {
@@ -548,6 +560,7 @@ nav.ul::after {
     top: 0;
     background-color: #301111;
     -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
             transform: scaleX(0);
     max-width: 840px;
     z-index: 1;
@@ -555,8 +568,10 @@ nav.ul::after {
     opacity: 0;
     pointer-events: none;
     -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     transition: all 0.2s;
     -webkit-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
             transform-origin: 100% 50%;
     width: 100%;
     min-height: 100vh;
@@ -573,6 +588,7 @@ nav.ul::after {
       top: 0;
       right: 0;
       -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
               transform: scaleX(1);
       pointer-events: all;
       opacity: 1;
@@ -612,6 +628,7 @@ nav.ul::after {
   }
 .top-nav.top-nav__visible {
     -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
             transform: scaleX(1);
     opacity: 1;
     width: 85%;
@@ -717,6 +734,7 @@ nav.ul::after {
         top: 50%;
         left: 40%;
         -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
                 transform: translate(-50%,-50%);
         margin-left: 5px;
       }
@@ -805,6 +823,7 @@ nav.ul::after {
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1;
         -webkit-transition: background-color 0.2s;
+        -o-transition: background-color 0.2s;
         transition: background-color 0.2s;
       }
 .top-nav__image-buttons-wrapper a:hover::after{
@@ -838,6 +857,7 @@ nav.ul::after {
   pointer-events: none;
   opacity: 0;
   -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   -webkit-overflow-scrolling: touch;
   z-index: 1;
@@ -954,6 +974,7 @@ nav.ul::after {
       position: absolute;
       left: 50%;
       -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
               transform: translateX(-50%);
     }
 .basic-page__hero-overlay {
@@ -970,6 +991,7 @@ nav.ul::after {
       top:50%;
       left: 50%;
       -webkit-transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
               transform: translate(-50%,-50%);
       width: 100%;
       z-index: 900;
@@ -1024,6 +1046,14 @@ nav.ul::after {
         -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)),
         -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)),
         -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)); 
+      background-image:
+        -webkit-linear-gradient(#87CC2F, #87CC2F),
+        -webkit-linear-gradient(#87CC2F, #87CC2F),
+        -webkit-linear-gradient(#87CC2F, #87CC2F); 
+      background-image:
+        -o-linear-gradient(#87CC2F, #87CC2F),
+        -o-linear-gradient(#87CC2F, #87CC2F),
+        -o-linear-gradient(#87CC2F, #87CC2F); 
       background-image:
         linear-gradient(#87CC2F, #87CC2F),
         linear-gradient(#87CC2F, #87CC2F),
@@ -1174,6 +1204,14 @@ nav.ul::after {
         -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)),
         -webkit-gradient(linear, left top, left bottom, from(#87CC2F), to(#87CC2F)); 
       background-image:
+        -webkit-linear-gradient(#87CC2F, #87CC2F),
+        -webkit-linear-gradient(#87CC2F, #87CC2F),
+        -webkit-linear-gradient(#87CC2F, #87CC2F); 
+      background-image:
+        -o-linear-gradient(#87CC2F, #87CC2F),
+        -o-linear-gradient(#87CC2F, #87CC2F),
+        -o-linear-gradient(#87CC2F, #87CC2F); 
+      background-image:
         linear-gradient(#87CC2F, #87CC2F),
         linear-gradient(#87CC2F, #87CC2F),
         linear-gradient(#87CC2F, #87CC2F);
@@ -1304,12 +1342,17 @@ nav.ul::after {
             clip-path: none;
      padding-top: 110px;
     -webkit-transform: skewY(-2deg);
+        -ms-transform: skewY(-2deg);
             transform: skewY(-2deg)
 }
  }
 .footer__wrapper {
     
     background: -webkit-gradient(linear, left top, left bottom, color-stop(49%, rgba(255,255,255,1)),color-stop(49%, rgba(135,204,47,1)));
+    
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 49%,rgba(135,204,47,1) 49%);
+    
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 49%,rgba(135,204,47,1) 49%);
     
     background: linear-gradient(to bottom, rgba(255,255,255,1) 49%,rgba(135,204,47,1) 49%);
     
@@ -1323,6 +1366,7 @@ nav.ul::after {
 @media (min-width: 1200px) {
 .footer__inner-wrapper {
       -webkit-transform: skewY(2deg);
+          -ms-transform: skewY(2deg);
               transform: skewY(2deg);
       max-width: 1200px;
       margin: 0 auto
@@ -1548,6 +1592,7 @@ nav.ul::after {
   color: #fff;
   text-align: center;
   -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
   transition: opacity .3s;
 }
 .scrollBtn span {
@@ -1560,7 +1605,8 @@ nav.ul::after {
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1581,27 +1627,41 @@ nav.ul::after {
 
   }
 .packageSlide0 .package-slide__content-wrapper {
+        background-image: -webkit-radial-gradient(15% 50%, circle, #dffdc6 0%, #98d874 60%);
+        background-image: -o-radial-gradient(15% 50%, circle, #dffdc6 0%, #98d874 60%);
         background-image: radial-gradient(circle at 15% 50%, #dffdc6 0%, #98d874 60%);
     }
 .packageSlide1 .package-slide__content-wrapper {
+      background-image: -webkit-radial-gradient(0% 0%, circle, #ffffff 0%, #e4e4e4 60%);
+      background-image: -o-radial-gradient(0% 0%, circle, #ffffff 0%, #e4e4e4 60%);
       background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #e4e4e4 60%);
     }
 .packageSlide2 .package-slide__content-wrapper {
+      background-image: -webkit-radial-gradient(0% 0%, circle, #ffffff 0%, #c9fda8 60%);
+      background-image: -o-radial-gradient(0% 0%, circle, #ffffff 0%, #c9fda8 60%);
       background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #c9fda8 60%);
     }
 .packageSlide3 .package-slide__content-wrapper {
       /* #cec3e4 deceff */
+      background-image: -webkit-radial-gradient(0% 0%, circle, #ffffff 0%, #deceff 60%);
+      background-image: -o-radial-gradient(0% 0%, circle, #ffffff 0%, #deceff 60%);
       background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #deceff 60%);
       
     }
 .packageSlide4 .package-slide__content-wrapper {
+      background-image: -webkit-radial-gradient(0% 0%, circle, #ffffff 0%, #adf5ff 60%);
+      background-image: -o-radial-gradient(0% 0%, circle, #ffffff 0%, #adf5ff 60%);
       background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #adf5ff 60%);
       /* #97dfea */
     }
 .packageSlide5 .package-slide__content-wrapper {
+      background-image: -webkit-radial-gradient(0% 0%, circle, #ffffff 0%, #ffcfd7 60%);
+      background-image: -o-radial-gradient(0% 0%, circle, #ffffff 0%, #ffcfd7 60%);
       background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #ffcfd7 60%);
     }
 .packageSlide6 .package-slide__content-wrapper {
+      background-image: -webkit-radial-gradient(0% 0%, circle, #ffffff 0%, #fdedb0 60%);
+      background-image: -o-radial-gradient(0% 0%, circle, #ffffff 0%, #fdedb0 60%);
       background-image: radial-gradient(circle at 0% 0%, #ffffff 0%, #fdedb0 60%);      
     }
 @media (min-width: 768px) {
@@ -1616,35 +1676,49 @@ nav.ul::after {
   }
 
       .packageSlide0 .package-slide__content-wrapper {
+        background-image: url('/site/templates/assets/images/programming/main-cover.png'), -webkit-radial-gradient(20% 43%, ellipse, #dffdc6 0%, #98d874 30%);
+        background-image: url('/site/templates/assets/images/programming/main-cover.png'), -o-radial-gradient(20% 43%, ellipse, #dffdc6 0%, #98d874 30%);
         background-image: url('/site/templates/assets/images/programming/main-cover.png'), radial-gradient(ellipse at 20% 43%, #dffdc6 0%, #98d874 30%);
       }
 
       .packageSlide1 .package-slide__content-wrapper {
         /* background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at $spotlight-gradient, rgba(232,252,219,1) 0%,rgba(241,234,255,1) 31%,rgba(234,252,255,1) 50%,rgba(255,234,238,1) 74%,rgba(252,248,232,1) 100%); */
+        background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), -webkit-radial-gradient(20% 43%, ellipse, rgba(232,252,219,1) 0%,rgba(234,224,255,1) 31%,rgba(224,250,255,1) 50%,rgba(255,224,230,1) 75%,rgba(249,243,219,1) 100%);
+        background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), -o-radial-gradient(20% 43%, ellipse, rgba(232,252,219,1) 0%,rgba(234,224,255,1) 31%,rgba(224,250,255,1) 50%,rgba(255,224,230,1) 75%,rgba(249,243,219,1) 100%);
         background-image: url('/site/templates/assets/images/programming/whole-adnotated.png'), radial-gradient(ellipse at 20% 43%, rgba(232,252,219,1) 0%,rgba(234,224,255,1) 31%,rgba(224,250,255,1) 50%,rgba(255,224,230,1) 75%,rgba(249,243,219,1) 100%);
          
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8fcdb+0,f1eaff+31,eafcff+50,ffeaee+74,fcf8e8+100 */
       }
 
       .packageSlide2 .package-slide__content-wrapper {
+        background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), -webkit-radial-gradient(20% 43%, circle, #ffffff 0%, #c9fda8 30%);
+        background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), -o-radial-gradient(20% 43%, circle, #ffffff 0%, #c9fda8 30%);
         background-image: url('/site/templates/assets/images/programming/base-adnotated.png'), radial-gradient(circle at 20% 43%, #ffffff 0%, #c9fda8 30%);
       }
 
       .packageSlide3 .package-slide__content-wrapper {
         /* #cec3e4 */
+        background-image: url('/site/templates/assets/images/programming/back-adnotated.png'), -webkit-radial-gradient(20% 43%, ellipse, #ffffff 0%, #deceff 30%);
+        background-image: url('/site/templates/assets/images/programming/back-adnotated.png'), -o-radial-gradient(20% 43%, ellipse, #ffffff 0%, #deceff 30%);
         background-image: url('/site/templates/assets/images/programming/back-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #deceff 30%);
       }
 
       .packageSlide4 .package-slide__content-wrapper {
+        background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), -webkit-radial-gradient(20% 43%, ellipse, #ffffff 0%, #adf5ff 30%);
+        background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), -o-radial-gradient(20% 43%, ellipse, #ffffff 0%, #adf5ff 30%);
         background-image: url('/site/templates/assets/images/programming/left-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #adf5ff 30%);
         /* #97dfea */
       }
 
       .packageSlide5 .package-slide__content-wrapper {
+        background-image: url('/site/templates/assets/images/programming/right-adnotated.png'), -webkit-radial-gradient(20% 43%, ellipse, #ffffff 0%, #ffcfd7 30%);
+        background-image: url('/site/templates/assets/images/programming/right-adnotated.png'), -o-radial-gradient(20% 43%, ellipse, #ffffff 0%, #ffcfd7 30%);
         background-image: url('/site/templates/assets/images/programming/right-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #ffcfd7 30%);
       }
 
       .packageSlide6 .package-slide__content-wrapper {
+        background-image: url('/site/templates/assets/images/programming/front-adnotated.png'), -webkit-radial-gradient(20% 43%, ellipse, #ffffff 0%, #fdedb0 30%);
+        background-image: url('/site/templates/assets/images/programming/front-adnotated.png'), -o-radial-gradient(20% 43%, ellipse, #ffffff 0%, #fdedb0 30%);
         background-image: url('/site/templates/assets/images/programming/front-adnotated.png'), radial-gradient(ellipse at 20% 43%, #ffffff 0%, #fdedb0 30%);      
       }
  }
@@ -1854,30 +1928,30 @@ nav.ul::after {
 * https://github.com/sachinchoolur/lightslider
 * Copyright (c) 2015 Sachin N; Licensed MIT */
 .lSSlideWrapper,.lSSlideWrapper .lSFade{position:relative}
-.lSSlideWrapper .lSSlide,.lSSlideWrapper.usingCss .lSFade>*{-webkit-transition-timing-function:inherit!important;transition-timing-function:inherit!important;-webkit-transition-duration:inherit!important;transition-duration:inherit!important}
+.lSSlideWrapper .lSSlide,.lSSlideWrapper.usingCss .lSFade>*{-webkit-transition-timing-function:inherit!important;-o-transition-timing-function:inherit!important;transition-timing-function:inherit!important;-webkit-transition-duration:inherit!important;-o-transition-duration:inherit!important;transition-duration:inherit!important}
 .lSSlideOuter,.lSSlideOuter .lSPager.lSGallery{-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-touch-callout:none;-webkit-user-select:none}
 .lSSlideOuter .lSPager.lSGallery:after,.lSSlideWrapper>.lightSlider:after{clear:both}
 .lSSlideOuter{overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .lightSlider:after,.lightSlider:before{content:" ";display:table}
 .lightSlider{overflow:hidden;margin:0}
 .lSSlideWrapper{max-width:100%;overflow:hidden}
-.lSSlideWrapper .lSSlide{-webkit-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 1s;-webkit-transition-property:-webkit-transform,height;-webkit-transition-property:height,-webkit-transform;transition-property:height,-webkit-transform;transition-property:transform,height;transition-property:transform,height,-webkit-transform}
+.lSSlideWrapper .lSSlide{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0);-webkit-transition:all 1s;-webkit-transition-property:-webkit-transform,height;-webkit-transition-property:height,-webkit-transform;transition-property:height,-webkit-transform;-o-transition-property:transform,height;transition-property:transform,height;transition-property:transform,height,-webkit-transform}
 .lSSlideWrapper .lSFade>*{position:absolute!important;top:0;left:0;z-index:9;margin-right:0;width:100%}
-.lSSlideWrapper.usingCss .lSFade>*{opacity:0;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transition-property:opacity;transition-property:opacity}
+.lSSlideWrapper.usingCss .lSFade>*{opacity:0;-webkit-transition-delay:0s;-o-transition-delay:0s;transition-delay:0s;-webkit-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity}
 .lSSlideWrapper .lSFade>.active{z-index:10}
 .lSSlideWrapper.usingCss .lSFade>.active{opacity:1}
 .lSSlideOuter .lSPager.lSpg{margin:10px 0 0;padding:0;text-align:center}
 .lSSlideOuter .lSPager.lSpg>li{cursor:pointer;display:inline-block;padding:0 5px}
-.lSSlideOuter .lSPager.lSpg>li a{background-color:#222;border-radius:30px;display:inline-block;height:8px;overflow:hidden;text-indent:-999em;width:8px;position:relative;z-index:99;-webkit-transition:all .5s linear 0s;transition:all .5s linear 0s}
+.lSSlideOuter .lSPager.lSpg>li a{background-color:#222;border-radius:30px;display:inline-block;height:8px;overflow:hidden;text-indent:-999em;width:8px;position:relative;z-index:99;-webkit-transition:all .5s linear 0s;-o-transition:all .5s linear 0s;transition:all .5s linear 0s}
 .lSSlideOuter .lSPager.lSpg>li.active a,.lSSlideOuter .lSPager.lSpg>li:hover a{background-color:#428bca}
 .lSSlideOuter .media{opacity:.8}
 .lSSlideOuter .media.active{opacity:1}
 .lSSlideOuter .lSPager.lSGallery{list-style:none;padding-left:0;margin:0;overflow:hidden;transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-webkit-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
-.lSSlideOuter .lSPager.lSGallery li{overflow:hidden;-webkit-transition:border-radius .12s linear 0s .35s linear 0s;transition:border-radius .12s linear 0s .35s linear 0s}
+.lSSlideOuter .lSPager.lSGallery li{overflow:hidden;-webkit-transition:border-radius .12s linear 0s .35s linear 0s;-o-transition:border-radius .12s linear 0s .35s linear 0s;transition:border-radius .12s linear 0s .35s linear 0s}
 .lSSlideOuter .lSPager.lSGallery li.active,.lSSlideOuter .lSPager.lSGallery li:hover{border-radius:5px}
 .lSSlideOuter .lSPager.lSGallery img{display:block;height:auto;max-width:100%}
 .lSSlideOuter .lSPager.lSGallery:after,.lSSlideOuter .lSPager.lSGallery:before{content:" ";display:table}
-.lSAction>a{width:32px;display:block;top:50%;height:32px;background-image:url(../img/controls.png);cursor:pointer;position:absolute;z-index:99;margin-top:-16px;opacity:.5;-webkit-transition:opacity .35s linear 0s;transition:opacity .35s linear 0s}
+.lSAction>a{width:32px;display:block;top:50%;height:32px;background-image:url(../img/controls.png);cursor:pointer;position:absolute;z-index:99;margin-top:-16px;opacity:.5;-webkit-transition:opacity .35s linear 0s;-o-transition:opacity .35s linear 0s;transition:opacity .35s linear 0s}
 .lSAction>a:hover{opacity:1}
 .lSAction>.lSPrev{background-position:0 0;left:10px}
 .lSAction>.lSNext{background-position:-32px 0;right:10px}
