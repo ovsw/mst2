@@ -23,7 +23,11 @@
   &__logo {
     display: block;
     margin: 0;
-    width: 300px;
+    width: 290px;
+    
+    @mixin atMedium {
+      width: 300px;
+    }
   }
 
   &__menu-trigger {

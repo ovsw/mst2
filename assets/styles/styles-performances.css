@@ -438,8 +438,13 @@ small, .font_small {font-size: 0.75em;}
 .header__logo {
     display: block;
     margin: 0;
-    width: 300px;
+    width: 290px;
   }
+@media (min-width: 768px) {
+.header__logo {
+      width: 300px
+  }
+ }
 .header__menu-trigger {
     display: -webkit-box;
     display: -ms-flexbox;
