@@ -9,8 +9,8 @@
 
   <?=$contenPage->render('modular_content'); ?>
 
-  <?php if ($page->id == '1491') : ?>
-    <p class="performance-cta-btn"><a class="button" href="<?= $pages->get('1493')->url ?>"><?= $pages->get('1493')->title ?> <i class="far fa-chevron-right"></i></a></p>      
+  <?php if ($page->id == '1489' || ($page->parent->id == '1489' && $page->id != '1493') ) : ?>
+    <p class="performance-cta-btn"><a class="button" href="<?= $pages->get('1493')->url ?>">Apply Now <i class="far fa-chevron-right"></i></a></p>      
   <?php endif; ?>
 
 </div>
