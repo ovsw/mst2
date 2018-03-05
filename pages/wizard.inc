@@ -105,7 +105,7 @@
 
       <a href="<?= $performance->url ?>" class="<?= $performanceItemClass ?>">
         <h3 class="performance__title"><?= $performance->title ?></h3>
-        <p class="performance__description"><?= $performance->short_description != "" ?  $performance->short-description : "Placeholder performance description goes here lorem ipsum dolor sit amet consequitur adipiscit elit." ?></p> 
+        <!-- <p class="performance__description"><?= $performance->short_description != "" ?  $performance->short-description : "Placeholder performance description goes here lorem ipsum dolor sit amet consequitur adipiscit elit." ?></p>  -->
         <div class="performance__details">
           <div class="performance__type"><span class="icon"><i class="fas fa-folder fa-fw" title="tupe"></i></span>
             <?php foreach ($performance->performance_type as $i => $type) { 
@@ -115,15 +115,15 @@
                 $i++;
             }?>
           </div>
-          <div class="performance__participants"><span class="icon"><i class="fas fa-users fa-fw" title="number of participants"></i></span>
+          <div class="performance__participants"><span class="icon"><i class="fas fa-users fa-fw" title="number of participants"></i></span> &nbsp;
             <span class="performance__min-participants"><?= $performance->min_participants->title ?></span>
             <span class="performance__max-participants">- <?= $performance->max_participants->title ?></span>
           </div>
           <div class="performance__age-range"><span class="icon"><i class="fas fa-child fa-fw" title="age ranges"></i></span>
-            <?php foreach ($performance->age_range as $i => $age) { 
+            <?php $i=0; foreach ($performance->age_range as $age) {
+              $i++;
               echo $age->title; 
               echo ($i < count($performance->age_range) ? ", " : "");
-              $i++;
             } ?>
           </div>
           
