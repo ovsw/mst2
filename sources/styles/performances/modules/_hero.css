@@ -1,19 +1,19 @@
 .hero {
 
-    position: relative;
-    padding-top: 1rem;
-    margin-top: 70px;
-    text-align: center;
-    padding-bottom: 3rem;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
-    overflow: hidden;
+  position: relative;
+  padding-top: 1rem;
+  margin-top: 70px;
+  text-align: center;
+  padding-bottom: 3rem;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
+  overflow: hidden;
 
-    min-height: 400px;
-    
+  min-height: 400px;
+  
 
-    @mixin atLarge {
-      min-height: 70vh;    
-    }  
+  @mixin atLarge {
+    min-height: 70vh;    
+  }
 
   &__video-bg {
     position: absolute;
@@ -83,6 +83,7 @@
         padding: 0.4rem 0rem;
       }
     }
+    
   }
 
   &__cta {
@@ -135,4 +136,9 @@
     }
   }
 
+
+  &.iosNovideo {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII='), url('../../assets/images/video-placeholder.jpg');
+    background-size: auto, cover;
+  }
 }

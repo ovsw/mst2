@@ -1489,21 +1489,19 @@ nav.ul::after {
   }
 .hero {
 
-    position: relative;
-    padding-top: 1rem;
-    margin-top: 70px;
-    text-align: center;
-    padding-bottom: 3rem;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
-    overflow: hidden;
+  position: relative;
+  padding-top: 1rem;
+  margin-top: 70px;
+  text-align: center;
+  padding-bottom: 3rem;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
+  overflow: hidden;
 
-    min-height: 400px;
-
+  min-height: 400px;
 }
 @media (min-width: 1024px) {
 .hero {
-      min-height: 70vh
-
+    min-height: 70vh
 }
  }
 .hero__video-bg {
@@ -1558,6 +1556,7 @@ nav.ul::after {
 .hero__hookline {
     color: #301111;
     margin: 2rem 1rem;
+    
   }
 .hero__hookline span {
       -webkit-box-shadow: 0.5rem 0 0 rgba(233, 255, 233,.9), -0.5rem 0 0 rgba(233, 255, 233,.9);
@@ -1569,6 +1568,7 @@ nav.ul::after {
 @media (min-width: 1024px) {
 .hero__hookline {
       font-size: 1.2rem
+    
   }
       .hero__hookline span{
         line-height: 2.8rem;
@@ -1624,6 +1624,10 @@ nav.ul::after {
 .hero__right-curtain.open {
       width: 10%;
     }
+.hero.iosNovideo {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII='), url('../../assets/images/video-placeholder.jpg');
+    background-size: auto, cover;
+  }
 @media (min-width: 1200px) {
 .slidecards {
     -webkit-box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.2);

@@ -11,15 +11,22 @@
   }
   @mixin atLarge {
     margin-top: 0;
+    padding-top: 150px;
   }
   @mixin atHuge {
     clip-path: none;
-    transform: skewY(-2deg);    
+     padding-top: 110px;
+    transform: skewY(-2deg); 
+      
   }
 
   &__wrapper {
-    @mixin atLarge {
-      background: -webkit-linear-gradient(top, rgba(255,255,255,1) 49%,rgba(135,204,47,1) 49%);
+    
+    
+    
+
+    @mixin atHuge {
+      padding-top: 100px; 
     }
     
   }
@@ -79,8 +86,11 @@
   }
 
   &__column--1 {
-    float:left;
-    text-align: right;
+
+    @mixin atMedium {
+      float:left;
+      text-align: right;
+    }
   }
 
   &__column--2 {
@@ -114,5 +124,29 @@
 
   & .country-name {
     display: none;
+  }
+
+  &__social-media {
+
+    margin-bottom: 2rem;
+
+    @mixin atLarge {
+      margin-bottom: 0;
+      margin-top: -3rem;
+    }
+
+    a {
+      font-size: 2rem;
+      margin: 0 1rem;
+
+      @mixin atMedium {
+        font-size: 3rem;
+        margin: 0 1rem;
+      }
+
+      &:hover {
+        color: $msGreen;
+      }
+    }
   }
 }
