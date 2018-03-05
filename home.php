@@ -36,7 +36,7 @@
               
                 <h2 class="hero__card-title"><?= $card->title ?></h2>
                 <div class="hero__card-description n-<?= $i ?>"><?= $card->card_short_desc ?></div>
-                <!-- <span class="button hero__card-button n-<?= $i ?>">Enter</span> -->
+                <span class="button hero__card-button n-<?= $i ?>">Learn More</span>
               <!-- <a class="button hero__card-button n-<?= $i ?>" href="<?= $card->cta_link ?>">Book us</a> -->
               </div>
               <!-- /.hero__card-text -->
@@ -51,8 +51,8 @@
         <!-- /.hero__cards -->
 
       
-      <div class="hero__left-curtain"></div>
-      <div class="hero__right-curtain"></div>
+      <!-- <div class="hero__left-curtain"></div>
+      <div class="hero__right-curtain"></div> -->
     
     </section>
 
@@ -61,6 +61,7 @@
     <?php if($page->editable()) echo "<p><a href='$page->editURL'>Edit</a></p>"; ?>
 
     <script src="<?= $config->urls->templates?>assets/scripts/common-bundle.js"></script>
+    <script src="<?= $config->urls->templates?>assets/scripts/vendor/fontawesome-all.js"></script>
     <script src="<?= $config->urls->templates?>assets/scripts/landing-bundle.js"></script>
   </body>
 </html>

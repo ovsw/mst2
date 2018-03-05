@@ -32,8 +32,6 @@
           <div class="footer__column footer__column--2">
             <div>Phone: <a class="tel" href="tel:+1-347-878-2431">347-878-2431</a></span></div>
             <div>Email: <a href="mailto:support@mainstages.com" class="email">support@mainstages.com</a></div>
-            <div class="tel"><span class="type">Fax</span>:
-            <span class="value">+1-111-111-111</span></div>
           </div>
         </div>
 
