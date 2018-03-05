@@ -44,7 +44,7 @@
 
   <div class="top-nav__image-buttons-wrapper">
 
-    <?php foreach ($pages->get('1051')->menu_quick_links_repeater as $item) : ?>
+    <?php foreach ($pages->get('1336')->menu_quick_links_repeater as $item) : ?>
     <a href="<?= $item->page_selector_any->url ?>" class="image-button" style="background-image: url('<?= $item->menu_quick_link_image->getCrop('crop_size')->url ?>');"><span><?= $item->title ?></span></a>
     <?php endforeach; ?>
 

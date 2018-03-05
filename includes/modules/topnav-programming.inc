@@ -33,8 +33,8 @@
 
     <div class="menu-cross-links">
       <span class="menu-cross-links__title"><a href="tel:1-347-878-2431"><i class="fas fa-phone"></i> 347-878-2431</a> </span>
-      <a class="crosslink performances" href="<?= $pages->get('1058')->url ?>">Mainstages Performances</a>
-      <a class="crosslink families" href="<?= $pages->get('1336')->url ?>">Mainstages for Families</a>
+      <a class="crosslink performances" href="<?= $pages->get('1058')->url ?>">mainstages Performances</a>
+      <a class="crosslink families" href="<?= $pages->get('1336')->url ?>">mainstages for Families</a>
     </div>
     <!-- /.menu-cross-links -->
 
