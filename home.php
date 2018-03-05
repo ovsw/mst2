@@ -61,7 +61,8 @@
     <?php if($page->editable()) echo "<p><a href='$page->editURL'>Edit</a></p>"; ?>
 
     <script src="<?= $config->urls->templates?>assets/scripts/common-bundle.js"></script>
-    <script src="<?= $config->urls->templates?>assets/scripts/vendor/fontawesome-all.js"></script>
+    <script src="<?= $config->urls->templates?>assets/scripts/vendor/fa-brands.js"></script>    
+    <script src="<?= $config->urls->templates?>assets/scripts/vendor/fontawesome.min.js"></script>
     <script src="<?= $config->urls->templates?>assets/scripts/landing-bundle.js"></script>
   </body>
 </html>

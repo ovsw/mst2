@@ -44,10 +44,10 @@
                 <?php endif; ?>
                 <div class="package-slide__button-wrapper">
                   <?php if ($slide->programming_hp_slides_camp_link) : ?>
-                    <a class="button package-slide__button" href="<?= $slide->programming_hp_slides_camp_link->url ?>">Camp <?= $slide->title ?> <i class="far fa-chevron-right"></i></a><br>
+                    <a class="button package-slide__button" href="<?= $slide->programming_hp_slides_camp_link->url ?>">Camp <?= $slide->title ?> <i class="fas fa-chevron-right"></i></a><br>
                   <?php endif; ?>
                   <?php if ($slide->programming_hp_slides_camp_link) : ?>
-                    <a class="button package-slide__button" href="<?= $slide->programming_hp_slides_afterschool_link->url ?>">Afterschool <?= $slide->title ?> <i class="far fa-chevron-right"></i></a> 
+                    <a class="button package-slide__button" href="<?= $slide->programming_hp_slides_afterschool_link->url ?>">Afterschool <?= $slide->title ?> <i class="fas fa-chevron-right"></i></a> 
                   <?php endif; ?>
                 </div>
                 <!-- /.package-slide__button-wrapper -->
