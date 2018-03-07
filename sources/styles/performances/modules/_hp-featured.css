@@ -6,6 +6,7 @@
 
     @mixin atMedium {
       display: flex;
+      flex-direction: column;
     }
   }
 
