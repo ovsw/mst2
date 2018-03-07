@@ -31,7 +31,7 @@ var initSliders = {
       pause: 9000,
     
       keyPress: false,
-      controls: true,
+      controls: false,
       prevHtml: '',
       nextHtml: '',
     
