@@ -28,7 +28,7 @@ var initSliders = {
       pauseOnHover: false,
       loop: true,
       slideEndAnimation: true,
-      pause: 4000,
+      pause: 9000,
     
       keyPress: false,
       controls: true,
