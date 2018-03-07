@@ -3,7 +3,8 @@
   &__wrapper {
 
     border-bottom: 1px solid color($msDarkBrown a(30%));
-
+    padding-top: 2rem;
+    
     @mixin atMedium {
       display: flex;
       align-items: flex-start;

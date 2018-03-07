@@ -12,7 +12,7 @@
       <div class="body-rte__side-text">
       <h2 class="blog-posts__title"><a href="<?= $post->url ?>"><?= $post->title ?></a></h2>
       <h3 class="blog-posts__date"><?= $post->blog_post_date ?></h3>
-        <p class="blog-posts__short-desc"><?= $post->blog_post_short_desc ?> <a href="<?= $post->url ?>">read full post</a></p> 
+        <p class="blog-posts__short-desc"><?= $post->blog_post_short_desc ?><br><a href="<?= $post->url ?>">read full post</a></p> 
       </div>
     </div>
     <!-- /.body-rte__text-w-side-image -->
