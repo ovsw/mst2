@@ -78,7 +78,7 @@
       </fieldset>
 
   </form>
-    <?php $performances = $pages->find("template=performance"); ?>
+    <?php $performances = $pages->find("template=performance,sort=title"); ?>
 
     <p class="wizard-status-message">Currently showing <span class="itemCount"><?= count($performances) ?></span> out of <strong><?= count($performances) ?></strong> performances:</p>
     
