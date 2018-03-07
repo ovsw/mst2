@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero hero--performances">
   <?php require($config->paths->templates."includes/modules/hero-video-performances.inc");
     ?>
   <div class="hero__content">

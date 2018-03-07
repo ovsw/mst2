@@ -137,8 +137,16 @@
   }
 
 
-  &.iosNovideo {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII='), url('../../assets/images/video-placeholder.jpg');
+  &--performances {
+    &.iosNovideo {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII='), url('../../assets/images/video-placeholder.jpg');
+      background-size: auto, cover;
+    }
+  }
+
+  &--families {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2NgYGBoAAAAhQCBtVE1xwAAAABJRU5ErkJggg=='), url('../../assets/images/families-hero.jpg');
     background-size: auto, cover;
   }
+ 
 }

@@ -75,7 +75,7 @@ $(document).ready(function(){
     }else{
       //alert('not running later than 10: ' + iosVersion[0]);
       $('.hero__video-bg').remove();
-      $('.hero').addClass('iosNovideo');
+      $('.hero--performances').addClass('iosNovideo');
     }
   }else{
     //alert('not iOS!');
