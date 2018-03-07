@@ -19,5 +19,5 @@
   
 
 </div>
-<p class="performance-cta-btn"><a class="button" href="<?= $pages->get('1061')->url ?>">Book Now</a></p>
+<p class="performance-cta-btn"><a class="button" href="<?= $pages->get('1061')->url ?>">Get a Quote</a></p>
 <!-- /.body-rte -->
