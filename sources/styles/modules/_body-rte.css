@@ -52,7 +52,7 @@
 
   p {
     font-size: 1.125rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $body-font;
     line-height: 1.9;
     margin: 0 auto 2.5rem auto;
     font-weight: 400;
@@ -63,7 +63,7 @@
   }
   
   ul, ol {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $body-font;
     margin-bottom: 2.5rem;
     
     li {

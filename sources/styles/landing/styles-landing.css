@@ -11,7 +11,6 @@
 
 body  {
   background-color: $msGreen;
-  font-family: $body-font;
   font-weight: 300;
 }
 

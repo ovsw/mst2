@@ -1122,7 +1122,7 @@ nav.ul::after {
   }
 .body-rte p {
     font-size: 1.125rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: europa, sans-serif;
     line-height: 1.9;
     margin: 0 auto 2.5rem auto;
     font-weight: 400;
@@ -1131,7 +1131,7 @@ nav.ul::after {
       color: #562e2e;
     }
 .body-rte ul, .body-rte ol {
-    font-family: 'Open Sans', sans-serif;
+    font-family: europa, sans-serif;
     margin-bottom: 2.5rem;
   }
 .body-rte ul li, .body-rte ol li {

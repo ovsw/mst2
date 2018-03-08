@@ -1,4 +1,3 @@
-/* FONTS */
 /* COLORS */
 /* NAV  */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -1125,7 +1124,7 @@ nav.ul::after {
   }
 .body-rte p {
     font-size: 1.125rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: europa, sans-serif;
     line-height: 1.9;
     margin: 0 auto 2.5rem auto;
     font-weight: 400;
@@ -1134,7 +1133,7 @@ nav.ul::after {
       color: #562e2e;
     }
 .body-rte ul, .body-rte ol {
-    font-family: 'Open Sans', sans-serif;
+    font-family: europa, sans-serif;
     margin-bottom: 2.5rem;
   }
 .body-rte ul li, .body-rte ol li {
@@ -1557,7 +1556,7 @@ nav.ul::after {
  }
 .hero__mainTitle{
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: europa, sans-serif;
     font-weight:  900;
     text-transform: uppercase;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
