@@ -1,5 +1,6 @@
 var path = require('path');
 var CommonsPlugin = new require("webpack/lib/optimize/CommonsChunkPlugin");
+var webpack = require('webpack');
 
 module.exports = {
 	entry: {
@@ -21,7 +22,8 @@ module.exports = {
     new CommonsPlugin({
       minChunks: 2,
       name: "common"
-    })
+    }),
+    new webpack.optimize.UglifyJsPlugin({minimize: true})
   ]
   // module: {
   //   rules: [
