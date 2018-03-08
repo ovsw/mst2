@@ -1,5 +1,6 @@
 @import "base/_variables";
 @import "base/_mixins";
+@import "../base/_variables";
 
 @import "normalize.css";
 @import "../modules/_loader";
@@ -10,7 +11,7 @@
 @import "../modules/_body-rte";
 @import "../modules/_footer";
 
-@import "../base/_variables";
+
 @import "modules/_header";
 @import "modules/_hero";
 @import "modules/_slidecards";

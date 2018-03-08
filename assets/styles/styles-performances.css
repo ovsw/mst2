@@ -365,10 +365,20 @@ template {
 	z-index: 9999;
 	/* background: url(../images/mainstages-loader.gif) center no-repeat $msGreen; */
   background-image: url(../images/loader.svg), url(../images/mainstages-logo-classic.png);
-  background-position: 50% 46%, 50% 60%;
+  background-position: 50% 30%, 50% 70%;
   background-color: #87CC2F;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+.se-pre-con {
+		background-position: 50% 40%, 50% 55%
+}
+ }
+@media (min-width: 1024px) {
+.se-pre-con {
+		background-position: 50% 40%, 50% 55%
+}
+ }
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
