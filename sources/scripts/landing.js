@@ -1,9 +1,5 @@
-import $ from 'jquery';
-import Person from './modules/Person';
+import './modules/jquery-global.js';
+import 'script-loader!./modules/loader.js';
 
-var john = new Person("John Doe", "blue");
-// john.greet();
 
-// var jane = new Person("Jane Smith", "green");
-// jane.greet();
 

@@ -10,32 +10,35 @@ webpackJsonp([0],[
 /* 8 */,
 /* 9 */,
 /* 10 */,
-/* 11 */
+/* 11 */,
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(12);
+module.exports = __webpack_require__(13);
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_jquery_global_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_script_loader_modules_Project_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_script_loader_modules_Project_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_script_loader_modules_Project_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lightslider__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lightslider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_lightslider__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_script_loader_modules_initSliders_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_script_loader_modules_initSliders_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_script_loader_modules_initSliders_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_script_loader_modules_Menu_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_script_loader_modules_Menu_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_script_loader_modules_Menu_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_script_loader_modules_Slidecards_js__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_script_loader_modules_Slidecards_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_script_loader_modules_Slidecards_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_script_loader_modules_Faqs_js__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_script_loader_modules_Faqs_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_script_loader_modules_Faqs_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__modules_Wizard_js__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_jquery_global_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_script_loader_modules_loader_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_script_loader_modules_loader_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_script_loader_modules_loader_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_script_loader_modules_Project_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_script_loader_modules_Project_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_script_loader_modules_Project_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lightslider__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lightslider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lightslider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_script_loader_modules_initSliders_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_script_loader_modules_initSliders_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_script_loader_modules_initSliders_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_script_loader_modules_Menu_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_script_loader_modules_Menu_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_script_loader_modules_Menu_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_script_loader_modules_Slidecards_js__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_script_loader_modules_Slidecards_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_script_loader_modules_Slidecards_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_script_loader_modules_Faqs_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_script_loader_modules_Faqs_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_script_loader_modules_Faqs_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__modules_Wizard_js__ = __webpack_require__(20);
 
 
 
@@ -99,29 +102,29 @@ $(document).ready(function(){
 
 
 /***/ }),
-/* 13 */,
 /* 14 */,
 /* 15 */,
-/* 16 */
+/* 16 */,
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(0)(__webpack_require__(17))
+__webpack_require__(0)(__webpack_require__(18))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = "$('.slidecards__card').click(function(){\r\n  \r\n  // if($(this).hasClass(\"open\")){ \r\n  //   $(this).removeClass('open');\r\n  // }else{\r\n  //   $('.slidecards__card').removeClass('open');\r\n  //   $(this).addClass('open');\r\n  // }\r\n\r\n  $('.slidecards__card').removeClass('open');\r\n  $(this).addClass('open');\r\n  \r\n});"
 
 /***/ }),
-/* 18 */,
-/* 19 */
+/* 19 */,
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mixitup__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mixitup__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mixitup___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_mixitup__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixitup_multifilter__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixitup_multifilter__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mixitup_multifilter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__mixitup_multifilter__);
 
 
@@ -176,7 +179,7 @@ $('.holidayFilterToggle').click(function(){
 });
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**!
@@ -10833,7 +10836,7 @@ $('.holidayFilterToggle').click(function(){
 })(window);
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**!
@@ -11962,4 +11965,4 @@ $('.holidayFilterToggle').click(function(){
     }})(window);
 
 /***/ })
-],[11]);
+],[12]);

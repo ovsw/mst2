@@ -6,6 +6,8 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
+    <div class="se-pre-con"></div>
+
     <header class="header">
       <div class="header__wrapper">
         <a href="/" class="header__logo">
@@ -63,6 +65,7 @@
     <script src="<?= $config->urls->templates?>assets/scripts/common-bundle.js"></script>
     <script src="<?= $config->urls->templates?>assets/scripts/vendor/fa-brands.js"></script>    
     <script src="<?= $config->urls->templates?>assets/scripts/vendor/fontawesome.min.js"></script>
+    <script src="<?= $config->urls->templates?>assets/scripts/landing-bundle.js"></script>
     <script src="<?= $config->urls->templates?>assets/scripts/landing-bundle.js"></script>
   </body>
 </html>

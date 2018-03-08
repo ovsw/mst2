@@ -2,7 +2,7 @@
 @import "base/_mixins";
 
 @import "normalize.css";
-@import "../base/_variables";
+@import "../modules/_loader";
 @import "../base/_global";
 @import "../modules/_header";
 @import "../modules/_main-nav";
@@ -10,6 +10,7 @@
 @import "../modules/_body-rte";
 @import "../modules/_footer";
 
+@import "../base/_variables";
 @import "modules/_header";
 @import "modules/_hero";
 @import "modules/_slidecards";

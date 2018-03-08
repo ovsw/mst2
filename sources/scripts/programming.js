@@ -1,5 +1,5 @@
 import './modules/jquery-global.js';
-
+import 'script-loader!./modules/loader.js';
 import 'script-loader!./modules/Project.js';
 
 import lightSlider from 'lightslider';

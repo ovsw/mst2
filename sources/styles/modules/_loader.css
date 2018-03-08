@@ -1,0 +1,21 @@
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100vh;
+	z-index: 9999;
+	/* background: url(../images/mainstages-loader.gif) center no-repeat $msGreen; */
+  background-image: url(../images/loader.svg), url(../images/mainstages-logo-classic.png);
+  background-position: 50% 30%, 50% 70%;
+  background-color: $msGreen;
+  background-repeat: no-repeat;
+
+	@mixin atMedium {
+		background-position: 50% 40%, 50% 55%;
+	}
+
+	@mixin atLarge {
+		background-position: 50% 40%, 50% 55%;
+	}
+}
