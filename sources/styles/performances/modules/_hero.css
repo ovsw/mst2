@@ -32,6 +32,10 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     max-width: 500px;
+
+    @mixin atLarge {
+      min-width: 800px;
+    }
   }
 
   &__heading {
@@ -44,10 +48,22 @@
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
     0px 8px 13px rgba(0,0,0,0.1),
     0px 18px 23px rgba(0,0,0,0.1);
+    
 
     @mixin atSmall {
       margin: 0 auto;
       max-width: 500px;
+    }
+
+    @mixin atMedium {
+      max-width: 700px;
+      font-size: 4rem;
+    }
+
+    @mixin atLarge {
+      padding: 0;
+      max-width: 800px;
+      font-size: 5rem;
     }
     
     span {
@@ -74,6 +90,13 @@
       background-color: rgba(233, 255, 233,.9);
       line-height: 1.9rem;
       padding: 0.2rem 0rem;
+
+      br {
+        display: none;
+        @mixin atLarge {
+          display: inline;
+        }
+      }
     }
 
     @mixin atLarge {
