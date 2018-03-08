@@ -705,14 +705,14 @@ small, .font_small {font-size: 0.75em;}
 }
 @media (min-width: 768px) {
 .footer {
-    padding-top: 110px;
+    padding-top: 10rem;
     padding-bottom: 50px
 }
  }
 @media (min-width: 1024px) {
 .footer {
     margin-top: 0;
-    padding-top: 150px
+    padding-top: 11rem
 }
  }
 @media (min-width: 1200px) {
@@ -779,7 +779,7 @@ small, .font_small {font-size: 0.75em;}
       width: 70%;
       font-size: 1.1rem;
       padding-bottom: 2rem;
-      padding-top: 1rem
+      padding-top: 3rem
   }
  }
 @media (min-width: 1200px) {
