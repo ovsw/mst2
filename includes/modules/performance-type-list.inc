@@ -17,11 +17,32 @@
             </div>
           </div>
 
+          <?php 
+            $optionTotalString = '';
+            foreach ($performance->no_of_participants as $selectedOption) {
+              
+              $optionTotalString .= $selectedOption->value;
+
+              $optionTotalString = str_replace("o", "", $optionTotalString); // remove all the o's from the string - they are needed to make valid class names for mixitup
+              
+
+              $minStr = substr($optionTotalString, 0, 3);
+              $maxStr = substr($optionTotalString, -3);
+
+              if ($optionTotalString == '250500') {
+                $participants = 'over 250';
+              }else if ($maxStr == 500) {
+                $participants = 'from '.ltrim($minStr, '0').' to 250+';
+              }else {
+                $participants = 'from '.ltrim($minStr, '0').' to '.ltrim($maxStr, '0');
+              }
+            }
+          ?>
+
           <div class="performance__details-row">
             <span class="icon"><i class="fas fa-users fa-fw" title="number of participants"></i></span>
             <div class="performance__detail-text">
-              <span class="performance__min-participants"> <?= $performance->min_participants->title ?></span>
-              <span class="performance__max-participants"> - <?= $performance->max_participants->title ?></span>
+              <span><?= $participants ?></span>
             </div>
           </div>
 
