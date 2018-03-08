@@ -1127,7 +1127,7 @@ nav.ul::after {
     font-family: europa, sans-serif;
     line-height: 1.9;
     margin: 0 auto 2.5rem auto;
-    font-weight: 400;
+    font-weight: 300;
   }
 .body-rte p strong {
       color: #562e2e;

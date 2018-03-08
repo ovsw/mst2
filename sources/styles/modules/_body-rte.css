@@ -55,7 +55,7 @@
     font-family: $body-font;
     line-height: 1.9;
     margin: 0 auto 2.5rem auto;
-    font-weight: 400;
+    font-weight: 300;
 
     strong {
       color: #562e2e;
