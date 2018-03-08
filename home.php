@@ -65,13 +65,7 @@
     <script src="<?= $config->urls->templates?>assets/scripts/common-bundle.js"></script>
     <script src="<?= $config->urls->templates?>assets/scripts/vendor/fa-brands.js"></script>    
     <script src="<?= $config->urls->templates?>assets/scripts/vendor/fontawesome.min.js"></script>
-    
-
-    <?php if ($config->httpHost == "mst2.ovs") : ?>
-      <script src="<?= $config->urls->templates?>assets/scripts/landing-bundle.js"></script>
-    <?php else : ?>
-      <script src="<?php echo AllInOneMinify::JS('assets/scripts/landing-bundle.js'); ?>"></script>
-    <?php endif; ?>
+    <script src="<?= $config->urls->templates?>assets/scripts/landing-bundle.js"></script>
 
   </body>
 </html>
