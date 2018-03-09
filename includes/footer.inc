@@ -12,8 +12,8 @@
         <!-- /.footer__social-media -->
 
         <div class="footer__logos">
-          <a href="#" class="footer__logo-link"><img src="<?= $config->urls->templates ?>assets/images/nystea-logo.png" alt="Mainstages Logo"></a>
-          <a href="#" class="footer__logo-link"><img src="<?= $config->urls->templates ?>assets/images/mainstages-logo-classic.png" alt="Mainstages Logo"></a>
+          <a href="http://www.nystea.org/" class="footer__logo-link"><img src="<?= $config->urls->templates ?>assets/images/nystea-logo.png" alt="Mainstages Logo"></a>
+          <a href="http://mainstages.com/" class="footer__logo-link"><img src="<?= $config->urls->templates ?>assets/images/mainstages-logo-classic.png" alt="Mainstages Logo"></a>
         </div>
 
         <div class="footer__row">
