@@ -23,7 +23,7 @@
               <div class="street-address">21-33 29th. Avenue - Suite 2</div>
               <div>
                 <span class="locality">Astoria</span>, <span class="region" title="New York">NY</span> 
-                <span class="postal-code">11102</span>
+                <span class="postal-code"> 11102</span>
               </div>
               <div class="country-name">USA</div>
             </div>
