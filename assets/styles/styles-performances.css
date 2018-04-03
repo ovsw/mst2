@@ -1574,8 +1574,13 @@ nav.ul::after {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 
-  
+    display: none;
   }
+@media (min-width: 1024px) {
+.hero__video-bg {
+      display: block
+  }
+ }
 .hero__content {
     position: absolute;
     top: 50%; left: 50%;
@@ -1592,7 +1597,7 @@ nav.ul::after {
 .hero__heading {
     font-size: 2.8rem;
     padding: 3.5rem 1.5rem 0rem 1.5rem;
-    color: #fff;
+    color: #87CC2F;
     font-weight: 400;
     line-height: 0.8;
     margin: 0;
@@ -1631,17 +1636,25 @@ nav.ul::after {
         padding-left: 2rem;
       }
 .hero__hookline {
-    color: #301111;
+    color: #fff;
     margin: 2rem 1rem;
+    font-weight: 400;
     
   }
 .hero__hookline span {
-      -webkit-box-shadow: 0.5rem 0 0 rgba(233, 255, 233,.9), -0.5rem 0 0 rgba(233, 255, 233,.9);
-              box-shadow: 0.5rem 0 0 rgba(233, 255, 233,.9), -0.5rem 0 0 rgba(233, 255, 233,.9);
-      background-color: rgba(233, 255, 233,.9);
-      line-height: 1.9rem;
+      /* box-shadow: 0.5rem 0 0 rgba(233, 255, 233,.9), -0.5rem 0 0 rgba(233, 255, 233,.9);
+      background-color: rgba(233, 255, 233,.9); */
+      line-height: 1.5rem;
       padding: 0.2rem 0rem;
+      text-shadow: 1px 1px 1px #000;
+      font-size: 1rem;
     }
+@media (min-width: 1024px) {
+.hero__hookline span {
+        font-size: 1.8rem;
+        line-height: 1.9
+    }
+ }
 .hero__hookline span br {
         display: none;
       }
@@ -1709,12 +1722,19 @@ nav.ul::after {
 .hero__right-curtain.open {
       width: 10%;
     }
-.hero--performances.iosNovideo {
-      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII='), url('../../assets/images/video-placeholder.jpg');
+.hero--performances {
+    
+      background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMU8wEAAH4AZHeeAz4AAAAASUVORK5CYII=), url('../../assets/images/performances-hero.jpg');
       background-size: auto, cover;
-    }
+  }
+@media (min-width: 1024px) {
+.hero--performances {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
+        background-size: auto
+  }
+ }
 .hero--families {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2NgYGBoAAAAhQCBtVE1xwAAAABJRU5ErkJggg=='), url('../../assets/images/families-hero.jpg');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mMUqwcAALEAlw+6NSgAAAAASUVORK5CYII='), url('../../assets/images/families-hero.jpg');
     background-size: auto, cover;
   }
 @media (min-width: 1200px) {
