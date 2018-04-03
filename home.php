@@ -75,10 +75,11 @@ ga('send', 'pageview');
 </script>
 <!-- end google analytics code -->
 
-    <script src="<?= $config->urls->templates?>assets/scripts/common-bundle.js"></script>
+    <script src="<?= $config->urls->templates?>assets/scripts/common-bundle.js?v=2"></script>
     <script src="<?= $config->urls->templates?>assets/scripts/vendor/fa-brands.js"></script>    
+    <script src="<?= $config->urls->templates?>assets/scripts/vendor/fa-solid.js"></script>
     <script src="<?= $config->urls->templates?>assets/scripts/vendor/fontawesome.min.js"></script>
-    <script src="<?= $config->urls->templates?>assets/scripts/landing-bundle.js"></script>
+    <script src="<?= $config->urls->templates?>assets/scripts/landing-bundle.js?v=2"></script>
 
   </body>
 </html>
