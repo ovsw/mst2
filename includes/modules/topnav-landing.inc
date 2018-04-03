@@ -4,22 +4,22 @@
         <p class="top-nav__mobile-title">Mainstages:</p>
         <ul class="top-nav__outer-list" id="menu-main-menu">
             <li class="top-nav__item-level-1 first menu-item p-1051">
-              <a href="/programming/"> - Programming</a>
+              <a href="/performances/"> Performances</a>
               <span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>
             </li>
 
             <li class="top-nav__item-level-1 menu-item p-1058">
-              <a href="/performances/"> - Performances</a>
+              <a href="/programming/"> Programming </a>
               <span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>
             </li>
 
             <li class="top-nav__item-level-1 last menu-item p-1336">
-              <a href="/families/"> - Families</a>
+              <a href="/families/"> Families</a>
               <span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>
             </li>
 
             <li class="top-nav__item-level-1 menu-item p-1091">
-              <a href="/programming/jobs/"> - Jobs</a>
+              <a href="/programming/jobs/"> Jobs</a>
               <span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>
             </li>
         </ul>

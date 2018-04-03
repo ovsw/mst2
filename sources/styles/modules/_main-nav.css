@@ -129,7 +129,7 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
     border-top: 1px solid rgba($white, 0.3);
   }
 
-  &__item-level-1 {
+  &__item-level-2,&__item-level-1 {
     position: relative;
     border-bottom: 1px solid color($white a(20%));
 
@@ -138,7 +138,7 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
     }
   }
   
-  &__item-level-1 > a {
+  &__item-level-2 > a, &__item-level-1 > a {
     font-size: 1rem;
     text-decoration: none;
     color: $white;
@@ -153,15 +153,8 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
     }
   }
 
-  &__item-level-1.p-1031 {
+  &__item-level-2.p-1031, &__item-level-1.p-1031 {
     background-color: $mainAccent;
-  }
-
-  &__item-level-1:hover {
-    
-  }
-
-  &__item-level-1:hover>a {
   }
 
   &__inner-list {
@@ -171,19 +164,19 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
     display: none;
   }
 
-  &__item-level-2 {
+  &__item-level-3 {
     background-color: $msDarkBrown;
     height: 0;
   }
 
-  &__item-level-2:first-child {
+  &__item-level-3:first-child {
   }
 
-  &__item-level-2 > a {
+  &__item-level-3 > a {
     display: block;
   }
 
-  &__item-level-2:hover {
+  &__item-level-3:hover {
     background-color: $menuActiveBg;
   }
 
@@ -242,7 +235,7 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
         .top-nav__ico-minus {display: inline-block;}
       }
       
-      .top-nav__item-level-2 {
+      .top-nav__item-level-3 {
         height: auto;
         border-top: 1px dotted color($white a(20%));
         background-color: $mobileSubitemsBg;
@@ -366,7 +359,7 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 6rem;
+  height: 4rem;
 
   @mixin atMedium {
     height: 4rem;

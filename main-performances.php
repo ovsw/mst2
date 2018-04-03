@@ -11,6 +11,7 @@
   <?php endif; ?>
 
     <header class="header">
+    <div id="overlay"></div>
       <div class="header__wrapper">
         <a href="/" class="header__logo">
           <img src="<?= $config->urls->templates ?>assets/images/mainstages-logo-horizontal.png" alt="Mainstages Logo"> 
