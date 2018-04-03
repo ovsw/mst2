@@ -13,6 +13,7 @@
         <a href="/" class="header__logo">
           <img src="<?= $config->urls->templates ?>assets/images/mainstages-logo-horizontal.png" alt="Mainstages Logo"> 
         </a>
+        <?php require($config->paths->templates."includes/modules/topnav-landing.inc"); ?>
       </div>
       <!-- /.header__wrapper -->
     </header>

@@ -1,1 +1,1 @@
-webpackJsonp([2],{8:function(e,n,t){e.exports=t(9)},9:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var o=(t(1),t(2));t.n(o)}},[8]);
+webpackJsonp([2],{8:function(e,n,t){e.exports=t(9)},9:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var o=(t(1),t(2)),u=(t.n(o),t(3));t.n(u);$(document).ready(function(){Menu.init()})}},[8]);

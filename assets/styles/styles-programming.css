@@ -587,6 +587,10 @@ nav.ul::after {
       width: 78.8%;
       min-height: none
   }
+
+      .top-nav__header-menu--noImageButtons {
+        width: 40%;
+      }
  }
 .top-nav__header-menu.visible {
       top: 0;
@@ -609,6 +613,9 @@ nav.ul::after {
       width: 50%
   }
  }
+.top-nav__main-menu-wrapper--noImageButtons {
+      width: 100%;
+    }
 .top-nav__main-menu-wrapper .top-nav__menus {
       overflow: auto;
     }
@@ -889,13 +896,7 @@ nav.ul::after {
     font-weight: 300;
     display: block;
     text-align: center;
-    display: none;
   }
-@media (min-width: 768px) {
-.menu-cross-links__title {
-      display: block
-  }
- }
 .menu-cross-links__title a {
       color: #301111;
       text-decoration: none;

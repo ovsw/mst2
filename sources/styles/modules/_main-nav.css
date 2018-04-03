@@ -39,7 +39,13 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
     @mixin atLarge {
       width: 78.8%;
       min-height: none;
+
+      &--noImageButtons {
+        width: 40%;
+      }
     }
+
+    
 
     &.visible {
       top: 0;
@@ -61,6 +67,10 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
       width: 50%;
     }
     
+    &--noImageButtons {
+      width: 100%;
+    }
+
     .top-nav__menus {
       overflow: auto;
     }
@@ -369,12 +379,10 @@ $mobileSubitemsBg: color($msDarkBrown l(+7%) s(-20%));
     font-weight: 300;
     display: block;
     text-align: center;
-    display: none;
+    
     
 
-    @mixin atMedium {
-      display: block;
-    }
+
 
     a {
       color: $msDarkBrown;
