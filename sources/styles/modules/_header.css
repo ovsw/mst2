@@ -57,8 +57,11 @@
     position: relative;
     width: 40px;
     height: 40px;
+    cursor: pointer;
+    
+    
 
-     &::before {
+    &::before {
       content: '';
       position: absolute; 
       top: 5px; 
@@ -78,7 +81,7 @@
       width: 34px;
       height: 3px;
       background-color: $white;
-      transition: all 0.3s ease-out;
+      transition: all 0.1s ease-out;
     }
 
     &::after {
@@ -110,3 +113,14 @@
     }
   }
 }
+
+    .header__menu-trigger:hover {
+      .header__menu-icon::before, .header__menu-icon__middle, .header__menu-icon::after {
+        background-color: $msGreen!important;
+      }
+
+      .label {
+        color: $msGreen;
+      }
+     
+    }
