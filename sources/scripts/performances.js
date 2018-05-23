@@ -10,11 +10,14 @@ import 'script-loader!./modules/Slidecards.js';
 import 'script-loader!./modules/Faqs.js';
 import 'script-loader!./modules/desktop-video.js';
 import './modules/Wizard.js';
+import 'script-loader!./modules/jquery.basictable.min.js';
 
 
 
 
 $(document).ready(function(){
+
+  $('.body-rte table').basictable();
 
   Project.init();
   Menu.init(); 
