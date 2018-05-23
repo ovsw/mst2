@@ -1,7 +1,7 @@
 <nav class="top-nav__header-menu top-nav__header-menu--noImageButtons">
   <div class="top-nav__main-menu-wrapper top-nav__main-menu-wrapper--noImageButtons">
     <div class="top-nav__menus">
-        <p class="top-nav__mobile-title">Mainstages:</p>
+        <p class="top-nav__mobile-title">mainstages:</p>
         <ul class="top-nav__outer-list" id="menu-main-menu">
             <li class="top-nav__item-level-1 first menu-item p-1051">
               <a href="/performances/"> Performances</a>

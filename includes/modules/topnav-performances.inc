@@ -20,7 +20,7 @@
             'collapsed' => false,
             'show_root' => false,
             'selector' => 'template!=performance',
-            'selector_level2' => "parent!=1058",
+            'selector_level2' => "parent!=1058,parent!=1015",
             'selector_field' => 'nav_selector',
             'outer_tpl' => '<ul class="top-nav__outer-list" id="menu-main-menu">||</ul>',
             'inner_tpl' => '<ul class="top-nav__inner-list">||</ul>',
