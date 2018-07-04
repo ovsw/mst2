@@ -11,21 +11,25 @@
     <meta name="generator" content="ProcessWire 3.0.98" />
     <meta property="og:site_name" content="mainstages" />
     <meta property="og:title" content="<?= $page->seo->title ?>" />
-    <meta property="og:url" content="<?= $config->https ? 'https//:'.$config->httpHost.$page->url : 'http//:'.$config->httpHost.$page->url ?>" />
-    <meta property="og:description" content="<?= $page->seo->title ?>" />
+    <meta property="og:url" content="<?= $config->https ? 'https://'.$config->httpHost.$page->url : 'http//:'.$config->httpHost.$page->url ?>" />
+    <meta property="og:description" content="<?= $page->seo->description ?>" />
     <meta property="og:type" content="website" />
     <?php if ($page->basic_hero_image) : ?>
-<meta property="og:image" content="<?= $config->https ? 'https//' : 'http://' ?><?= $config->httpHost.$page->basic_hero_image->getCrop("small")->url ?>" />
+<meta property="og:image" content="<?= $config->https ? 'https://' : 'http://' ?><?= $config->httpHost.$page->basic_hero_image->getCrop("medium")->url ?>" />
     <?php else : ?>
 <meta property="og:image" content="<?= $page->seo->image ?>" />
     <?php endif; ?>
+
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="400"/>
+    <meta property="fb:app_id" content="966242223397117" />
 <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@mainstages" />
     <meta name="twitter:title" content="<?= $page->seo->title ?>" />
-    <meta name="twitter:url" content="<?= $config->https ? 'https//:'.$config->httpHost.$page->url : 'http//:'.$config->httpHost.$page->url ?>" />
-    <meta name="twitter:description" content="<?= $page->seo->title ?>" />
+    <meta name="twitter:url" content="<?= $config->https ? 'https://'.$config->httpHost.$page->url : 'http//:'.$config->httpHost.$page->url ?>" />
+    <meta name="twitter:description" content="<?= $page->seo->description ?>" />
     <?php if ($page->basic_hero_image) : ?>
-<meta name="twitter:image" content="<?= $config->https ? 'https//' : 'http://' ?><?= $config->httpHost.$page->basic_hero_image->getCrop("small")->url ?>" />
+<meta name="twitter:image" content="<?= $config->https ? 'https//' : 'http://' ?><?= $config->httpHost.$page->basic_hero_image->getCrop("medium")->url ?>" />
     <?php else : ?>
 <meta property="og:image" content="<?= $page->seo->image ?>" />
     <?php endif; ?>
