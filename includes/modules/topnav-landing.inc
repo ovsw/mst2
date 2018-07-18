@@ -8,17 +8,22 @@
               <span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>
             </li>
 
-            <li class="top-nav__item-level-1 menu-item p-1058">
+            <li class="top-nav__item-level-1 menu-item">
               <a href="/programming/"> Programming </a>
               <span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>
             </li>
 
-            <li class="top-nav__item-level-1 last menu-item p-1336">
+            <li class="top-nav__item-level-1 menu-item">
               <a href="/families/"> Families</a>
               <span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>
             </li>
 
-            <li class="top-nav__item-level-1 menu-item p-1091">
+            <li class="top-nav__item-level-1 menu-item">
+              <a href="/performances/about-us/"> What is mainstages?</a>
+              <span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>
+            </li>
+
+            <li class="top-nav__item-level-1 menu-item">
               <a href="/programming/jobs/"> Jobs</a>
               <span class="top-nav__submenu-button "><i class="fas fa-plus top-nav__ico-plus"></i><i class="fas fa-minus top-nav__ico-minus"></i></span>
             </li>
